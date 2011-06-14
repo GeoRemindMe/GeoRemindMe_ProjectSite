@@ -26,6 +26,10 @@ W3C: http://www.w3.org/International
 
 import commands
 
+print '\n*****************'
+print 'Checking new strings...'
+print 'Updatings language files...\n'
+
 for lang in LANGUAGES:
 	if commands.getstatusoutput('django-admin makemessages -l '+lang[0])[0]==0:#creates german (de) .po
 		print lang[1] + ' strings updated at \'locale/'+lang[0]+'/LC_MESSAGES/django.po\''
@@ -34,5 +38,5 @@ for lang in LANGUAGES:
 	else:
 		print lang[1] + ' strings couldn\'t be updated at \'locale/'+lang[0]+'/LC_MESSAGES/django.po\''
 		
-print 'Now look if there is any translation tagged with #fuzzy or without been translated'
+print '*****************\n'
 		
