@@ -1,0 +1,109 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+
+{% block title %}{% trans "Contact us - GeoRemindMe" %}{%endblock%}
+
+{% block extra_css %}
+	<link rel="stylesheet" type="text/css" href="http://static.georemindme.com/css/common.css" media="screen" /> 
+{%endblock%}
+
+{% block extra_js %}
+<script type="text/javascript">
+function checkFields()
+{
+    if (echeck($('#userEmail').val()) && $('#msg').val())
+    {
+        emailOK=passOK=true;
+        renderStartBtn();
+    }
+    else
+    {
+        emailOK=passOK=false;
+        renderStartBtn();
+    }
+    
+}
+$(document).ready(function(){
+    $('#msg,#userEmail').one('focus',function(){$(this).val('');});
+    
+    $('#startBtn').click(function(e){
+       e.preventDefault();
+       $("#wait-mask").show();
+       $.ajax({
+           url: AJAX_URL+"contact/",
+           type: "post",
+           data: $("form").serialize(),
+           async:true,
+           success: function(){ $("#wait-mask").hide(); $('#sentMsg').removeClass("msgNoOK").addClass("msgOK");$('#sentMsg span').text("{% trans "Message sent succesfully!" %}");$('#msg,#userEmail').val('');},
+           error: function(){ $("#wait-mask").hide(); $('#sentMsg').removeClass("msgOK").addClass("msgNoOK");$('#sentMsg span').text("{% trans "Error sending the message" %}");}           
+           });
+        
+    });
+});
+</script> 
+
+{%endblock%}
+
+{%block section%}id="contact-section"{%endblock%}
+
+{%block breadcumb%}
+   <nav> 
+      <a href="/">{% trans "Home" %}</a> 
+      <span class="maqnav">></span> 
+      <h1>{% trans "Company contact" %}</h1> 
+   </nav>
+{%endblock%}
+
+{% block content %}
+        <article style="text-align:left;" id="community-content"> 
+			<h2>{% trans "We are a rather nice and open bunch of people. Get in touch with us!" %}</h2>
+			<section class="community-box"> 
+			<div itemscope itemtype="http://data-vocabulary.org/Organization">
+				<h3 id="presentation" class="menu-icons">{% trans "Company information" %}</h3> 
+               <dl  class="contact-table">
+                  <dt id="contact-email">{% trans "Email" %}</dt>
+                  <dd>info@georemindme.com</dd>
+                  <dt id="contact-phone">{% trans "Telephone" %}</dt>
+                  <dd><span itemprop="tel">+34 958 15 91 09</span> {% trans "or" %} <span itemprop="tel">+34 652 384 350</span></dd>
+                  <dt id="contact-address">{% trans "Address" %}</dt>
+                  <dd itemprop="address" itemscope itemtype="http://www.data-vocabulary.org/Address/">PTS, <span itemprop="street-address">Avda de la Innovación,</span><span itemprop="postal-code"> 18100</span>, <span itemprop="locality">Armilla (Granada)</span>, <span itemprop="country-name">{% trans "Spain" %}</span></dd>
+                  <dt id="contact-skype">Skype</dt>
+                  <dd itemprop="name">GeoRemindMe</dd>
+                  <dt id="contact-twitter">Twitter</dt>
+                  <dd><a itemprop="url" href="http://www.twitter.com/GeoRemindMe">@GeoRemindMe</a></dd>
+                  <dt id="contact-facebook">Facebook</dt>
+                  <dd><a href="http://www.facebook.com/georemindme" itemprop="url">www.facebook.com/GeoRemindMe</a></dd>
+                  <dt id="contact-youtube">Youtube</dt>
+                  <dd><a href="http://www.youtube.com/georemindme"itemprop="url">www.youtube.com/GeoRemindMe</a></dd>
+                  <dt id="contact-linkedin">LinkedIn</dt>
+                  <dd><a href="http://www.linkedin.com/company/1975016?trk=tyah" itemprop="url">{% trans "Business profile" %}</a></dd>
+               </dl>
+            </div>
+            </section>
+            
+            <!-- Contact form -->
+            <section class="community-box"> 
+			   <h3 id="contact-icon" class="menu-icons">{% trans "Contact form" %}</h3> 
+			   <div id="contact-form">
+               <p>{% trans "You can also contact us using this form" %}</p>
+               <form method="post" action=".">                 
+                  <img src="/static/webapp/img/mailInactive.png" alt="Email icon" title="{% trans "Enter your email address" %}" >
+                  <input type="text" value="{% trans "email" %}" name="userEmail" id="userEmail"  placeholder="email" onblur="checkFields();">
+            
+                  
+                  <textarea onfocus="checkFields();" name="msg" id="msg" onkeyup="checkFields();">{% trans "Write your message here..." %}</textarea>
+                  
+                  <span id="sentMsg"><span></span></span>
+                  <div><input type="submit" value="{% trans "Send" %}" id="startBtn" title="{% trans "Please fill up all fields" %}"></div>
+               </form>
+               </div>
+            </section>
+          </article>
+         
+         
+         
+         
+         
+     
+{%endblock%}

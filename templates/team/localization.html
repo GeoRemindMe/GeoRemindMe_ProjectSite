@@ -1,0 +1,29 @@
+{% extends 'layout.html' %}
+
+
+{% block content %}
+
+	<article style="text-align:left;" id="community-content"> 
+		<section class="community-box"> 
+			<h3 id="localization" class="menu-icons">{% trans "Introduction to localization team" %}</h3> 
+            <p>{% trans "Localization is the process of adapting content or products to another language so that they have the appearance and function of products made in a particular country. Linguistic context, cultural environment and technical specifications are all taken into account in this process. Localization is then basic to make GeoRemindMe accesible to as many people as possible." %}</p>
+            
+            <p>{% trans "<strong>If you want to be part of the localization team, you don't need to learn any technical stuff</strong>. We are using an easy web system to manage the translations where you will only need to learn the very basics of HTML in order to start collaborating." %}</p>
+           
+            <p>{% trans "The localization team uses this two tools:" %}</p>
+            <ul>
+				<li><a href="https://teambox.com/public/georemindme-2/translating">Teambox</a>: {% trans "it's the online project collaboration software used to manage the project were we introduce ourselves, talk about the project, distribute the tasks, etc." %}</li>
+				<li><a href="http://www.transifex.net/projects/p/georemindme/">Transifex</a>: {% trans "is an open service that allows people to collaboratively translate software, documentation...This is were the localization process is done so that the texts can be properly uploaded to the website" %}</li>
+            </ul>
+            
+            <p id="invitation-request"><a href="https://teambox.com/public/georemindme-2/translating">{% trans "Learn more" %}</a>.</p>
+        </section>	
+		
+        <section class="community-box"> 
+            <h3 id="video-icon" class="menu-icons">{% trans "Introduction video" %}</h3>
+            <div class="center"><iframe width="425" height="349" src="http://www.youtube.com/embed/wHfSozHj_-U" frameborder="0" allowfullscreen></iframe></div>            
+        </section>
+		
+	</article>  
+
+{% endblock %}

@@ -1,0 +1,183 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+
+{% block title %}{% trans "Contact us - GeoRemindMe" %}{%endblock%}
+
+{% block extra_css %}
+	<link rel="stylesheet" type="text/css" href="http://static.georemindme.com/css/common.css" media="screen" /> 
+	<link rel="stylesheet" href="/static/webapp/style/jquery.treeview.css" type="text/css" />
+{%endblock%}
+
+{% block extra_js %}
+
+	<script type="text/javascript" src="/static/webapp/js/jquery.treeview.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#list-tree").treeview({collapsed: true});
+		});
+	</script>
+
+	<script type="text/javascript">
+	function checkFields()
+	{
+		if (echeck($('#userEmail').val()) && $('#msg').val())
+		{
+			emailOK=passOK=true;
+			renderStartBtn();
+		}
+		else
+		{
+			emailOK=passOK=false;
+			renderStartBtn();
+		}
+		
+	}
+	$(document).ready(function(){
+		$('#msg,#userEmail').one('focus',function(){$(this).val('');});
+		
+		$('#startBtn').click(function(e){
+		   e.preventDefault();
+		   $("#wait-mask").show();
+		   $.ajax({
+			   url: AJAX_URL+"contact/",
+			   type: "post",
+			   data: $("form").serialize(),
+			   async:true,
+			   success: function(){ $("#wait-mask").hide(); $('#sentMsg').removeClass("msgNoOK").addClass("msgOK");$('#sentMsg span').text("{% trans "Message sent succesfully!" %}");$('#msg,#userEmail').val('');},
+			   error: function(){ $("#wait-mask").hide(); $('#sentMsg').removeClass("msgOK").addClass("msgNoOK");$('#sentMsg span').text("{% trans "Error sending the message" %}");}           
+			   });
+			
+		});
+	});
+	</script> 
+
+{%endblock%}
+
+{%block section%}id="contact-section"{%endblock%}
+
+{%block breadcumb%}
+   <nav> 
+      <a href="/">{% trans "Home" %}</a> 
+      <span class="maqnav">></span> 
+      <h1>{% trans "Sitemap" %}</h1> 
+   </nav>
+{%endblock%}
+
+{% block content %}
+
+	<article style="text-align:left;" id="community-content"> 
+		<section class="community-box"> 
+			<h3 class="blue-chicken menu-icons">Usuarios</h3> 
+			<p>Todo lo que el usuario necesita para sacarle todo el provecho a la herramienta:</p>
+			<ul>
+				<li>
+					<a href="http://www.georemindme.com">Inicio</a> ; información sobre el proyecto
+				</li>
+				<li><a href="https://georemindme.appspot.com/knowmore/">Más información</a> ; profundiza en más detalles de la herramienta</li>
+				<li><a href="https://georemindme.appspot.com/login/">Entrar</a> ; menu de acceso a la herramienta</li>
+				<li><a href="http://blog.georemindme.com">Blog</a> ; información sobre novedades y avances del proyecto.</li>
+				<li><a href="http://help.georemindme.com">Help / Support</a> ; sugerencias y ayuda para usuarios</li>
+			</ul>
+		</section>	
+		
+		<section class="community-box"> 
+			<h3 id="Jobs" class=" menu-icons">La empresa</h3> 
+			<p>Toda la información sobre la empresa que trabaja con este proyecto:</p>
+			<ul>
+				<li><a href="/team/">Equipo</a> ; conoce a nuestros trabajdores.</li>
+				<li><a href="http://jobs.georemindme.com">Empleo</a> ; información sobre ofertas de empleo.</li>
+				<li><a href="/contact/">Contacto</a> ; diferentes formas de contacto.</li>
+				<li><a href="/partners/">Colaboradores</a> ; instituciones y empresas con las que trabajamos.</li>
+				<li><a href="/press/">Prensa</a> ; apariciones y notas de prensa.</li>
+			</ul>
+		</section>	
+		<hr>
+		<section class="community-box"> 
+			<h3 id="Community" class="menu-icons">Comunidad de voluntarios</h3>
+			<p>Comunidad de usuarios voluntarios y amigos de la plataforma que nos ayudan a seguir creciendo y mejorando.</p>
+			<ul id="list-tree">
+				<li><a href="http://www.flickr.com/groups/1620000@N25/pool/">Fotos</a> ; fotografías de eventos de la comunidad.</li></li>
+				<li><a href="https://teambox.com/projects/georemindme-2/">Teambox</a> ; plataforma de trabajo colaborativo.</li>
+				<li><span class="folder"><a href="http://team.georemindme.com">Voluntarios </a></span>
+					<ul>
+					<li>
+					<span class="folder"><a href="http://dev.georemindme.com/android-developers">Programadores.</a></span>
+					<ul>
+						<li>
+							<span class="folder"><span>Desarrolladores Android</span></span>
+							<ul>
+								<li><a href="http://dev.georemindme.com/android-developers">Guía</a> ; guía de iniciación para colaboradores.</li>
+								<li><a href="https://teambox.com/public/georemindme-2/android-developers">Colaboradores</a> ; listado de desarrolladores Android.</li>
+							</ul>
+						</li>
+						<li>
+							<span class="folder"><span>Desarrolladores Web</span></span>
+							<ul>
+								<li><a href="http://dev.georemindme.com/webdev/">Guía</a> ; guía de iniciación para colaboradores.</li>
+								<li><a href="https://teambox.com/public/georemindme-2/web-developers">Colaboradores</a> ; listado de desarrolladores web.</li>
+							</ul>
+						</li>
+						
+						<li><a href="https://github.com/georemindme">Github</a> ; sistema de control de versiones para el código.</li>
+						<li><a href="http://api.georemindme.com/">API pública</a> ; documentación y ejemplos de la API.</li>
+						<li><a href="http://dev.georemindme.com/licensing/">Licencias</a> ; licencias aplicables al software.</li>
+					</ul>
+					<li>
+						<span class="folder"><a href="http://team.georemindme.com/design/">Diseñadores</span>
+						<ul>
+							<li><a href="#">Galería</a> ; galería de las imágenes realizadas desde la comunidad.</li>
+						</ul>
+					</li>
+					<li>
+						<span class="folder"><a href="http://team.georemindme.com/localization/">Traductores</span>
+						<ul>
+							<li><a href="http://www.transifex.net/projects/p/georemindme/">Transifex</a> ; herramienta web para realizar las traducciones.</li>
+							<li><a href="https://teambox.com/public/georemindme-2/translating">Metodología de trabajo</a> ; guía explicativa sobre la metodología seguida.</li>
+						</ul>
+					</li>
+					</li>
+					</ul>
+					
+<!--
+						<li>
+							Translators
+							<ul>
+								<li>Teambox</li>
+								<li>Transifex</li>
+								<li>Workflow</li>
+							</ul>
+						</li>
+-->
+				</li>
+				
+					
+				
+				</li>
+				 
+			 
+				
+			</ul>
+
+		</section>	
+
+		<section class="community-box"> 
+			<h3 id="legal" class="menu-icons">Legal</h3> 
+			<p>Estamos comprometidos con la seguridad y el buen uso de los datos, informate sobre:</p>
+			<ul>
+				<li><a href="/privacy/">Nuestra política de privacidad</a> ; información sobre cómo gestionamos tu privacidad</li>
+				<li><a href="/tos/">Condiciones de uso</a> ; condiciones para poder usar la herramienta</li>
+			</ul>
+		</section>		
+		
+		
+	</article>  
+         
+     
+{%endblock%}
+
+
+	
+	  
+-> Company
+	- Jobs

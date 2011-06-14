@@ -1,0 +1,68 @@
+{% extends 'layout.html' %}
+
+
+{% block content %}
+
+	<article style="text-align:left;" id="community-content"> 
+	
+		<section class="community-box"> 
+            <h3 id="guide-icon" class="menu-icons">{% trans 'Web developers guide' %}</h3> 
+            <ol>
+				<li>
+					<h4>{% trans 'Setting up the environment' %}</h4>
+
+					<ol>
+						<li>{% trans '<a href="https://github.com/GeoRemindMe/GeoRemindMe_Web/wiki/How-to-set-up-your-repository">Install and configure Git and Github</a> (on Ubuntu)' %}</li>
+						<li>{% trans 'Create a fork of the repository' %}</li>
+						<li>{% trans '<a href="https://github.com/GeoRemindMe/GeoRemindMe_Web/wiki/How-to-setup-a-local-enviroment">Run a local server and deploy the application</a>' %}</li>
+					</ol>
+				</li>
+				<li>
+					<h4>{% trans 'Introduction to GeoRemindMe workflow' %}</h4>
+
+					<ol>
+						<li>{% trans '<a href="https://github.com/GeoRemindMe/GeoRemindMe_Web/wiki/Coding-Style-Guide">Coding style guide</a>' %}</li>
+						<li>{% trans '<a href="https://github.com/GeoRemindMe/GeoRemindMe_Web/wiki/How-to-update-languages">How to update languages</a>' %}</li>
+						<li>{% trans 'How to add a contribution</li>
+						<li>{% trans 'Generating documentation with <a href="http://sphinx.pocoo.org/">Sphinx</a>' %}</li>
+					</ol>
+				</li>
+				<li>
+
+					<h4>{% trans 'Building new features' %}</h4>
+
+					<ol>
+						<li>{% trans '<a href="http://api.georemindme.com">Public API</a>' %}</li>
+						<li>{% trans 'GeoRemindMe Labs' %}</li>
+						<li>{% trans 'Widgets' %}</li>
+						<li>{% trans 'Tutorials and code examples' %}</li>
+					</ol>
+				</li>
+				<li>
+
+
+					<h4>{% trans 'Web architecture' %}</h4>
+
+					<ol>
+						<li>{% trans 'Database entities and relations' %}</li>
+						<li>{% trans '<a href="https://github.com/GeoRemindMe/GeoRemindMe_Web/wiki/AJAX-communications">AJAX communications</a>' %}</li>
+						<li>{% trans '<a href="http://dev.georemindme.com/webapp/build/html/">Code documentation</a>' %}</li>
+					</ol>
+				</li>
+			</ol>
+
+        </section>
+        
+        <section class="community-box"> 
+            <h3 id="photos" class="menu-icons">{% trans 'Quick overview' %}</h3>
+            <p>{% trans 'This sketch explains some of the modules that make up the client and server aplications and how this two are related:' %}</p>
+            <a href="http://static.georemindme.com/images/doc/web-scheme.png"><img src="http://static.georemindme.com/images/doc/web-scheme_thumb.png" /></a>
+            <p class="center"><em>{% trans 'Quick overview of the web architecture (4th May 2011)' %}</em></p>
+			
+        </section>
+		
+        
+		
+	</article>  
+
+{% endblock %}

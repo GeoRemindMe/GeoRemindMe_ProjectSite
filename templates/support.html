@@ -1,0 +1,116 @@
+{% extends "webapp/base.html" %}
+
+{% load i18n %}
+
+{% block title %}{% trans "Support center - GeoRemindMe" %}{%endblock%}
+
+{% block extra_css %}
+	<link rel="stylesheet" type="text/css" href="http://static.georemindme.com/css/common.css" media="screen" /> 
+	
+	<style media='all' type='text/css'>
+		div#gsfn_list_widget img { border: none; }
+		div#gsfn_list_widget { font-size: 12px;  padding: 10px; }
+		div#gsfn_list_widget a.widget_title { color: #000; display: block; margin-bottom: 10px; font-weight: bold; }
+		div#gsfn_list_widget .powered_by { margin-top: 8px; padding-top: 8px; border-top: 1px solid #DDD; }
+		div#gsfn_list_widget .powered_by a { color: #333; font-size: 90%; }
+		div#gsfn_list_widget div#gsfn_content { }
+		div#gsfn_list_widget div#gsfn_content li { text-align:left; margin-bottom:6px; }
+		div#gsfn_list_widget div#gsfn_content a.gsfn_link { line-height: 1; }
+		div#gsfn_list_widget div#gsfn_content span.time { font-size: 90%; padding-left: 3px; }
+		div#gsfn_list_widget div#gsfn_content p.gsfn_summary { margin-top: 2px }
+		div#gsfn_search_widget label{font-weight:normal;}
+
+	</style>
+{%endblock%}
+
+{% block extra_js %}
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$('#fdbk_iframe').css('height',300);
+	});
+	</script>
+	{%endblock%}
+
+{%block section%}id="contact-section"{%endblock%}
+
+{%block breadcumb%}
+   <nav> 
+      <a href="/">{% trans "Home" %}</a> 
+      <span class="maqnav">></span> 
+      <h1>{% trans "Support center" %}</h1> 
+   </nav>
+{%endblock%}
+
+{% block content %}
+        <article style="text-align:left;" id="community-content"> 
+			<section class="community-box">               
+				<h3 id="comments" class="menu-icons">{% trans "Last comments" %}</h3> 
+				{% trans "Meet the <a href='http://getsatisfaction.com/georemindme'>user community</a> and share your questions, suggestions and problems." %}
+				
+				
+				
+				<div id='gsfn_list_widget'>
+				<div id='gsfn_content'>Loading...</div>
+				
+				</div>
+				<script src="http://getsatisfaction.com/georemindme/widgets/javascripts/ba9248b5a9/widgets.js" type="text/javascript"></script>
+				<script src="http://getsatisfaction.com/georemindme/topics.widget?callback=gsfnTopicsCallback&amp;limit=5&amp;sort=last_active_at" type="text/javascript"></script>
+				{% trans "<a href='http://getsatisfaction.com/georemindme'>Read more</a>." %}
+
+			</section>
+			<section class="community-box"> 
+				<h3 id="search-icon" class="menu-icons">{% trans "Quick search" %}</h3> 
+				
+				<div id='gsfn_search_widget'>
+				<div class='gsfn_content'>
+				<form accept-charset='utf-8' action='http://getsatisfaction.com/georemindme' id='gsfn_search_form' method='get' onsubmit='gsfn_search(this); return false;'>
+				<div>
+				<input name='style' type='hidden' value='' />
+				<input name='limit' type='hidden' value='3' />
+				<input name='utm_medium' type='hidden' value='widget_search' />
+				<input name='utm_source' type='hidden' value='widget_georemindme' />
+				<input name='callback' type='hidden' value='gsfnResultsCallback' />
+				<input name='format' type='hidden' value='widget' />
+				<label class='gsfn_label' for='gsfn_search_query'>Look if someone though about it before: questions, ideas and problems:<br></label>
+				<input id='gsfn_search_query' maxlength='120' name='query' type='text' value='' />
+				<input id='continue' type='submit' value='Continue' />
+				</div>
+				</form>
+				<div id='gsfn_search_results' style='height: auto;'></div>
+				</div>
+				</div>
+				<script src="http://getsatisfaction.com/georemindme/widgets/javascripts/ba9248b5a9/widgets.js" type="text/javascript"></script>
+                  
+                  
+            </section>
+            <hr>
+            <h3 id="feedback" class="menu-icons">{% trans "Easy and quick feedback system" %}</h3> 
+            
+			<script type="text/javascript" charset="utf-8">
+			  var is_ssl = ("https:" == document.location.protocol);
+			  var asset_host = is_ssl ? "https://s3.amazonaws.com/getsatisfaction.com/" : "http://s3.amazonaws.com/getsatisfaction.com/";
+			  document.write(unescape("%3Cscript src='" + asset_host + "javascripts/feedback-v2.js' type='text/javascript'%3E%3C/script%3E"));
+			</script>
+
+			<script type="text/javascript" charset="utf-8">
+			  var feedback_widget_options = {};
+
+			  feedback_widget_options.display = "inline";  
+			  feedback_widget_options.company = "georemindme";
+			  
+			  
+			  feedback_widget_options.style = "idea";
+			  feedback_widget_options.custom_css = 'height:1000px;';
+			  
+			  var feedback_widget = new GSFN.feedback_widget(feedback_widget_options);
+
+			</script>
+
+        </article>
+         
+         
+         
+         
+         
+     
+{%endblock%}

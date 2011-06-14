@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+  <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+	<title>{{ title }}</title>
+	 
+	<link rel="stylesheet" href="http://2.georemindme.appspot.com/static/webapp/style/screen.css" type="text/css" media="screen, projection" /> 
+	<link rel="stylesheet" href="http://2.georemindme.appspot.com/static/webapp/style/style.css" type="text/css" media="screen, projection" /> 
+	<link rel="stylesheet" href="http://2.georemindme.appspot.com/static/webapp/style/print.css" type="text/css" media="print" /> 
+	<link rel="stylesheet" href="http://2.georemindme.appspot.com/static/webapp/style/easySlider.css" type="text/css" media="screen, projection" />
+	 
+	 
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script> 
+	<script type="text/javascript" src="http://www.georemindme.com/static/webapp/js/jquery.preload-1.0.8-min.js"></script> 
+	 
+	 
+	<script type="text/javascript" src="http://www.georemindme.com/webapp/static/webapp/js/static.js"></script> 
+	 
+	<!-- Loading lightbox plugin--> 
+
+	<link rel="stylesheet" type="text/css" href="http://static.georemindme.com/css/common.css" media="screen" /> 
+	  
+	 <link rel="shortcut icon" HREF="http://georemindme.appspot.com/static/webapp/img/favicon.png">
+
+	 
+	<!--
+	<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script> 
+	--> 
+	 
+	<script type="text/javascript" src="../src/webapp/static/webapp/js/base.js"></script> 
+	 
+	<!--[if IE]>
+	<link rel="stylesheet" href="../src/webapp/static/webapp/style/ie.css" type="text/css"
+	media="screen, projection" />
+	<![endif]--> 
+	 
+	<!--[if lt IE 9]>
+	<script src="https://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+	<![endif]--> 
+	 
+	
+</head> 
+ 
+<body> 
+ 
+   <div id="wait-mask"></div> 
+   <div class="container" id="documentation">     
+      <header> 
+         <span id="logo"><a href="/" title="Ir volando a la página de inicio. Pio! Pio!"><img src="http://www.georemindme.com/static/webapp/img/logoHeader.png" alt="GeoRemindMe"></a></span> 
+         <div id="top-menu"> 
+
+			<ul>
+				{% for item in menu_items %}
+					<li>
+					{% if item.name == active_section %} 
+						<span class="menu-icons" id="{{ item.name }}">{{ item.name }} </span>
+					{% else %}
+						<a class="menu-icons" href="{{ item.url }}" id="{{ item.name }}">{{ item.name }}</a>  
+					{% endif %}
+					
+					
+					 
+					
+					</li>
+				{% endfor %}
+			</ul>
+					
+		</div> 
+         <nav> 
+			<a href="http://www.georemindme.com">Home</a>
+			{% for item in breadcumb %}
+				<span class="maqnav">></span>
+				<a href="{{ item.url }}">{{ item.title }}</a>
+			{% endfor %}
+			
+			<span class="maqnav">></span>
+			<h1>{{ title }}</h1>
+         </nav> 
+         
+		
+      </header> 
+ 
+   <div id="main-container">   
+      <section> 
+      
+		{% block content %} {% endblock %}
+		 
+      </section> 
+   </div> 
+ 
+    </div>
+	<div id="footer" class="">
+		<div id="footer-nav">
+			<ul>
+			   <li><a href="http://blog.georemindme.com" title="{% trans "Know what's going on"%}"  accesskey="z"><strong>{% trans "Blog"%}</strong></a></li>
+			   <li><a href="http://jobs.georemindme.com" title="{% trans "Do you want to work with us?"%}">Jobs</a></li>
+			   <li><a href="http://team.georemindme.com" title="{% trans "Join the community now!"%}">Community</a></li>
+			   <li><a href="http://help.georemindme.com" title="{% trans "Contact us"%}">Support</a></li>
+			   <li><a href="http://www.georemindme.com/sitemap" title="{% trans "Looking for some info?"%}">Sitemap</a></li>
+		   </ul>
+		<p>{% trans "<strong>GeoRemindMe 2011</strong>,headquarters at <a href='http://maps.google.com/maps/ms?ie=UTF8&hl=en&msa=0&msid=204520629691711228427.0004a5735677747224788&ll=37.147913,-3.608596&spn=0.00289,0.004823&t=h&z=18'>PTS, Avda de la Innovación, 18100 Armilla (Granada), Spain</a>"%}</p>
+		</div>
+	</div>
+	<script type="text/javascript"> 
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-19272923-2']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+	  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+	</script> 
+ 
+</body> 
+ 
+</html> 

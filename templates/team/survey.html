@@ -1,0 +1,36 @@
+{% extends 'layout.html' %}
+
+
+{% block content %}
+
+	<article id="community-content"> 
+		<h3>{% trans "GeoRemindMe Survey" %}</h3>
+		<p>{% trans "Dear student," %}</p>
+		<p>
+			<img src="http://static.georemindme.com/images/logo_ugr.jpg" alt="Logo ugr" style="float:right;border:0;margin:0 10px;" />
+			{% trans "<strong>GeoRemindMe</strong> is a tool that will help you discover through your smartphone* and a facebook aplication fun, 
+			unique, traditional or breath-taking places during your stay in Granada. In collaboration with the <a href=\"http://www.ugr.es\">University 
+			of Granada (UGR)</a> and the <a href=\"http://internacional.ugr.es/pages/perfiles/estudiantes/programa-mentores-de-la-ugr\">buddy programme</a> we 
+			are creating this tool that will be available for your use before you arrive to Spain." %}</p>
+		
+		<p>{% trans "Among other things, we want you to be able to:" %}</p>
+		
+		<ul>
+			<li>{% trans "<strong>Get suggestions</strong> from your buddy, the University and your friends." %}</li>
+			<li>{% trans "<strong>Suggest</strong> your friends places and things to do in Granada." %}</li>
+			<li>{% trans "<strong>Rate and comment</strong> the suggestions." %}</li>
+			<li>{% trans "<strong>Search and filter</strong> the suggestions made by others." %}</li>
+			<li>{% trans "<strong>Download or print</strong> trips or routes to discover diferent areas of the city." %}</li>
+			<li>{% trans "And many more!" %}</li>
+		</ul>
+		
+		<p>{% trans "To make this project a success, we would like to ask for your help by filling up this short survey. We would really appreciate your feedback. <br> <em>*We are currently developing the application for smartphones running Android, but depending on the results of this survey we may get back to the lab and provide you with other versions such as iPhone and Blackberry.</em>" %}</p>
+		
+	
+		<iframe src="https://spreadsheets.google.com/spreadsheet/embeddedform?formkey=dENnQ2R6Q1RhcmlwWWkxTEY0bVQyS0E6MQ" width="760" height="1700" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+		<h2>{% trans "Join the Community" %}</h2>
+		<p>{% trans "This is a <a href=\"http://dev.georemindme.com/licensing\">free software project</a> so we are happy to welcome you if you are interested in collaborating with us. You can find more on this on our <a href=\"http://team.georemindme.com/\">Community site</a> were you can meet the team and choose the area where you will be more comfortable collaborating on." %}</p>
+		<h3>{% trans "Thank you very much for your help!" %}</h3>
+	</article>  
+
+{% endblock %}

@@ -1,0 +1,167 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+
+{% block title %}{% trans "Company team - GeoRemindMe" %}{%endblock%}
+
+{% block extra_css %}
+	<link rel="stylesheet" type="text/css" href="http://static.georemindme.com/css/common.css" media="screen" /> 
+{%endblock%}
+
+{% block extra_js %}
+<script type="text/javascript">
+function checkFields()
+{
+    if (echeck($('#userEmail').val()) && $('#msg').val())
+    {
+        emailOK=passOK=true;
+        renderStartBtn();
+    }
+    else
+    {
+        emailOK=passOK=false;
+        renderStartBtn();
+    }
+    
+}
+$(document).ready(function(){
+    $('#msg,#userEmail').one('focus',function(){$(this).val('');});
+    
+    $('#startBtn').click(function(e){
+       e.preventDefault();
+       $("#wait-mask").show();
+       $.ajax({
+           url: AJAX_URL+"contact/",
+           type: "post",
+           data: $("form").serialize(),
+           async:true,
+           success: function(){ $("#wait-mask").hide(); $('#sentMsg').removeClass("msgNoOK").addClass("msgOK");$('#sentMsg span').text("{% trans "Message sent succesfully!" %}");$('#msg,#userEmail').val('');},
+           error: function(){ $("#wait-mask").hide(); $('#sentMsg').removeClass("msgOK").addClass("msgNoOK");$('#sentMsg span').text("{% trans "Error sending the message" %}");}           
+           });
+        
+    });
+});
+</script> 
+
+{%endblock%}
+
+{%block section%}id="contact-section"{%endblock%}
+
+{%block breadcumb%}
+   <nav> 
+      <a href="/">{% trans "Home" %}</a> 
+      <span class="maqnav">></span> 
+      <h1>{% trans "Company team" %}</h1> 
+   </nav>
+{%endblock%}
+
+{% block content %}
+
+	<div id="container-contact">
+		<h2>{% trans "Our team" %}</h2>
+
+		<!-- RAUL JIMENEZ -->
+		<figure itemscope itemtype="http://www.data-vocabulary.org/Person/" class="vcard">
+		   <img src="/static/webapp/img/team/raul.jpg" title="Raúl Jiménez Ortega" alt="hhkaos picture" class="photo" itemprop="photo" />
+		   <figcaption>
+			  <!-- Profile -->
+			  <section class="profile">
+				 <!-- Name -->
+				 <header title="Name">
+					
+					   <span itemprop="name">Raúl Jimenez Ortega</span>,<br>
+					   <span itemprop="role">{% trans "Chief Executive Officer (CEO) & cofounder" %}</span>
+				  
+				 </header>
+				 <a href="mailto:raul@georemindme.com" class="email contact-icon" title="raul@georemindme.com"><span class="hidden">raul@georemindme.com</span></a>
+				 <!-- Contact -->
+				 <section class="note">
+					<ul>
+					   <li><a href="http://www.twitter.com/hhkaos" class="twitter contact-icon" itemprop="url" rel="twitter" title="@hhkaos"><span class="hidden">@hhkaos</span></a></li>
+					   <li><a href="http://es.linkedin.com/in/jimenezortegaraul" class="linkedin contact-icon" itemprop="url" rel="linkedin" title="{% trans "Linkedin profile" %}"><span class="hidden">{% trans "Linkedin profile" %}</span></a></li>
+					</ul>
+				 </section>
+				 <p>{% trans "Compulsive entrepreneur, technologist, extrovert programmer, friend of his friends and last but not least a guy who dreams big." %}</p>
+			  </section>
+		   </figcaption>
+		</figure>
+		
+		<!-- Anna Peña -->
+		<figure itemscope itemtype="http://www.data-vocabulary.org/Person/" class="vcard ">
+		   <img src="/static/webapp/img/team/anna.jpg" title="Anna Peña Martínez" alt="anna picture" class="photo" itemprop="photo" />
+		   <figcaption>
+			  <!-- Profile -->
+			  <section class="profile">
+				 <!-- Name -->
+				 <header title="Name">
+					
+					   <span itemprop="name">Anna Peña Martínez</span>,<br>
+					   <span itemprop="role">{% trans "Product Manager & cofounder" %}</span>
+					</span>
+				 </header>
+				 <a href="mailto:anna@georemindme.com" class="email contact-icon" title="anna@georemindme.com"><span class="hidden">anna@georemindme.com</span></a>
+				 <!-- Contact -->
+				 <section class="note">
+					<ul>
+					   <li><a href="http://www.twitter.com/annalogik" class="twitter contact-icon" itemprop="url" rel="twitter" title="@annalogik"><span class="hidden">@annalogik</span></a></li>
+					   <li><a href="http://www.linkedin.com/in/annalogik" class="linkedin contact-icon" itemprop="url" rel="linkedin"  title="{% trans "Linkedin profile" %}"><span class="hidden">{% trans "Linkedin profile" %}</span></a></li>
+					</ul>
+				 </section>
+				 <p>{% trans "A fan of foreign TV shows, sci-fi novels and a thorough geek, she's the one you want to be around in a zombie apocalypse scenario." %}</p>
+			  </section>
+		   </figcaption>
+		</figure>
+		
+		
+		<!-- Francisco Javier Fernández Toro -->
+		<figure itemscope itemtype="http://www.data-vocabulary.org/Person/" class="vcard  clear">
+		   <img src="/static/webapp/img/team/fran.jpg" title="Francisco Javier Fernández Toro" alt="fran picture" class="photo" itemprop="photo" />
+		   <figcaption>
+			  <!-- Profile -->
+			  <section class="profile">
+				 <!-- Name -->
+				 <header title="Name">
+					
+					   <span itemprop="name">Francisco Javier Fernández Toro</span>,<br/>
+					   <span itemprop="role">{% trans "Chief of Mobile Development & cofounder" %}</span>
+					
+				 </header>
+				 <a href="mailto:fran@georemindme.com" class="email contact-icon" title="fran@georemindme.com"><span class="hidden">fran@georemindme.com</span></a>
+				 <!-- Contact -->
+				 <section class="note">
+					<ul>
+					   <li><a href="http://www.twitter.com/fjfdeztoro" class="twitter contact-icon" itemprop="url" rel="twitter" title="@fjfdeztoro"><span class="hidden">@fjfdeztoro</span></a></li>
+					   <li><a href="http://es.linkedin.com/pub/francisco-javier-fern%C3%A1ndez-toro/2a/962/248" class="linkedin contact-icon" itemprop="url" rel="linkedin"  title="{% trans "Linkedin profile" %}"><span class="hidden">{% trans "Linkedin profile" %}</span></a></li>
+					</ul>
+				 </section>
+				 <p>{% trans "Self-taught and yet a great team player, with a passion for anything that can be programmed, particularly if you can carry it around in your pocket." %}</p>
+			  </section>
+		   </figcaption>
+		</figure>
+		
+		<!-- Javier Cordero Martinez -->
+		<figure itemscope itemtype="http://www.data-vocabulary.org/Person/" class="vcard">
+		   <img src="/static/webapp/img/team/javi.jpg" title="Javier Cordero Martinez" alt="javi picture" class="photo" itemprop="photo" />
+		   <figcaption>
+			  <!-- Profile -->
+			  <section class="profile">
+				 <!-- Name -->
+				 <header title="Name">
+				   
+					   <span itemprop="name">Javier Cordero Martinez</span>,<br/>
+					   <span itemprop="role">{% trans "Senior Web Developer" %}</span>
+					</span>
+				 </header>
+				 <a href="mailto:javier@georemindme.com" class="email contact-icon" title="javier@georemindme.com"><span class="hidden">javier@georemindme.com</span></a>
+				 <!-- Contact -->
+				 <section class="note">
+					<ul>
+					   <li><a href="http://es.linkedin.com/in/jcorderomartinez" class="linkedin contact-icon" itemprop="url" rel="linkedin"  title="{% trans "Linkedin profile" %}"><span class="hidden">{% trans "Linkedin profile" %}</span></a></li>
+					</ul>
+				 </section>
+				 <p>{% trans "My main hobby in the project is to change the data model and often delete all users and alerts database except mine, of course." %}</p>
+			  </section>
+		   </figcaption>
+		</figure>
+	</div>
+{%endblock%}

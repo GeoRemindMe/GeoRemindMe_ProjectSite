@@ -1,0 +1,274 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+
+{% block title %}{% trans "Know more about GeoRemindMe" %}{%endblock%}
+
+{% block extra_js %}
+<script type="text/javascript" src="/static/webapp/js/static.js"></script> 
+
+<!-- Loading lightbox plugin--> 
+<script type="text/javascript" src="/static/webapp/js/jquery.lightbox-0.5.js"></script> 
+<link rel="stylesheet" type="text/css" href="/static/webapp/style/jquery.lightbox-0.5.css" media="screen" /> 
+ <script type="text/javascript"> 
+    $(function() {
+        $('.screenshots a').lightBox();
+        
+           $('input[type=submit]').click(function(e){
+               e.preventDefault();
+               
+               if (!echeck($('#user-email').val()))
+               {
+                    $("#wait-mask").hide();
+                    $('#sentMsg').removeClass("msgOK").addClass("msgNoOK");$('#sentMsg span').text("{% trans "Email wrong" %}");
+                    return;
+                }
+               
+               $("#wait-mask").show();
+               $.ajax({
+                   url: AJAX_URL+"keep-up-to-date/",
+                   type: "post",
+                   data: $("#form-keep-up-to-date").serialize(),
+                   async:true,
+                   success: function(){ $("#wait-mask").hide(); $('#sentMsg').removeClass("msgNoOK").addClass("msgOK");$('#sentMsg span').text("{% trans "Message sent succesfully!" %}");$('#msg,#userEmail').val('');},
+                   error: function(){ $("#wait-mask").hide(); $('#sentMsg').removeClass("msgOK").addClass("msgNoOK");$('#sentMsg span').text("{% trans "Error sending the message" %}");}           
+                   });
+            
+        });
+    });
+ </script> 
+{%endblock%}
+
+{%block section%}id="know-more"{%endblock%}
+
+{%block breadcumb%}
+   <nav> 
+      <a href="/">{% trans "Home" %}</a> 
+      <span class="maqnav">></span> 
+      <h1>{% trans "Know more" %}</h1> 
+   </nav>
+{%endblock%}
+   
+
+{%block content%}
+
+   <div id="col-left">
+      <!-- Content index with animated scroll-->
+      <ul id="content-index">
+         <li><a href="#know-more" class="anchor separator" id="back-to-top" accesskey="w">{% trans "Back to top" %}</a></li>
+         <li><a href="#available-versions" class="anchor separator" accesskey="r">{% trans "Available versions" %}</a></li>
+         <li><a href="#other-versions" class="anchor separator" accesskey="t">{% trans "WIP versions" %}</a></li>
+         <li><a href="#keep-up-to-date" class="anchor separator" accesskey="y">{% trans "Keep up to date" %}</a></li>
+      </ul>
+      <!-- En content index-->
+   </div>
+   <section id="col-right">
+      <article class="content-box" id="available-versions">
+         <div>
+         <h2>{% trans "Available versions" %}</h2>
+         <p>{% trans "We want you to be able to use the app anytime you need it, so meet the <strong>three available options</strong>:" %}</p>
+         <section class="app-version">
+            <h3 id="mobile-app">{% trans "Mobile app" %}</h3>
+            <p class="intro">{% trans "The native app <strong>will alert you</strong> when you are near a place with a reminder. It has been specifically <em><strong>optimized to reduce battery usage</strong> and ease navigation in your reminder list</em>." %}</p>
+            <p class="screenshots">
+               <a title="{% trans "Screenshot Android version: Add a reminder" %}" href="/static/webapp/img/screenshots/android/android_addalert1.png"><img src="/static/webapp/img/screenshots/android/android_addalert1.png" height="72" alt="android alert screenshot" /></a>
+               <a title="{% trans "Screenshot Android version: Add a reminder" %}" href="/static/webapp/img/screenshots/android/android_addalert2.png"><img src="/static/webapp/img/screenshots/android/android_addalert2.png" height="72" alt="android alert screenshot" /></a>
+               <a title="{% trans "Screenshot Android version: Menu" %}" href="/static/webapp/img/screenshots/android/android_menu.png"><img src="/static/webapp/img/screenshots/android/android_menu.png" height="72" alt="android menu screenshot" /></a>
+               <a title="{% trans "Screenshot Android version: Settings" %}" href="/static/webapp/img/screenshots/android/android_settings.png"><img src="/static/webapp/img/screenshots/android/android_settings.png" height="72" alt="android settings screenshot" /></a>               
+            </p>
+            <p class="center">
+               {% trans "Install it from:" %}<br>
+               {% trans "Android Market (<a href='#other-versions' class='anchor separator'>Coming soon</a>)" %}<br>
+               {% trans "App Store (<a href='#other-versions' class='anchor separator'>Coming soon</a>)" %}
+            </p>
+            
+            
+         </section>
+         
+         <section class="app-version">
+            <h3 class="webdesktop-app">{% trans "Desktop web app" %}</h3>
+            <p class="intro">{% trans "You can access the desktop web application from <em>any browser</em>* and <strong>easily manage</strong> your tasks." %}</p>
+            <p class="screenshots">
+               <a title="{% trans "Screenshot Web Desktop version: Dahsboard" %}" href="/static/webapp/img/screenshots/webdesktop/Dashboard.png"><img src="/static/webapp/img/screenshots/webdesktop/Dashboard.png" height="72" alt="" /></a>
+            </p>
+            <p  class="center">{% trans "Sign in through the <a href='/'>home page</a>" %}</p>
+            <p class="footer-notes">{% trans "Minimum requirements: IE 9, FF 2.0, Chrome, Safari, Opera" %}</p>
+         </section>
+         
+         <section class="app-version">
+            <h3 id="webmobile-app">{% trans "Mobile web app" %}</h3>
+            <p class="intro">{% trans "If you are still waiting for a native version for your platform of choice, you can access the mobile web application through your 3G connection to <strong>check and manage your tasks</strong>." %}</p>
+            <p class="screenshots">
+               <a title="{% trans "Screenshot Web Mobile version: Home" %}" href="/static/webapp/img/screenshots/webmobile/webmobile_home.png"><img src="/static/webapp/img/screenshots/webmobile/webmobile_home.png" height="72" alt="" /></a>
+               <a title="{% trans "Screenshot Web Mobile version: Map" %}" href="/static/webapp/img/screenshots/webmobile/webmobile_map.png"><img src="/static/webapp/img/screenshots/webmobile/webmobile_map.png" height="72" alt="" /></a>
+            </p>
+            <p class="center">{% trans "Access through: <a href='http://m.georemindme.com'>http://m.georemindme.com</a>" %}</p>
+            <p class="footer-notes">
+               {% trans "Minimum requirements: an active account and enabled Javascript." %}
+            </p>
+         </section>
+         
+         <p>{% trans "Check this table to find the version that best suits your needs" %}:</p>
+         <table>
+            <thead>
+            <tr>
+               <th>{% trans "Feature" %}</th>
+               <th>{% trans "Mobile" %}</th>
+               <th>{% trans "Desktop web" %}</th>
+               <th>{% trans "Mobile web" %}</th>
+            </tr>
+            </thead>
+            <tfoot>
+               <tr>
+                  <td><strong>{% trans "Price" %}</strong></td>
+                  <td class="center">{% trans "Free!" %}</td>
+                  <td class="center">{% trans "Free!" %}</td>
+                  <td class="center">{% trans "Free!" %}</td>
+               </tr>
+            </tfoot>
+            <tr>
+               <td>{% trans "Manage (add, edit and delete) tasks" %}</td>
+               <td class="feature-ok"><span>{% trans "Yes" %}</span></td>
+               <td class="feature-ok"><span>{% trans "Yes" %}</span></td>
+               <td class="feature-ok"><span>{% trans "Yes" %}</span></td>
+            </tr>
+            <tr>
+               <td>{% trans "HTML5 location" %}</td>
+               <td class="feature-ok"><span>{% trans "Yes" %}</span></td>
+               <td class="feature-ok"><span>{% trans "Yes" %}</span></td>
+               <td class="feature-ok"><span>{% trans "Yes" %}</span></td>
+            </tr>
+            <tr>
+               <td>{% trans "User login" %}</td>
+               <td class="feature-ok"><span>{% trans "Yes" %}</span></td>
+               <td class="feature-ok"><span>{% trans "Yes" %}</span></td>
+               <td class="feature-ok"><span>{% trans "Yes" %}</span></td>
+            </tr>
+            <tr>
+               <td>{% trans "Language choice" %}</td>
+               <td class="feature-ok"><span>{% trans "Yes" %}</span></td>
+               <td class="feature-ok"><span>{% trans "Yes" %}</span></td>
+               <td class="feature-ok"><span>{% trans "Yes" %}</span></td>
+            </tr>
+            <tr>
+               <td>{% trans "Allows sign-up" %}</td>
+               <td class="feature-ok"><span>{% trans "Yes" %}</span></td>
+               <td class="feature-ok"><span>{% trans "Yes" %}</span></td>
+               <td class="feature-no"><span>{% trans "No" %}</span></td>
+            </tr>
+            <tr>
+               <td>{% trans "Offline mode" %}</td>
+               <td class="feature-ok"><span>{% trans "Yes" %}</span></td>
+               <td class="feature-ok"><span>{% trans "Yes" %}</span></td>
+               <td class="feature-no"><span>{% trans "No" %}</span></td>
+            </tr>
+            <tr>
+               <td>{% trans "Sound alarms" %}</td>
+               <td class="feature-ok"><span>{% trans "Yes" %}</span></td>
+               <td class="feature-no"><span>{% trans "No" %}</span></td>
+               <td class="feature-no"><span>{% trans "No" %}</span></td>
+            </tr>
+            <tr>
+               <td>{% trans "GPS location" %}</td>
+               <td class="feature-ok"><span>{% trans "Yes" %}</span></td>
+               <td class="feature-no"><span>{% trans "No" %}</span></td>
+               <td class="feature-no"><span>{% trans "No" %}</span></td>
+            </tr>
+            <tr>
+               <td>{% trans "Max. number of tasks" %}</td>
+               <td class="center">{% trans "Unlimited" %}</td>
+               <td class="center">{% trans "Unlimited" %}</td>
+               <td class="center">{% trans "Unlimited" %}</td>
+            </tr>
+         </table>
+         
+         <p><a href="#know-more" class="back-to-top">{% trans "Back to top" %}</a></p>
+         </div>
+      </article>
+      
+      <article class="content-box"  id="other-versions">
+         <div>
+         <h2>{% trans "WIP versions" %}</h2>
+         <p>{% trans "We are <a href='#0.1_team'>currently working</a> on other versions that users have requested through the <a href='#'>community forums</a>." %}</p>
+         <table>
+            <thead>
+            <tr>
+               <th>{% trans "Application" %}</th>
+               <th>{% trans "Scheduled<br> launch date" %}</th>
+               <th>{% trans "Version" %}</th>
+               <th>{% trans "Compatible with" %}</th>
+            </tr>
+            </thead>
+            <tr>
+               <td class="webdesktop-app tdIcon">{% trans "Desktop web app" %}</td>
+               <td>{% trans "Private beta" %}</td>
+               <td>1.0</td>
+               <td>FF*, IE*, Chrome, Safari</td>
+            </tr>
+            <tr>
+               <td class="webmobile-app tdIcon">{% trans "Mobile web app" %}</td>
+               <td>{% trans "Mid April" %}</td>
+               <td>1.0</td>
+               <td>FF*, IE*, Chrome, Safari</td>
+            </tr>
+            <tr>
+               <td id="android-app" class="tdIcon">Android</td>
+               <td>{% trans "Late May" %}</td>
+               <td>1.0</td>
+               <td>Android Eclair (>2.0)</td>
+            </tr>
+            <tr>
+               <td class="apple-app tdIcon">iPhone</td>
+               <td>{% trans "Late May"%}</td>
+               <td>1.0</td>
+               <td>iOS 4</td>
+            </tr>
+            <tr>
+               <td class="apple-app tdIcon">iPad</td>
+               <td>{% trans "No launch date yet" %}</td>
+               <td>{% trans "Queued" %}</td>
+               <td>-</td>
+            </tr>
+            <tr>
+               <td id="blackberry-app" class="tdIcon">Blackberry</td>
+               <td>{% trans "No launch date yet" %}</td>
+               <td>{% trans "Queued" %}</td>
+               <td>-</td>
+            </tr>
+         </table>
+         <p class="foot-note footer-notes">
+            {% trans "(*) Supported versions of de FF (Firefox), IE (Internet Explorer), Google Chrome, Safari and Opera will be announced later." %}
+         </p>
+         <p><a href="#know-more" class="back-to-top">{% trans "Back to top" %}</a></p>
+         </div>
+      </article>
+      
+      <article class="content-box" id="keep-up-to-date">
+         <div>
+         <h2>{% trans "Keep up to date" %}</h2>
+         <p>{% trans "If you want to receive an e-mail when we have news on any of the versions, you can subscribe by simply filling up this form:" %}</p>
+         <form action="/" id="form-keep-up-to-date">
+            <label for="user-email">{% trans "Email address: " %}</label><input type="email" name="user-email" id="user-email" size="20" placeholder="email" required>
+            <fieldset>
+               <legend>{% trans "Check the versions for the devices you&#39;re interested in:" %}</legend>
+               <ul>
+                  <li><input type="checkbox" name="android-version" id="android-version" checked><label for="android-version">Android</label></li>
+                  <li><input type="checkbox" name="iphone-version" id="iphone-version" checked><label for="iphone-version">iPhone</label></li>
+                  <li><input type="checkbox" name="ipad-version" id="ipad-version" checked><label for="ipad-version">iPad</label></li>
+                  <li><input type="checkbox" name="blackberry-version" id="blackberry-version" checked><label for="blackberry-version">Blackberry</label></li>
+                  <li><input type="checkbox" name="webdesktop-version" id="webdesktop-version" checked><label for="webdesktop-version">Web Desktop</label></li>
+                  <li><input type="checkbox" name="webmovil-version" id="webmovil-version" checked><label for="webmovil-version">Mobile web</label></li>
+               </ul> 
+            </fieldset>
+            <span id="sentMsg"><span style="background-color:#efefef;"></span></span>
+            <input type="submit" value="{% trans "Subscribe to news & updates" %}">
+         </form>
+         <p>{% trans "You can also <a href='http://feeds.feedburner.com/GeoRemindMe'>subscribe to the RSS</a> of our blog so you won&#39;t miss anything juicy." %}</p> 
+         <p><a href="#know-more" class="back-to-top">{% trans "Back to top" %}</a></p>
+         </div>
+      </article>
+      
+      
+   
+   </section>
+{%endblock%}

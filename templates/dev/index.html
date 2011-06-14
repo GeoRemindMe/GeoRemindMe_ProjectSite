@@ -1,0 +1,43 @@
+{% extends 'layout.html' %}
+
+
+{% block content %}
+
+	<article style="text-align:left;" id="community-content"> 
+	
+		<section class="community-box"> 
+            <h3 id="guide-icon" class="menu-icons">{% trans "Developers guide" %}</h3> 
+            <p>{% trans "We are thankfull for our users <a href=\"http://getsatisfaction.com/georemindme/\">feedback</a>. There are many <a href=\"http://getsatisfaction.com/georemindme/ideas/popular\">ideas and suggestions</a> yet to be implemented. The good news are that <strong>our open software project is open to anyone who wants to collaborate</strong>." %}</p>
+			<p>{% trans "We are providing you with two guides that will help you with your firts steps if you want to join the community and give us a hand as a developer. You can find them here:" %}</p>
+            
+				<ul>
+					<li id="android-community"><a href="android-developers">{% trans "Android developers guide" %}</a></li>
+					<li id="webdevelopers-community"><a href="webdev/">{% trans "Web developers guide" %}</a></li>
+				</ul>
+			<p>{% trans "If you have further questions, please join the community and we will be happy to help you" %}:
+				<p id="invitation-request"><a href="https://teambox.com/public/georemindme-2/translating">{% trans "Join now" %}</a>.</p>
+            </p> 	
+        </section>
+        
+        <section class="community-box"> 
+            <h3 id="developers" class="menu-icons">{% trans "Tools and information" %}</h3>
+			<p>{% trans "Tools" %}:</p>
+			<ul>
+				<li><a href="https://teambox.com/public/georemindme-2">Teambox</a>: {% trans "it's the online project collaboration software used to manage the project were we introduce ourselves, talk about the project, distribute the tasks, etc." %}</li>
+				<li><a href="https://github.com/georemindme">Github</a>: {% trans "this is the distributed version control system we are currently using." %}</li>
+			</ul>
+			
+            <p>{% trans "Information" %}:</p>
+            <ul>
+				<li><a href="http://api.georemindme.com">{% trans "Public API" %}</a>: {% trans "we want to help you building your own apps and functionalities (<strong>Work In Progress!</strong>)" %}</li>
+				<li><a href="licensing/">{% trans "Licenses" %}</a>: {% trans "learn how the code is licensed" %}</li>
+            </ul>
+            
+        </section>
+		
+        
+		
+	</article>  
+
+{% endblock %}
+
