@@ -5,11 +5,26 @@
 from os import path
 BASE_DIR = path.normpath(path.dirname(__file__))
 
+''' 
+A locale name, either a language specification of the form ll or a 
+combined language and country specification of the form ll_CC. 
+Examples: it, de_AT, es, pt_BR. 
+
+Note the underscore in some of them and the case of the part located 
+to its right.
+
+#List supported languages
+On Ubuntu: cat /usr/share/i18n/SUPPORTED
+
+#More info about language tags
+RFC 5646: http://www.rfc-editor.org/rfc/rfc5646.txt
+LANGTAG: http://www.langtag.net
+W3C: http://www.w3.org/International
+'''
 LANGUAGES = (
-  ('ca', u'Català'),
-  #('de', 'Deutsch'),
-  ('en', 'English'),
-  ('es', u'Español'),
+	('ca', u'Català'),
+	('en', 'English'),
+	('es', u'Español'),
 )
 
 import commands
