@@ -1,20 +1,22 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
+# FIRST RAUL JIMENEZ ORTEGA <RAUL@GEOREMINDME.COM>, 2011.
+#   <hhkaos@gmail.com>, 2011.
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: GeoRemindMe\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-06-14 16:20+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2011-06-14 18:15+0200\n"
+"PO-Revision-Date: 2011-06-14 14:25+0000\n"
+"Last-Translator: hhkaos <hhkaos@gmail.com>\n"
+"Language-Team: Spanish (Castilian) (http://www.transifex.net/projects/p/"
+"georemindme/team/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 #: templates/base.html:8
@@ -22,6 +24,8 @@ msgid ""
 "Manage your geolocated alerts on your Android smartphone. Coming soon on "
 "your iPhone, iPad, Blackberry and other mobile devices."
 msgstr ""
+"Gestiona tus alertas geolocalizadas en tu teléfono Android. Próximamente en "
+"tu iPhone, iPad, Blackberry y otros dispositivos móviles"
 
 #: templates/base.html:9
 msgid ""
@@ -29,105 +33,108 @@ msgid ""
 "reminders, android app alerts, android geolocation, iphone geolocation, "
 "iphone app alerts"
 msgstr ""
+"aplicación de geolocalización, alertas geolocalizadas, "
+"geolocalizaciónrecordatorios, aplicación android de alertas, geolocalización "
+"android, geolocalizacion iphone, aplicación iphone de geolocalización"
 
 #: templates/base.html:12
 msgid "GeoRemindMe - Application for geolocated alerts"
-msgstr ""
+msgstr "GeoRemindMe - Aplicación para geolocalizar alertas"
 
 #: templates/base.html:19
 msgid "http://feeds.feedburner.com/GeoRemindMe"
-msgstr ""
+msgstr "http://feeds.feedburner.com/GeoRemindMe-ES"
 
 #: templates/base.html:19
 msgid "http://blog.georemindme.com/feed/"
-msgstr ""
+msgstr "http://blog.georemindme.com/es/es/category/logros-2/"
 
 #: templates/base.html:59
 msgid "Go flying to the homepage. Tweet! Tweet!"
-msgstr ""
+msgstr "Ir volando a la página de inicio. Pio! Pio!"
 
 #: templates/base.html:67
 msgid "Do you already have an account?"
-msgstr ""
+msgstr "¿Tienes ya una cuenta?"
 
 #: templates/base.html:67
 msgid "Log in"
-msgstr ""
+msgstr "Identifícate"
 
 #: templates/base.html:82
 msgid "Password"
-msgstr ""
+msgstr "Contraseña"
 
 #: templates/base.html:90
 msgid "Forgot your password?"
-msgstr ""
+msgstr "¿Olvidaste tu contraseña?"
 
 #: templates/base.html:96
 msgid "Remember me on this computer"
-msgstr ""
+msgstr "Recuérdame en este ordenador"
 
 #: templates/base.html:99
 msgid "Sign in"
-msgstr ""
+msgstr "Entrar"
 
 #: templates/base.html:106
 #, python-format
 msgid "Hello %(email)s ! "
-msgstr ""
+msgstr "Hola %(email)s ! "
 
 #: templates/base.html:106
 msgid "Go to dashboard"
-msgstr ""
+msgstr "Ir al escritorio"
 
 #: templates/base.html:122
 msgid "Follow us on"
-msgstr ""
+msgstr "Síguenos en"
 
 #: templates/base.html:124
 msgid "Visit our Blog"
-msgstr ""
+msgstr "Visita nuestro Blog"
 
 #: templates/base.html:125
 msgid "Follow us on Twitter"
-msgstr ""
+msgstr "Síguenos en Twitter"
 
 #: templates/base.html:126
 msgid "Follow us on Facebook"
-msgstr ""
+msgstr "Síguenos en Facebook"
 
 #: templates/base.html:140 templates/content-table.html:113
 #: templates/layout.html:82
 msgid "Know what's going on"
-msgstr ""
+msgstr "Qué está pasando"
 
 #: templates/base.html:140 templates/content-table.html:113
 #: templates/layout.html:82
 msgid "Blog"
-msgstr ""
+msgstr "Blog"
 
 #: templates/base.html:141 templates/content-table.html:114
 #: templates/layout.html:83
 msgid "Do you want to work with us?"
-msgstr ""
+msgstr "¿Quieres trabajar con nosotros?"
 
 #: templates/base.html:142 templates/content-table.html:115
 #: templates/layout.html:84
 msgid "Join the community now!"
-msgstr ""
+msgstr "¡Únete a la comunidad ahora!"
 
 #: templates/base.html:143 templates/content-table.html:116
 #: templates/layout.html:85
 msgid "Contact us"
-msgstr ""
+msgstr "Contáctanos"
 
 #: templates/base.html:144 templates/content-table.html:117
 #: templates/layout.html:86
 msgid "Looking for some info?"
-msgstr ""
+msgstr "¿Buscas alguna información?"
 
 #: templates/base.html:149 templates/layout.html:91
 msgid "Language:"
-msgstr ""
+msgstr "Idioma:"
 
 #: templates/base.html:161 templates/content-table.html:119
 #: templates/layout.html:103
@@ -138,107 +145,111 @@ msgid ""
 "3.608596&spn=0.00289,0.004823&t=h&z=18'>PTS, Avda de la Innovación, 18100 "
 "Armilla (Granada), Spain</a>"
 msgstr ""
+"<strong>GeoRemindMe 2011</strong>, <a href='http://maps.google.com/maps/ms?"
+"ie=UTF8&hl=en&msa=0&msid=204520629691711228427.0004a5735677747224788&ll=37.147913,-"
+"3.608596&spn=0.00289,0.004823&t=h&z=18'>PTS, Avda de la Innovación, 18100 "
+"Armilla (Granada), España</a>"
 
 #: templates/base.html:164
 msgid "How do we care about your data"
-msgstr ""
+msgstr "Como nos precupamos por tu seguridad"
 
 #: templates/base.html:164
 msgid "Privacy"
-msgstr ""
+msgstr "Privacidad"
 
 #: templates/base.html:165
 msgid "Meet the requirements for using the application"
-msgstr ""
+msgstr "Conoce los requisitos para usar la aplicación"
 
 #: templates/base.html:165
 msgid "TOS"
-msgstr ""
+msgstr "Condiciones de uso"
 
 #: templates/contact.html:5 templates/sitemap.html:5
 msgid "Contact us - GeoRemindMe"
-msgstr ""
+msgstr "Contáctanos - GeoRemindMe"
 
 #: templates/contact.html:38 templates/knowmore.html:33
 #: templates/partners.html:33 templates/sitemap.html:47 templates/team.html:38
 msgid "Message sent succesfully!"
-msgstr ""
+msgstr "¡El mensaje se ha enviado correctamente!"
 
 #: templates/contact.html:39 templates/knowmore.html:34
 #: templates/partners.html:34 templates/sitemap.html:48 templates/team.html:39
 msgid "Error sending the message"
-msgstr ""
+msgstr "Se ha producido un error al enviar el mensaje"
 
 #: templates/contact.html:52 templates/knowmore.html:46
 #: templates/partners.html:46 templates/press.html:32
 #: templates/privacypolicy.html:24 templates/sitemap.html:61
 #: templates/support.html:38 templates/team.html:52 templates/tos.html:24
 msgid "Home"
-msgstr ""
+msgstr "Inicio"
 
 #: templates/contact.html:54
 msgid "Company contact"
-msgstr ""
+msgstr "Contacto de la compañía"
 
 #: templates/contact.html:60
 msgid "We are a rather nice and open bunch of people. Get in touch with us!"
-msgstr ""
+msgstr "Somos gente simpática y accesible. ¡Contacta con nosotros!"
 
 #: templates/contact.html:63
 msgid "Company information"
-msgstr ""
+msgstr "Información de la compañía"
 
 #: templates/contact.html:65
 msgid "Email"
-msgstr ""
+msgstr "Email"
 
 #: templates/contact.html:67
 msgid "Telephone"
-msgstr ""
+msgstr "Teléfono"
 
 #: templates/contact.html:68
 msgid "or"
-msgstr ""
+msgstr "o"
 
 #: templates/contact.html:69
 msgid "Address"
-msgstr ""
+msgstr "Dirección"
 
 #: templates/contact.html:70
 msgid "Spain"
-msgstr ""
+msgstr "España"
 
 #: templates/contact.html:80
 msgid "Business profile"
-msgstr ""
+msgstr "Perfil de negocio"
 
 #: templates/contact.html:87
 msgid "Contact form"
-msgstr ""
+msgstr "Formulario de contacto"
 
 #: templates/contact.html:89
 msgid "You can also contact us using this form"
-msgstr ""
+msgstr "También puedes contactarnos usando este formulario "
 
 #: templates/contact.html:91
 msgid "Enter your email address"
-msgstr ""
+msgstr "Introduce tu correo"
 
 #: templates/contact.html:92
 msgid "email"
-msgstr ""
+msgstr "email"
 
 #: templates/contact.html:95
 msgid "Write your message here..."
-msgstr ""
+msgstr "Escribe tu mensaje aquí..."
 
 #: templates/contact.html:98
 msgid "Send"
-msgstr ""
+msgstr "Enviar"
 
 #: templates/contact.html:98
 msgid "Please fill up all fields"
-msgstr ""
+msgstr "Por favor rellena todos los campos"
 
 #: templates/home.html:61
 msgid ""
@@ -248,73 +259,75 @@ msgstr ""
 
 #: templates/home.html:87
 msgid "http://feedburner.google.com/fb/a/mailverify?uri=GeoRemindMe"
-msgstr ""
+msgstr "http://feedburner.google.com/fb/a/mailverify?uri=GeoRemindMe-ES"
 
 #: templates/home.html:87
 msgid "Keep me updated!"
-msgstr ""
+msgstr "¡Mantenedme informado!"
 
 #: templates/home.html:88
 msgid "Enter your email address to be notified when a new version is released"
-msgstr ""
+msgstr "Deja tu email y te avisaremos cuando lancemos una nueva versión"
 
 #: templates/home.html:90
 msgid "en_US"
-msgstr ""
+msgstr "es_ES"
 
 #: templates/home.html:90
 msgid "Sign me up!"
-msgstr ""
+msgstr "¡Apúntame!"
 
 #: templates/home.html:91
 msgid "No spam. We promise."
-msgstr ""
+msgstr "No enviamos Spam. Palabrita."
 
 #: templates/home.html:105
 msgid "Screenshots, licenses, versions, etc."
-msgstr ""
+msgstr "Impresiones de pantalla, versiones, licencias, etc."
 
 #: templates/home.html:105
 msgid "More about"
-msgstr ""
+msgstr "Más información"
 
 #: templates/home.html:105
 msgid " the project:"
-msgstr ""
+msgstr " del proyecto"
 
 #: templates/home.html:106
 msgid "Available Versions"
-msgstr ""
+msgstr "Versiones disponibles"
 
 #: templates/home.html:107
 msgid "The GeoRemindMe Community"
-msgstr ""
+msgstr "La comunidad de GeoRemindMe"
 
 #: templates/home.html:111
 msgid "Now <strong>testing</strong>"
-msgstr ""
+msgstr "Aplicación <strong>en pruebas</strong>"
 
 #: templates/home.html:112
 msgid ""
 "Would you like to help us with beta testing? <strong>Request an invitation</"
 "strong> and we will send you the details:"
 msgstr ""
+"¿Quieres ayudarnos haciendo beta testing. <strong>Solicita una invitación</"
+"strong> y te explicaremos los detalles:"
 
 #: templates/home.html:113
 msgid "Request invitation"
-msgstr ""
+msgstr "Solicitar invitación"
 
 #: templates/knowmore.html:5
 msgid "Know more about GeoRemindMe"
-msgstr ""
+msgstr "Saber más sobre GeoRemindMe"
 
 #: templates/knowmore.html:23 templates/partners.html:23
 msgid "Email wrong"
-msgstr ""
+msgstr "Email incorrecto"
 
 #: templates/knowmore.html:48
 msgid "Know more"
-msgstr ""
+msgstr "Saber más"
 
 #: templates/knowmore.html:58 templates/knowmore.html.py:183
 #: templates/knowmore.html:240 templates/knowmore.html.py:265
@@ -323,29 +336,31 @@ msgstr ""
 #: templates/jobs/index.html:82 templates/jobs/index.html.py:104
 #: templates/jobs/index.html:122
 msgid "Back to top"
-msgstr ""
+msgstr "Volver arriba"
 
 #: templates/knowmore.html:59 templates/knowmore.html.py:68
 msgid "Available versions"
-msgstr ""
+msgstr "Versiones disponibles"
 
 #: templates/knowmore.html:60 templates/knowmore.html.py:189
 msgid "WIP versions"
-msgstr ""
+msgstr "Estado de las versiones"
 
 #: templates/knowmore.html:61 templates/knowmore.html.py:246
 msgid "Keep up to date"
-msgstr ""
+msgstr "Te mantenemos informado"
 
 #: templates/knowmore.html:69
 msgid ""
 "We want you to be able to use the app anytime you need it, so meet the "
 "<strong>three available options</strong>:"
 msgstr ""
+"Queremos que puedas usar la aplicación en cualquier momento, a continuación "
+"te presentamos las <strong>tres opciones disponibles</strong>:"
 
 #: templates/knowmore.html:71
 msgid "Mobile app"
-msgstr ""
+msgstr "Aplicación móvil"
 
 #: templates/knowmore.html:72
 msgid ""
@@ -353,10 +368,14 @@ msgid ""
 "with a reminder. It has been specifically <em><strong>optimized to reduce "
 "battery usage</strong> and ease navigation in your reminder list</em>."
 msgstr ""
+"La aplicación nativa <strong>te avisará</strong> cuando estés cerca de un "
+"lugar donde tengas un recordatorio. Esta ha sido <em><strong>optimizada para "
+"reducir el consumo de batería</strong> y facilitar la navegación por tu "
+"lista de recordatorios</em>."
 
 #: templates/knowmore.html:74
 msgid "Screenshot Android version: Add a reminder"
-msgstr ""
+msgstr "Pantallazo de la versión Android: Añadir un recordatorio"
 
 #: templates/knowmore.html:75
 msgid "Screenshot Android version: Alert list"
@@ -364,45 +383,52 @@ msgstr ""
 
 #: templates/knowmore.html:78
 msgid "Install it from:"
-msgstr ""
+msgstr "Instálala desde:"
 
 #: templates/knowmore.html:79
 msgid ""
 "Android Market (<a href='#other-versions' class='anchor separator'>Coming "
 "soon</a>)"
 msgstr ""
+"Android Market (<a href='#other-versions' class='anchor "
+"separator'>Próximamente </a>)"
 
 #: templates/knowmore.html:80
 msgid ""
 "App Store (<a href='#other-versions' class='anchor separator'>Coming soon</"
 "a>)"
 msgstr ""
+"App Store (<a href='#other-versions' class='anchor separator'>Próximamente</"
+"a>)"
 
 #: templates/knowmore.html:87 templates/knowmore.html.py:201
 msgid "Desktop web app"
-msgstr ""
+msgstr "App. web escritorio"
 
 #: templates/knowmore.html:88
 msgid ""
 "You can access the desktop web application from <em>any browser</em>* and "
 "<strong>easily manage</strong> your tasks."
 msgstr ""
+"Puedes acceder a la aplicación web de escritorio desde <em>cualquier "
+"navegador</em> y <strong>gestionar fácilmente un gran número de tareas</"
+"strong>."
 
 #: templates/knowmore.html:90
 msgid "Screenshot Web Desktop version: Dahsboard"
-msgstr ""
+msgstr "Pantallazo de la versión web de escritorio: Dashboard"
 
 #: templates/knowmore.html:92
 msgid "Sign in through the <a href='/'>home page</a>"
-msgstr ""
+msgstr "Regístrate desde la <a href='/'>página principal</a>"
 
 #: templates/knowmore.html:93
 msgid "Minimum requirements: IE 9, FF 2.0, Chrome, Safari, Opera"
-msgstr ""
+msgstr "Requisitos mínimos: IE 9, FF 2.0, Chrome, Safari, Opera"
 
 #: templates/knowmore.html:97 templates/knowmore.html.py:207
 msgid "Mobile web app"
-msgstr ""
+msgstr "Aplicación web móvil"
 
 #: templates/knowmore.html:98
 msgid ""
@@ -410,57 +436,64 @@ msgid ""
 "you can access the mobile web application through your 3G connection to "
 "<strong>check and manage your tasks</strong>."
 msgstr ""
+"Si aún no está disponible la aplicación nativa para tu plataforma, siempre "
+"puedes acceder a la aplicación web móvil desde tu conexión 3G para "
+"<strong>comprobar y gestionar tus tareas</strong>."
 
 #: templates/knowmore.html:100
 msgid "Screenshot Web Mobile version: Home"
-msgstr ""
+msgstr "Pantallazo de la versión web móvil: Inicio"
 
 #: templates/knowmore.html:101
 msgid "Screenshot Web Mobile version: Map"
-msgstr ""
+msgstr "Pantallazo de la versión web móvil: Mapa"
 
 #: templates/knowmore.html:103
 msgid ""
 "Access through: <a href='http://m.georemindme.com'>http://m.georemindme.com</"
 "a>"
 msgstr ""
+"Accede a través: <a href='http://m.georemindme.com'>http://m.georemindme."
+"com</a>"
 
 #: templates/knowmore.html:105
 msgid "Minimum requirements: an active account and enabled Javascript."
-msgstr ""
+msgstr "Requisitos mínimos: una cuenta activa y Javascript habilitado."
 
 #: templates/knowmore.html:109
 msgid "Check this table to find the version that best suits your needs"
 msgstr ""
+"A continuación os dejamos una tabla comparativa para que podáis ver las "
+"ventajas de cada versión"
 
 #: templates/knowmore.html:113
 msgid "Feature"
-msgstr ""
+msgstr "Característica"
 
 #: templates/knowmore.html:114
 msgid "Mobile"
-msgstr ""
+msgstr "Móvil"
 
 #: templates/knowmore.html:115
 msgid "Desktop web"
-msgstr ""
+msgstr "Web de escritorio"
 
 #: templates/knowmore.html:116
 msgid "Mobile web"
-msgstr ""
+msgstr "Web móvil"
 
 #: templates/knowmore.html:121
 msgid "Price"
-msgstr ""
+msgstr "Precio"
 
 #: templates/knowmore.html:122 templates/knowmore.html.py:123
 #: templates/knowmore.html:124
 msgid "Free!"
-msgstr ""
+msgstr "¡Gratis!"
 
 #: templates/knowmore.html:128
 msgid "Manage (add, edit and delete) tasks"
-msgstr ""
+msgstr "Gestionar tareas(añadir, editar y elimninar)"
 
 #: templates/knowmore.html:129 templates/knowmore.html.py:130
 #: templates/knowmore.html:131 templates/knowmore.html.py:135
@@ -472,122 +505,132 @@ msgstr ""
 #: templates/knowmore.html:159 templates/knowmore.html.py:160
 #: templates/knowmore.html:165 templates/knowmore.html.py:171
 msgid "Yes"
-msgstr ""
+msgstr "Sí"
 
 #: templates/knowmore.html:134
 msgid "HTML5 location"
-msgstr ""
+msgstr "Localización HTML5"
 
 #: templates/knowmore.html:140
 msgid "User login"
-msgstr ""
+msgstr "Login de usuario"
 
 #: templates/knowmore.html:146
 msgid "Language choice"
-msgstr ""
+msgstr "Soporte para múltiple idiomas"
 
 #: templates/knowmore.html:152
 msgid "Allows sign-up"
-msgstr ""
+msgstr "Permite registro"
 
 #: templates/knowmore.html:155 templates/knowmore.html.py:161
 #: templates/knowmore.html:166 templates/knowmore.html.py:167
 #: templates/knowmore.html:172 templates/knowmore.html.py:173
 msgid "No"
-msgstr ""
+msgstr "No"
 
 #: templates/knowmore.html:158
 msgid "Offline mode"
-msgstr ""
+msgstr "Modo sin conexión"
 
 #: templates/knowmore.html:164
 msgid "Sound alarms"
-msgstr ""
+msgstr "Alarmas sonoras"
 
 #: templates/knowmore.html:170
 msgid "GPS location"
-msgstr ""
+msgstr "Localización GPS"
 
 #: templates/knowmore.html:176
 msgid "Max. number of tasks"
-msgstr ""
+msgstr "Número máx. de tareas"
 
 #: templates/knowmore.html:177 templates/knowmore.html.py:178
 #: templates/knowmore.html:179
 msgid "Unlimited"
-msgstr ""
+msgstr "Ilimitado"
 
 #: templates/knowmore.html:190
 msgid ""
 "We are <a href='#0.1_team'>currently working</a> on other versions that "
 "users have requested through the <a href='#'>community forums</a>."
 msgstr ""
+"Actualmente <a href='#0.1_team'>estamos trabajando</a> en otras versiones "
+"que nos han pedido los usuarios a través de los <a href='#'>foros de la "
+"comunidad</a>."
 
 #: templates/knowmore.html:194
 msgid "Application"
-msgstr ""
+msgstr "Aplicación"
 
 #: templates/knowmore.html:195
 msgid "Scheduled<br> launch date"
-msgstr ""
+msgstr "Fecha de<br>lanzamiento"
 
 #: templates/knowmore.html:196
 msgid "Version"
-msgstr ""
+msgstr "Versión"
 
 #: templates/knowmore.html:197
 msgid "Compatible with"
-msgstr ""
+msgstr "Compatible con"
 
 #: templates/knowmore.html:202
 msgid "Private beta"
-msgstr ""
+msgstr "Beta privada"
 
 #: templates/knowmore.html:208
 msgid "Mid April"
-msgstr ""
+msgstr "Mediados de abril"
 
 #: templates/knowmore.html:214 templates/knowmore.html.py:220
 msgid "Late May"
-msgstr ""
+msgstr "Finales de mayo"
 
 #: templates/knowmore.html:226 templates/knowmore.html.py:232
 msgid "No launch date yet"
-msgstr ""
+msgstr "Sin fecha prevista"
 
 #: templates/knowmore.html:227 templates/knowmore.html.py:233
 msgid "Queued"
-msgstr ""
+msgstr "En cola"
 
 #: templates/knowmore.html:238
 msgid ""
 "(*) Supported versions of de FF (Firefox), IE (Internet Explorer), Google "
 "Chrome, Safari and Opera will be announced later."
 msgstr ""
+"(*) Las versiones soportadas de FF (Firefox), IE (Internet Explorer), Google "
+"Chrome, Safari y Opera serán anunciadas después."
 
 #: templates/knowmore.html:247
 msgid ""
 "If you want to receive an e-mail when we have news on any of the versions, "
 "you can subscribe by simply filling up this form:"
 msgstr ""
+"Si quieres recibir un correo cuando tengamos novedades sobre alguna de las "
+"versiones, te puedes suscribir simplemente rellenando este formulario:"
 
 #: templates/knowmore.html:249
 msgid "Email address: "
-msgstr ""
+msgstr "Dirección de correo: "
 
 #: templates/knowmore.html:251
 msgid "Check the versions for the devices you&#39;re interested in:"
-msgstr ""
+msgstr "Marca las versiones para los dispositivos en los que estés interesado:"
 
 #: templates/knowmore.html:262
 msgid "Subscribe to news & updates"
-msgstr ""
+msgstr "Suscríbete a las novedades y actualizaciones"
 
 #: templates/knowmore.html:264
 msgid ""
 "You can also <a href='http://feeds.feedburner.com/GeoRemindMe'>subscribe to "
 "the RSS</a> of our blog so you won&#39;t miss anything juicy."
 msgstr ""
+"También puedes <a href='http://feeds.feedburner.com/"
+"GeoRemindMe'>subscribirte al RSS</a> de nuestro blog para que no te vuelvas "
+"a perder nada."
 
 #: templates/partners.html:5
 msgid "Partners - GeoRemindMe"
@@ -623,11 +666,11 @@ msgstr ""
 
 #: templates/privacypolicy.html:5
 msgid "Privacy policy - GeoRemindMe"
-msgstr ""
+msgstr "Política de privacidad - GeoRemindMe"
 
 #: templates/privacypolicy.html:26
 msgid "Privacy policy"
-msgstr ""
+msgstr "Política de privacidad"
 
 #: templates/sitemap.html:63
 msgid "Sitemap"
@@ -650,6 +693,8 @@ msgid ""
 "Meet the <a href='http://getsatisfaction.com/georemindme'>user community</a> "
 "and share your questions, suggestions and problems."
 msgstr ""
+"Conoce a la <a href='http://getsatisfaction.com/georemindme'>comunidad de "
+"usuarios</a> y comparte tus sugerencias, preguntas y problemas."
 
 #: templates/support.html:58
 msgid "<a href='http://getsatisfaction.com/georemindme'>Read more</a>."
@@ -673,7 +718,7 @@ msgstr ""
 
 #: templates/team.html:61
 msgid "Our team"
-msgstr ""
+msgstr "Nuestro equipo"
 
 #: templates/team.html:73
 msgid "Chief Executive Officer (CEO) & cofounder"
@@ -682,13 +727,15 @@ msgstr ""
 #: templates/team.html:81 templates/team.html.py:107 templates/team.html:134
 #: templates/team.html.py:159
 msgid "Linkedin profile"
-msgstr ""
+msgstr "Perfil en Linkedin"
 
 #: templates/team.html:84
 msgid ""
 "Compulsive entrepreneur, technologist, extrovert programmer, friend of his "
 "friends and last but not least a guy who dreams big."
 msgstr ""
+"Emprendedor compulsivo, tecnólogo, informático extrovertido, amigo de sus "
+"amigos y por último pero no menos importante una persona con grandes sueños."
 
 #: templates/team.html:99
 msgid "Product Manager & cofounder"
@@ -699,6 +746,8 @@ msgid ""
 "A fan of foreign TV shows, sci-fi novels and a thorough geek, she's the one "
 "you want to be around in a zombie apocalypse scenario."
 msgstr ""
+"Amante de las series de televisión extranjeras, novelas Sci Fi y las nuevas "
+"tecnologías, está de sobra preparada para un apocalipsis Zombie."
 
 #: templates/team.html:126
 msgid "Chief of Mobile Development & cofounder"
@@ -709,24 +758,29 @@ msgid ""
 "Self-taught and yet a great team player, with a passion for anything that "
 "can be programmed, particularly if you can carry it around in your pocket."
 msgstr ""
+"Autodidacta y con gran espíritu de grupo. Apasionado de todo lo que se pueda "
+"programar, especialmente si lo puedes llevar en el bolsillo."
 
 #: templates/team.html:152
 msgid "Senior Web Developer"
-msgstr ""
+msgstr "Desarrollador Web Senior"
 
 #: templates/team.html:162
 msgid ""
 "My main hobby in the project is to change the data model and often delete "
 "all users and alerts database except mine, of course."
 msgstr ""
+"Mi principal aficion en el proyecto es cambiar el modelo de los datos y "
+"borrar cada poco a todos los usuarios y alertas de la base de datos, menos "
+"el mio, claro."
 
 #: templates/tos.html:5
 msgid "Terms of Service of GeoRemindMe"
-msgstr ""
+msgstr "Terminos y condiciones"
 
 #: templates/tos.html:26
 msgid "Terms of use"
-msgstr ""
+msgstr "Condiciones de uso"
 
 #: templates/api/index.html:16
 msgid ""
@@ -1177,11 +1231,11 @@ msgstr ""
 msgid "Designing"
 msgstr ""
 
-#: templates/team/index.html:22
+#: templates/team/index.html:23
 msgid "Creating an local group"
 msgstr ""
 
-#: templates/team/index.html:24
+#: templates/team/index.html:26
 msgid ""
 "We don't want you to feel alone while collaborating, so you will be "
 "<strong>in touch with a mentor</strong> from the GeoRemindMe team or an "
@@ -1189,18 +1243,18 @@ msgid ""
 "and will answer your questions."
 msgstr ""
 
-#: templates/team/index.html:25
+#: templates/team/index.html:27
 msgid ""
 "Further questions? Please feel free to <a href=\"https://teambox.com/public/"
 "georemindme-2\">contact us</a> and have a look at our <a href=\"https://"
 "github.com/GeoRemindMe/GeoRemindMe_Web/wiki/FAQ\">wiki-FAQ</a>"
 msgstr ""
 
-#: templates/team/index.html:29
+#: templates/team/index.html:31
 msgid "Community pictures"
 msgstr ""
 
-#: templates/team/index.html:31
+#: templates/team/index.html:33
 msgid ""
 "Do you have more community pictures and would like to share them? <a href=\\"
 msgstr ""
@@ -1239,7 +1293,7 @@ msgstr ""
 
 #: templates/team/localization.html:20
 msgid "Learn more"
-msgstr ""
+msgstr "Saber más"
 
 #: templates/team/localization.html:24
 msgid "Introduction video"

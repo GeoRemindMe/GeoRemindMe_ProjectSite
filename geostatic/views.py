@@ -5,6 +5,14 @@ from django.shortcuts import get_object_or_404,render_to_response
 from django.template import RequestContext
 from django.http import HttpResponse
 from django.http import HttpResponseRedirect
+
+from django.core.urlresolvers import reverse
+from django.http import HttpResponseRedirect
+from django.shortcuts import render_to_response
+from django.template import RequestContext
+from django.utils.translation import ugettext as _
+
+
 import urlparse
 import re
 
@@ -25,8 +33,8 @@ def main(request,slug=""):
     if slug and slug[-1]=="/":
 		slug = slug[:-1]
 
-    print 'Subdomain='+subdomain
-    print 'Slug='+slug
+    #print 'Subdomain='+subdomain
+    #print 'Slug='+slug
     page = get_object_or_404(Page,slug=slug,subdomain=subdomain)
     
 
@@ -40,7 +48,14 @@ def set_language(request):
         next = request.POST.get('next', '/')
         if lang in available: #we have the lang_code
             request.session['LANGUAGE_CODE'] = lang
-        
+        if request.session.get('user', None):
+            settings = request.session['user'].settings
+            settings.language = lang
+            settings.put()
         return HttpResponseRedirect(next)
         
+    return HttpResponseRedirect(request.path)
+        
     return HttpResponseRedirect(request.path)    
+    
+    

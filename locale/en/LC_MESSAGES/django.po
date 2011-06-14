@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-06-14 16:20+0200\n"
+"POT-Creation-Date: 2011-06-14 18:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1176,11 +1176,11 @@ msgstr ""
 msgid "Designing"
 msgstr ""
 
-#: templates/team/index.html:22
+#: templates/team/index.html:23
 msgid "Creating an local group"
 msgstr ""
 
-#: templates/team/index.html:24
+#: templates/team/index.html:26
 msgid ""
 "We don't want you to feel alone while collaborating, so you will be "
 "<strong>in touch with a mentor</strong> from the GeoRemindMe team or an "
@@ -1188,18 +1188,18 @@ msgid ""
 "and will answer your questions."
 msgstr ""
 
-#: templates/team/index.html:25
+#: templates/team/index.html:27
 msgid ""
 "Further questions? Please feel free to <a href=\"https://teambox.com/public/"
 "georemindme-2\">contact us</a> and have a look at our <a href=\"https://"
 "github.com/GeoRemindMe/GeoRemindMe_Web/wiki/FAQ\">wiki-FAQ</a>"
 msgstr ""
 
-#: templates/team/index.html:29
+#: templates/team/index.html:31
 msgid "Community pictures"
 msgstr ""
 
-#: templates/team/index.html:31
+#: templates/team/index.html:33
 msgid ""
 "Do you have more community pictures and would like to share them? <a href=\\"
 msgstr ""
