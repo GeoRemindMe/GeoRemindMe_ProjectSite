@@ -187,7 +187,7 @@ a.signin p{
 }
 
 .caja-arriba{
-	margin: 70px 50px 10px 0;
+	margin: 0px 50px 10px 0;
 }
 
 .caja-abajo{
@@ -303,7 +303,7 @@ iframe{
     font-weight: normal;
     position: absolute;
     text-align: right;
-    top: 110px;
+    top: 10px;
     width: 271px;
 }
 
@@ -881,7 +881,7 @@ ul#content-index li a:active{
 #main-container #networks{
    font-size: 1.1em;
    position: absolute;
-   top: 90px;
+   top: 30px;
    width: 250px;
    margin-left:700px;
 }

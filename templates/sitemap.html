@@ -9,6 +9,8 @@
 	<link rel="stylesheet" href="/media/style/jquery.treeview.css" type="text/css" />
 {%endblock%}
 
+{% block login %} {%endblock%}
+
 {% block extra_js %}
 
 	<script type="text/javascript" src="/media/js/jquery.treeview.js"></script>
@@ -75,7 +77,9 @@
 					<a href="http://www.georemindme.com">{% trans "Inicio</a> ; información sobre el proyecto" %}
 				</li>
 				<li><a href="/knowmore/">{% trans "Más información" %}</a> ; {% trans "profundiza en más detalles de la herramienta" %}</li>
+<!--
 				<li><a href="https://georemindme.appspot.com/">{% trans "Login" %}</a> ; {% trans "menu de acceso a la herramienta" %}</li>
+-->
 				<li><a href="http://blog.georemindme.com">{% trans "Blog" %}</a> ; {% trans "información sobre novedades y avances del proyecto" %}</li>
 				<li><a href="http://help.georemindme.com">{% trans "Help / Support" %}</a> ; sugerencias y ayuda para usuarios" %}</li>
 			</ul>

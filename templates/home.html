@@ -18,34 +18,6 @@
 			
 		});
 		
-	   /*
-		* Here the triggers with animations and validations of the 
-		* register form
-	   */
-		$("input[name='registerEmail']")
-			.focus(function(){
-			 if ($(this).val()=="email") 
-				$(this).val('');
-			 $('#imgEmailLogin').attr('src','/media/img/mailActive.png');
-		  })
-			.blur(checkEmail);
-		
-	   
-		$("#userRegisterPass1,#userRegisterPass2")
-		  .blur(checkPasswords)
-		  .keyup(checkPasswords)
-		  .focus(function(){$('#imgPasswordLogin').attr('src','/media/img/icons/passIconActive.png')})
-		  .blur(function(){$('#imgPasswordLogin').attr('src','/media/img/icons/passIconInactive.png')});
-
-		  
-	   //With this you can check the terms making click on the text
-	   $('#textTermsCheckbox').click(function(){
-		  if(!$("#termsCheckbox").is(':checked'))
-			 $("#termsCheckbox").attr('checked',true);
-		  else
-			 $("#termsCheckbox").attr('checked',false);
-	   });
-	   
 	   
 	   {% if login%}setTimeout(function(){$('#signinBtn').click();},500);{%endif%}
 	});
@@ -54,6 +26,9 @@
 
 
 {%block tooltipLogo%}{%endblock%}
+
+{% block login %} {%endblock%}
+
 {%block section%}id="private-beta"{%endblock%}
 {% block content %}
 

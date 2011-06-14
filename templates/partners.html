@@ -4,40 +4,7 @@
 
 {% block title %}{% trans "Partners - GeoRemindMe" %}{%endblock%}
 
-{% block extra_js %}
-<script type="text/javascript" src="/media/js/static.js"></script> 
-
-<!-- Loading lightbox plugin--> 
-<script type="text/javascript" src="/media/js/jquery.lightbox-0.5.js"></script> 
-<link rel="stylesheet" type="text/css" href="/media/style/jquery.lightbox-0.5.css" media="screen" /> 
- <script type="text/javascript"> 
-    $(function() {
-        $('.screenshots a').lightBox();
-        
-           $('input[type=submit]').click(function(e){
-               e.preventDefault();
-               
-               if (!echeck($('#user-email').val()))
-               {
-                    $("#wait-mask").hide();
-                    $('#sentMsg').removeClass("msgOK").addClass("msgNoOK");$('#sentMsg span').text("{% trans "Email wrong" %}");
-                    return;
-                }
-               
-               $("#wait-mask").show();
-               $.ajax({
-                   url: AJAX_URL+"keep-up-to-date/",
-                   type: "post",
-                   data: $("#form-keep-up-to-date").serialize(),
-                   async:true,
-                   success: function(){ $("#wait-mask").hide(); $('#sentMsg').removeClass("msgNoOK").addClass("msgOK");$('#sentMsg span').text("{% trans "Message sent succesfully!" %}");$('#msg,#userEmail').val('');},
-                   error: function(){ $("#wait-mask").hide(); $('#sentMsg').removeClass("msgOK").addClass("msgNoOK");$('#sentMsg span').text("{% trans "Error sending the message" %}");}           
-                   });
-            
-        });
-    });
- </script> 
-{%endblock%}
+{% block login %} {%endblock%}
 
 {%block section%}id="know-more"{%endblock%}
 
