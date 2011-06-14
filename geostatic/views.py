@@ -8,7 +8,10 @@ import urlparse
 def main(request,slug=""):
     
     subdomain = urlparse.urlsplit(request.META['HTTP_HOST'])[0].split('.')
-      
+    
+    if subdomain == "www":
+        subdomain = ""
+    
     page = get_object_or_404(Page,slug=slug,subdomain=subdomain)
     
     return render_to_response(page.template, context=RequestContext(request))
