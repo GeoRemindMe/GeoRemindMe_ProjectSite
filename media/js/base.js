@@ -92,7 +92,7 @@ function echeck(email) {
 function checkEmail(event)
 {
 	
-	$('#imgEmailLogin').attr('src','/static/webapp/img/mailInactive.png');
+	$('#imgEmailLogin').attr('src','/media/img/mailInactive.png');
 	if ($(this).val()=="") {
 		$(this).val('email');
 		$('#txtMsgRegisterEmail').html('');
@@ -227,11 +227,11 @@ $(document).ready(function(){
     
 
 	$('#username').focus(function(){
-			$('.loginMail').css('background-image','url("/static/webapp/img/mailActive.png")');
+			$('.loginMail').css('background-image','url("/media/img/mailActive.png")');
 		})
 		.one('focus',function(){$(this).val('');})
 		.blur(function(){
-			$('.loginMail').css('background-image','url("/static/webapp/img/mailInactive.png")');
+			$('.loginMail').css('background-image','url("/media/img/mailInactive.png")');
 			if($(this).val().length>0 && !echeck($(this).val())){
 					$('#msgLoginEmail').removeClass('msgOK');
 					$('#msgLoginEmail').addClass('msgNoOK');
@@ -245,11 +245,11 @@ $(document).ready(function(){
 		});
 		
 	$('#password').focus(function(){
-			$('.loginPassword').css('background-image','url("/static/webapp/img/passIconActive.png")');
+			$('.loginPassword').css('background-image','url("/media/img/icons/passIconActive.png")');
 		})
 		.one('focus',function(){$(this).val('');})
 		.blur(function(){
-			$('.loginPassword').css('background-image','url("/static/webapp/img/passIconInactive.png")');
+			$('.loginPassword').css('background-image','url("/media/img/icons/passIconInactive.png")');
 		})		
 		.keypress(function(e)
 		{
@@ -261,7 +261,7 @@ $(document).ready(function(){
 	$('#signin_submit').click(login);
 	
 	$.preload([ 'passIconInactive', 'passIconActive', 'mailInactive', 'mailActive','loginBtn' ], {
-		base:'/static/webapp/img/',
+		base:'/media/img/',
 		ext:'.png'
 	});
 	

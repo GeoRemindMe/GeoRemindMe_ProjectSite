@@ -1,5 +1,5 @@
 {% extends 'layout.html' %}
-
+{% load i18n %}
 
 {% block content %}
 
@@ -56,7 +56,7 @@
         <section class="community-box"> 
             <h3 id="photos" class="menu-icons">{% trans 'Quick overview' %}</h3>
             <p>{% trans 'This sketch explains some of the modules that make up the client and server aplications and how this two are related:' %}</p>
-            <a href="http://static.georemindme.com/images/doc/web-scheme.png"><img src="http://static.georemindme.com/images/doc/web-scheme_thumb.png" /></a>
+            <a href="/media/img/doc/web-scheme.png"><img src="/media/img/doc/web-scheme_thumb.png" /></a>
             <p class="center"><em>{% trans 'Quick overview of the web architecture (4th May 2011)' %}</em></p>
 			
         </section>

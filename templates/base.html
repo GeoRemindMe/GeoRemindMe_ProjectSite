@@ -11,18 +11,18 @@
 
 	<title>{% block title %}{% trans "GeoRemindMe - Application for geolocated alerts"%}{%endblock%}</title>
 
-	<link rel="stylesheet" href="/static/webapp/style/screen.css" type="text/css" media="screen, projection" />
-	<link rel="stylesheet" href="/static/webapp/style/style.css" type="text/css" media="screen, projection" />
-	<link rel="stylesheet" href="/static/webapp/style/print.css" type="text/css" media="print" />
+	<link rel="stylesheet" href="/media/style/screen.css" type="text/css" media="screen, projection" />
+	<link rel="stylesheet" href="/media/style/style.css" type="text/css" media="screen, projection" />
+	<link rel="stylesheet" href="/media/style/print.css" type="text/css" media="print" />
 	{% block extra_css %}{%endblock%}
 
 	<link rel="alternate" type="application/rss+xml" title="GeoRemindMe &raquo; Feed" href="{% trans "http://feeds.feedburner.com/GeoRemindMe"%}" /><link rel="alternate" type="application/rss+xml" title="GeoRemindMe &raquo; Feed" href="{% trans "http://blog.georemindme.com/feed/"%}" /> 
 
 
-	<script type="text/javascript" src="/static/webapp/js/jquery.min.js"></script>
-	<script type="text/javascript" src="/static/webapp/js/jquery.placeholder.js"></script>
-	<script type="text/javascript" src="/static/webapp/js/jquery.preload-1.0.8-min.js"></script> 
-	<script type="text/javascript" src="/static/webapp/js/common.js"></script>
+	<script type="text/javascript" src="/media/js/jquery.min.js"></script>
+	<script type="text/javascript" src="/media/js/jquery.placeholder.js"></script>
+	<script type="text/javascript" src="/media/js/jquery.preload-1.0.8-min.js"></script> 
+	<script type="text/javascript" src="/media/js/common.js"></script>
 
 	{% block extra_js %}{%endblock%}
 	
@@ -31,10 +31,10 @@
 	<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script> 
 	-->
 
-	<script type="text/javascript" src="/static/webapp/js/base.js"></script> 
+	<script type="text/javascript" src="/media/js/base.js"></script> 
 
 	<!--[if IE]>
-	<link rel="stylesheet" href="/static/webapp/style/ie.css" type="text/css"
+	<link rel="stylesheet" href="/media/style/ie.css" type="text/css"
 	media="screen, projection" />
 	<![endif]-->
 
@@ -56,7 +56,7 @@
       
       <div id="header">
          
-         <span id="logo"><a href="/" {%block tooltipLogo%}title="{% trans "Go flying to the homepage. Tweet! Tweet!" %}"{%endblock%} accesskey="q"><img src="/static/webapp/img/logoHeader.png" alt="GeoRemindMe"/></a></span>
+         <span id="logo"><a href="/" {%block tooltipLogo%}title="{% trans "Go flying to the homepage. Tweet! Tweet!" %}"{%endblock%} accesskey="q"><img src="/media/img/logoHeader.png" alt="GeoRemindMe"/></a></span>
       {% block login %} 
       <div id="topnav">
       
@@ -121,9 +121,9 @@
              <div id="networks">
          <p>{% trans "Follow us on"%}:</p>
          <ul>
-          <li><a href="http://blog.georemindme.com" title="{% trans "Visit our Blog"%}" accesskey="j"><img src="/static/webapp/img/wp_icon.png" title="{% trans "Visit our Blog"%}" alt="Wordpress logo"/></a></li>      
-          <li><a href="http://www.twitter.com/GeoRemindMe" title="{% trans "Follow us on Twitter"%}" accesskey="l"><img src="/static/webapp/img/twitter_icon.png" title="{% trans "Follow us on Twitter"%}" alt="Twitter logo"/></a></li>
-          <li><a href="http://www.facebook.com/georemindme" title="{% trans "Follow us on Facebook"%}"  accesskey="k"><img src="/static/webapp/img/fb_icon.png" title="{% trans "Follow us on Facebook"%}" alt="Facebook logo"/></a></li>
+          <li><a href="http://blog.georemindme.com" title="{% trans "Visit our Blog"%}" accesskey="j"><img src="/media/img/icons/social/wp_icon.png" title="{% trans "Visit our Blog"%}" alt="Wordpress logo"/></a></li>      
+          <li><a href="http://www.twitter.com/GeoRemindMe" title="{% trans "Follow us on Twitter"%}" accesskey="l"><img src="/media/img/icons/social/twitter_icon.png" title="{% trans "Follow us on Twitter"%}" alt="Twitter logo"/></a></li>
+          <li><a href="http://www.facebook.com/georemindme" title="{% trans "Follow us on Facebook"%}"  accesskey="k"><img src="/media/img/icons/social/fb_icon.png" title="{% trans "Follow us on Facebook"%}" alt="Facebook logo"/></a></li>
           
          </ul>
          </div>
@@ -141,7 +141,7 @@
 			   <li><a href="http://jobs.georemindme.com" title="{% trans "Do you want to work with us?"%}">Jobs</a></li>
 			   <li><a href="http://team.georemindme.com" title="{% trans "Join the community now!"%}">Community</a></li>
 			   <li><a href="http://help.georemindme.com" title="{% trans "Contact us"%}">Support</a></li>
-			   <li><a href="{% url sitemap %}" title="{% trans "Looking for some info?"%}">Sitemap</a></li>
+			   <li><a href="/sitemap" title="{% trans "Looking for some info?"%}">Sitemap</a></li>
 			   <li>
 				 {% get_available_languages as LANGUAGES %}
 				 {% get_current_language as LANGUAGE_CODE %}
@@ -161,8 +161,8 @@
 			<p>{% trans "<strong>GeoRemindMe 2011</strong>,headquarters at <a href='http://maps.google.com/maps/ms?ie=UTF8&hl=en&msa=0&msid=204520629691711228427.0004a5735677747224788&ll=37.147913,-3.608596&spn=0.00289,0.004823&t=h&z=18'>PTS, Avda de la Innovación, 18100 Armilla (Granada), Spain</a>"%}</p>
 		</div>
 	<!--
-<li><a href="{% url privacy %}" title="{% trans "How do we care about your data"%}" accesskey="x">{% trans "Privacy"%}</a></li>
-<li><a href="{% url tos %}" title="{% trans "Meet the requirements for using the application"%}" accesskey="c">{% trans "TOS"%}</a></li>
+<li><a href="/privacy" title="{% trans "How do we care about your data"%}" accesskey="x">{% trans "Privacy"%}</a></li>
+<li><a href="/tos" title="{% trans "Meet the requirements for using the application"%}" accesskey="c">{% trans "TOS"%}</a></li>
 	-->
 	  </div>
       <script type="text/javascript"> 

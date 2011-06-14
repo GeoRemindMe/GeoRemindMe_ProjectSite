@@ -15,14 +15,14 @@
 
 
 body {
-   background: url(../img/bg.png) repeat-x;
+   background: url("/media/img/backgrounds/bg.png") repeat-x;
 }
 
 fieldset {
    border:none;
 }
 #logo{
-   background: url("../img/hr_header.png") no-repeat scroll 0 bottom transparent;
+   background: url("/media/img/hr_header.png") no-repeat scroll 0 bottom transparent;
    display: block;
    padding: 15px 0;
    float:left;
@@ -61,13 +61,13 @@ a.menu-open {
 }
 
 #signinBtn.openedLoginBtn{
-   background: url("../img/loginBtn.png") no-repeat scroll 0 -42px transparent;
+   background: url("/media/img/backgrounds/loginBtn.png") no-repeat scroll 0 -42px transparent;
 }
 #signinBtn.openedLoginBtn:hover{
-   background: url("../img/loginBtn.png") no-repeat scroll 0 -63px transparent;
+   background: url("/media/img/backgrounds/loginBtn.png") no-repeat scroll 0 -63px transparent;
 }
 .closedLoginBtn{
-   background: url("../img/loginBtn.png") no-repeat scroll 0 0 transparent;
+   background: url("/media/img/backgrounds/loginBtn.png") no-repeat scroll 0 0 transparent;
 }
 #signinBtn {
 
@@ -84,12 +84,12 @@ a.menu-open {
 }
 
 #signinBtn.closedLoginBtn:hover {
-   background: url("../img/loginBtn.png") no-repeat scroll 0 -21px transparent;
+   background: url("/media/img/loginBtn.png") no-repeat scroll 0 -21px transparent;
    color: #555;
 }
 
 #signin_submit{
-    background-image: url("../img/signInBtn.png");
+    background-image: url("/media/img/signInBtn.png");
     border: 0 none;
     color: white;
     float: right;
@@ -99,7 +99,7 @@ a.menu-open {
     width: 91px;
 }
 #signin_submit:hover{
-   background: url("../img/signInBtn.png") no-repeat scroll 0 -21px transparent;
+   background: url("/media/img/signInBtn.png") no-repeat scroll 0 -21px transparent;
    color:black;
 }
 
@@ -137,7 +137,7 @@ a.signin p{
 }
 
 .loginMail{
-   background-image: url("../img/mailInactive.png");
+   background-image: url("/media/img/icons/mailInactive.png");
    background-position: 100% 50%;
    background-repeat: no-repeat;
    height: 22px;
@@ -145,7 +145,7 @@ a.signin p{
 }
 
 .loginPassword{
-   background-image: url("../img/passIconInactive.png");
+   background-image: url("/media/img/icons/passIconInactive.png");
    background-position: 100% 50%;
    background-repeat: no-repeat;
    height: 35px;
@@ -195,7 +195,7 @@ a.signin p{
 }
 
 .right-arrow{
-	background: url("../img/flechita.png") no-repeat scroll 0 0 transparent;
+	background: url("/media/img/flechita.png") no-repeat scroll 0 0 transparent;
 	display: block;
     height: 24px;
     line-height: 24px;
@@ -281,16 +281,16 @@ p.loginPassword input{
 }
 
 #startBtn.enabled{
-   background: url("../img/startBtn.png");
+   background: url("/media/img/startBtn.png");
    color:white;
 }
 #startBtn.disabled{
-   background: url("../img/startBtn.png") repeat scroll 0 -54px transparent;
+   background: url("/media/img/startBtn.png") repeat scroll 0 -54px transparent;
    color:black;
 }
 
 #startBtn.enabled:hover{
-   background: url("../img/startBtn.png") repeat scroll 0 -27px transparent;
+   background: url("/media/img/startBtn.png") repeat scroll 0 -27px transparent;
    color: #555;
 }
 
@@ -397,7 +397,7 @@ ul li{
 }
 
 .hr-especial {
-   background: url(../img/separador-hor-footer.png) no-repeat;
+   background: url(/media/img/separador-hor-footer.png) no-repeat;
    margin-left:auto;
    margin-right:auto;
    height:6px;
@@ -406,11 +406,11 @@ ul li{
 
 
 .vertical-ruler{
-   background: url("../img/separador-ver-small.png") no-repeat scroll right center transparent;
+   background: url("/media/img/separador-ver-small.png") no-repeat scroll right center transparent;
 }
 
 .vertical-ruler-big {
-   background: url("../img/separador-ver-big.png") no-repeat scroll right center transparent;
+   background: url("/media/img/separador-ver-big.png") no-repeat scroll right center transparent;
 }
 
 #register form #register_email img{
@@ -422,13 +422,13 @@ ul li{
 
 
 .msgOK{
-   background: url("../img/sprite_sticks.png") no-repeat scroll 0 0 transparent;
+   background: url("/media/img/sprite_sticks.png") no-repeat scroll 0 0 transparent;
     color: green;
     margin-left: 50px;
     padding-left: 20px;
 }
 .msgNoOK{
-   background: url("../img/sprite_sticks.png") no-repeat scroll -20px 0 transparent;
+   background: url("/media/img/sprite_sticks.png") no-repeat scroll -20px 0 transparent;
     color: red;
     margin-left: 50px;
     padding-left: 20px;
@@ -436,7 +436,7 @@ ul li{
 }
 
 #language_bar{
-   background: url("../img/bg_language.png") repeat-x scroll 0 0 #DDDDDD;
+   background: url("/media/img/bg_language.png") repeat-x scroll 0 0 #DDDDDD;
    border: 1px solid gray;
     font-size: 11px;
     height: 19px;
@@ -557,14 +557,14 @@ margin-top:0;
     width: 35px;
 }
 a.email{
-   background: url("../img/mail_contacto.png") no-repeat scroll left center transparent;
+   background: url("/media/img/mail_contacto.png") no-repeat scroll left center transparent;
 }
 
 a.twitter{
-   background: url("../img/twitter_icon_contacto.png") no-repeat scroll left center transparent;
+   background: url("/media/img/twitter_icon_contacto.png") no-repeat scroll left center transparent;
 }
 a.linkedin{
-   background: url("../img/linkedin_icon.png") no-repeat scroll left center transparent;
+   background: url("/media/img/linkedin_icon.png") no-repeat scroll left center transparent;
 }
 
 figcaption{
@@ -653,31 +653,31 @@ figcaption{
 }
 
 #contact-email{
-   background: url("../img/sprite_contacto.png") no-repeat scroll left 6px transparent;
+   background: url("/media/img/icons/sprite_contacto.png") no-repeat scroll left 6px transparent;
 }
 #contact-phone{
-   background: url("../img/sprite_contacto.png") no-repeat scroll left -22px transparent;
+   background: url("/media/img/icons/sprite_contacto.png") no-repeat scroll left -22px transparent;
 }
 #contact-address{
-   background: url("../img/sprite_contacto.png") no-repeat scroll left -46px transparent;
+   background: url("/media/img/icons/sprite_contacto.png") no-repeat scroll left -46px transparent;
 }
 #contact-support{
-   background: url("../img/sprite_contacto.png") no-repeat scroll left -70px transparent;
+   background: url("/media/img/icons/sprite_contacto.png") no-repeat scroll left -70px transparent;
 }
 #contact-skype{
-   background: url("../img/sprite_contacto.png") no-repeat scroll left -96px transparent;
+   background: url("/media/img/icons/sprite_contacto.png") no-repeat scroll left -96px transparent;
 }
 #contact-twitter{
-   background: url("../img/sprite_contacto.png") no-repeat scroll left -122px transparent;
+   background: url("/media/img/icons/sprite_contacto.png") no-repeat scroll left -122px transparent;
 }
 #contact-facebook{
-   background: url("../img/sprite_contacto.png") no-repeat scroll left -146px transparent;
+   background: url("/media/img/icons/sprite_contacto.png") no-repeat scroll left -146px transparent;
 }
 #contact-youtube{
-   background: url("../img/sprite_contacto.png") no-repeat scroll left -172px transparent;
+   background: url("/media/img/icons/sprite_contacto.png") no-repeat scroll left -172px transparent;
 }
 #contact-linkedin{
-   background: url("../img/sprite_contacto.png") no-repeat scroll left -198px transparent;
+   background: url("/media/img/icons/sprite_contacto.png") no-repeat scroll left -198px transparent;
 }
 #userEmail{
    
@@ -813,7 +813,7 @@ nav{
 
 .content-box{
    
-   background:transparent url(../img/shadow_box.png) no-repeat 0% 100%;
+   background:transparent url(/media/img/backgrounds/shadow_box.png) no-repeat 0% 100%;
    display: table;
    margin: 10px 0;
    padding: 0 0 11px;
@@ -958,26 +958,26 @@ article img{
 }
 
 #other-versions .apple-app{
-   background: url("../img/apple_icon.png") no-repeat scroll 5px center transparent;
+   background: url("/media/img/icons/apple_icon.png") no-repeat scroll 5px center transparent;
 }
 #android-app{
-   background: url("../img/android_icon.png") no-repeat scroll 5px center transparent;
+   background: url("/media/img/icons/android_icon.png") no-repeat scroll 5px center transparent;
 }
 #blackberry-app{
-   background: url("../img/blackberry_Icon.png") no-repeat scroll 5px center transparent;
+   background: url("/media/img/icons/blackberry_Icon.png") no-repeat scroll 5px center transparent;
 }
 #other-versions .webmobile-app, #webmobile-app{
-   background: url("../img/webmobile_icon.png") no-repeat scroll 5px center transparent;
+   background: url("/media/img/icons/webmobile_icon.png") no-repeat scroll 5px center transparent;
    line-height: 24px
 }
 
 #mobile-app{
-   background: url("../img/mobile_icon.png") no-repeat scroll 5px center transparent;
+   background: url("/media/img/icons/mobile_icon.png") no-repeat scroll 5px center transparent;
    line-height: 24px
 }
 
 .webdesktop-app{
-   background: url("../img/webdesktop_icon.png") no-repeat scroll 5px center transparent;
+   background: url("/media/img/icons/webdesktop_icon.png") no-repeat scroll 5px center transparent;
    line-height: 24px
 
 }
@@ -1068,14 +1068,14 @@ list-style-type: disc;
 }
 
 #available-versions td.feature-ok{
-   background: url("../img/sprite_sticks_vertical.png") no-repeat scroll center 0 transparent;
+   background: url("/media/img/icons/sprite_sticks_vertical.png") no-repeat scroll center 0 transparent;
    padding:0;
 }
 .feature-ok span,.feature-no span{
    visibility: hidden;  
 }
 #available-versions td.feature-no{
-   background: url("../img/sprite_sticks_vertical.png") no-repeat scroll center -20px transparent;
+   background: url("/media/img/icons/sprite_sticks_vertical.png") no-repeat scroll center -20px transparent;
    padding:0;
 }
 
@@ -1211,7 +1211,7 @@ p#invitation-request a:hover{
 }
 
 .download-icon{
-   background: url("../img/download_icon.gif") no-repeat scroll 5px center transparent;
+   background: url("/media/img/download_icon.gif") no-repeat scroll 5px center transparent;
    display: block;
    padding-left: 35px;
 }

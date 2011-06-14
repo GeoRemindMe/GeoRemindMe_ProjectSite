@@ -1,12 +1,19 @@
 {% extends 'layout.html' %}
+{% load i18n %}
 
+{% block API-Link %}<li class="menu-icons" id="API">API</li>{% endblock %}
+
+{% block breadCumbMenu %}
+    <span class="maqnav">></span>
+    API
+{% endblock %}    
 
 {% block content %}
 
 	<article style="text-align:left;"> 
 		<div style="float:left;width:100%;"> 
-			<div class="center message-box"><img src="http://static.georemindme.com/images/tools-128.png">
-			<p>{% trans "There is some <a href="https://teambox.com/public/georemindme-2/conversations/132183-define-api">work in progress here</a>, <strong>we are currently looking for help</strong> to design and develop this API, so if you are interested you are much welcomed to <strong><a href="https://teambox.com/projects/georemindme-2">join our community of developers!</a></strong>." %}</p>
+			<div class="center message-box"><img src="/media/img/tools-128.png">
+			<p>{% trans 'There is some <a href="https://teambox.com/public/georemindme-2/conversations/132183-define-api">work in progress here</a>, <strong>we are currently looking for help</strong> to design and develop this API, so if you are interested you are much welcomed to <strong><a href="https://teambox.com/projects/georemindme-2">join our community of developers!</a></strong>.' %}</p>
 			</div>
 		</div>
 	</article>  

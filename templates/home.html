@@ -3,11 +3,11 @@
 {% load i18n %}
 
 {%block extra_css%}
-	<link rel="stylesheet" href="/static/webapp/style/easySlider.css" type="text/css" media="screen, projection" />
+	<link rel="stylesheet" href="/media/style/easySlider.css" type="text/css" media="screen, projection" />
 {%endblock%}
 
 {%block extra_js%}
-	<script type="text/javascript" src="/static/webapp/js/easySlider1.5.js"></script>
+	<script type="text/javascript" src="/media/js/easySlider1.5.js"></script>
 
 
 	<script type="text/javascript">
@@ -26,7 +26,7 @@
 			.focus(function(){
 			 if ($(this).val()=="email") 
 				$(this).val('');
-			 $('#imgEmailLogin').attr('src','/static/webapp/img/mailActive.png');
+			 $('#imgEmailLogin').attr('src','/media/img/mailActive.png');
 		  })
 			.blur(checkEmail);
 		
@@ -34,8 +34,8 @@
 		$("#userRegisterPass1,#userRegisterPass2")
 		  .blur(checkPasswords)
 		  .keyup(checkPasswords)
-		  .focus(function(){$('#imgPasswordLogin').attr('src','/static/webapp/img/passIconActive.png')})
-		  .blur(function(){$('#imgPasswordLogin').attr('src','/static/webapp/img/passIconInactive.png')});
+		  .focus(function(){$('#imgPasswordLogin').attr('src','/media/img/icons/passIconActive.png')})
+		  .blur(function(){$('#imgPasswordLogin').attr('src','/media/img/icons/passIconInactive.png')});
 
 		  
 	   //With this you can check the terms making click on the text
@@ -102,7 +102,7 @@
    </div>
 
   	<div id="form-invitation-request" class="caja-arriba">
-      <p class="new_msg"><a href="{%url knowmore%}" title="{% trans "Screenshots, licenses, versions, etc."%}" accesskey="m">{% trans "More about"%}</a>{% trans " the project:"%}</p>
+      <p class="new_msg"><a href="/knowmore" title="{% trans "Screenshots, licenses, versions, etc."%}" accesskey="m">{% trans "More about"%}</a>{% trans " the project:"%}</p>
       <p><a href='/knowmore/#available-versions' class="right-arrow">{% trans "Available Versions" %}</a></p>
       <p><a href='/knowmore/#community' class="right-arrow">{% trans "The GeoRemindMe Community" %}</a></p>
    </div>

@@ -1,5 +1,5 @@
 {% extends 'layout.html' %}
-
+{% load i18n %}
 
 {% block content %}
 
@@ -22,7 +22,7 @@
 					<h4>{% trans 'Introduction to GeoRemindMe workflow' %}</h4>
 
 					<ol>
-						<li>{% trans '<a href="http://static.georemindme.com/images/doc/style_guide_android.pdf">Coding style guide</a>' %}</li>
+						<li>{% trans '<a href="/media/img/doc/style_guide_android.pdf">Coding style guide</a>' %}</li>
 						<li>{% trans 'How to update languages' %}</li>
 						<li>{% trans 'How to add a contribution' %}</li>
 						<li>{% trans 'Generating docummentation' %}</li>
@@ -53,7 +53,7 @@
         <section class="community-box"> 
             <h3 id="photos" class="menu-icons">{% trans 'Quick overview' %}</h3>
             <p>{% trans 'This sketch explains some of the modules that make up the Android application:' %}</p>
-            <a href="http://static.georemindme.com/images/doc/android-scheme.png"><img src="http://static.georemindme.com/images/doc/android-scheme_thumb.png" /></a>
+            <a href="/media/img/doc/android-scheme.png"><img src="/media/img/doc/android-scheme_thumb.png" /></a>
             <p class="center"><em>{% trans 'Quick overview of the Android architecture (4th May 2011)' %}</em></p>
 			
         </section>

@@ -3,6 +3,7 @@
 
 
 from os import path
+from settings import LANGUAGES
 BASE_DIR = path.normpath(path.dirname(__file__))
 
 ''' 
@@ -21,11 +22,7 @@ RFC 5646: http://www.rfc-editor.org/rfc/rfc5646.txt
 LANGTAG: http://www.langtag.net
 W3C: http://www.w3.org/International
 '''
-LANGUAGES = (
-	('ca', u'Català'),
-	('en', 'English'),
-	('es', u'Español'),
-)
+
 
 import commands
 
