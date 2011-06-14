@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GeoRemindMe\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-06-14 18:15+0200\n"
+"POT-Creation-Date: 2011-06-14 19:55+0200\n"
 "PO-Revision-Date: 2011-06-14 14:25+0000\n"
 "Last-Translator: hhkaos <hhkaos@gmail.com>\n"
 "Language-Team: Spanish (Castilian) (http://www.transifex.net/projects/p/"
@@ -103,41 +103,40 @@ msgid "Follow us on Facebook"
 msgstr "Síguenos en Facebook"
 
 #: templates/base.html:140 templates/content-table.html:113
-#: templates/layout.html:82
+#: templates/layout.html:80
 msgid "Know what's going on"
 msgstr "Qué está pasando"
 
 #: templates/base.html:140 templates/content-table.html:113
-#: templates/layout.html:82
+#: templates/layout.html:80 templates/sitemap.html:79
 msgid "Blog"
 msgstr "Blog"
 
 #: templates/base.html:141 templates/content-table.html:114
-#: templates/layout.html:83
+#: templates/layout.html:81
 msgid "Do you want to work with us?"
 msgstr "¿Quieres trabajar con nosotros?"
 
 #: templates/base.html:142 templates/content-table.html:115
-#: templates/layout.html:84
+#: templates/layout.html:82
 msgid "Join the community now!"
 msgstr "¡Únete a la comunidad ahora!"
 
 #: templates/base.html:143 templates/content-table.html:116
-#: templates/layout.html:85
+#: templates/layout.html:83
 msgid "Contact us"
 msgstr "Contáctanos"
 
 #: templates/base.html:144 templates/content-table.html:117
-#: templates/layout.html:86
+#: templates/layout.html:84
 msgid "Looking for some info?"
 msgstr "¿Buscas alguna información?"
 
-#: templates/base.html:149 templates/layout.html:91
+#: templates/base.html:149 templates/layout.html:89
 msgid "Language:"
 msgstr "Idioma:"
 
 #: templates/base.html:161 templates/content-table.html:119
-#: templates/layout.html:103
 msgid ""
 "<strong>GeoRemindMe 2011</strong>,headquarters at <a href='http://maps."
 "google.com/maps/ms?"
@@ -181,9 +180,10 @@ msgid "Error sending the message"
 msgstr "Se ha producido un error al enviar el mensaje"
 
 #: templates/contact.html:52 templates/knowmore.html:46
+#: templates/layout.html:54 templates/layout.html.py:63
 #: templates/partners.html:46 templates/press.html:32
 #: templates/privacypolicy.html:24 templates/sitemap.html:61
-#: templates/support.html:38 templates/team.html:52 templates/tos.html:24
+#: templates/support.html:37 templates/team.html:52 templates/tos.html:24
 msgid "Home"
 msgstr "Inicio"
 
@@ -215,7 +215,7 @@ msgstr "o"
 msgid "Address"
 msgstr "Dirección"
 
-#: templates/contact.html:70
+#: templates/contact.html:70 templates/layout.html:101
 msgid "Spain"
 msgstr "España"
 
@@ -257,6 +257,57 @@ msgid ""
 "de tus redes sociales</em>."
 msgstr ""
 
+#: templates/home.html:64
+msgid "<strong>Encuentra</strong> cosas interesantes que hacer"
+msgstr ""
+
+#: templates/home.html:65
+msgid "<strong>Descubre</strong> y explora nuevas zonas"
+msgstr ""
+
+#: templates/home.html:66
+msgid "<strong>No olvides</strong> lo que querías hacer"
+msgstr ""
+
+#: templates/home.html:72
+msgid "Todo esto gracias a que podrás"
+msgstr ""
+
+#: templates/home.html:76
+msgid ""
+"<strong>Compartir y recibir recomendaciones</strong> de tus contactos, "
+"instituciones, etc..."
+msgstr ""
+
+#: templates/home.html:77
+msgid ""
+"Recibir <strong>recomendaciones personalizadas</strong> en base a tus "
+"gustos, localización, etc"
+msgstr ""
+
+#: templates/home.html:78
+msgid "<strong>Buscar y filtrar</strong> recomendaciones de otras personas"
+msgstr ""
+
+#: templates/home.html:79
+msgid "<strong>Seguir</strong> a los usuarios y comercios que te interesen"
+msgstr ""
+
+#: templates/home.html:80
+msgid ""
+"<strong>Descargar o imprimir</strong> rutas de diferentes zonas de la ciudad"
+msgstr ""
+
+#: templates/home.html:81
+msgid "<strong>Apoyar y comentar</strong> las recomendaciones"
+msgstr ""
+
+#: templates/home.html:82
+msgid ""
+"Y en un futuro... queremos <strong>ofrecerte cupones</strong> de descuento "
+"para disfrutarlos donde estés"
+msgstr ""
+
 #: templates/home.html:87
 msgid "http://feedburner.google.com/fb/a/mailverify?uri=GeoRemindMe"
 msgstr "http://feedburner.google.com/fb/a/mailverify?uri=GeoRemindMe-ES"
@@ -280,6 +331,11 @@ msgstr "¡Apúntame!"
 #: templates/home.html:91
 msgid "No spam. We promise."
 msgstr "No enviamos Spam. Palabrita."
+
+#: templates/home.html:95
+#, fuzzy
+msgid "Compatible con"
+msgstr "Compatible con"
 
 #: templates/home.html:105
 msgid "Screenshots, licenses, versions, etc."
@@ -632,12 +688,61 @@ msgstr ""
 "GeoRemindMe'>subscribirte al RSS</a> de nuestro blog para que no te vuelvas "
 "a perder nada."
 
+#: templates/layout.html:55
+msgid "API"
+msgstr ""
+
+#: templates/layout.html:56 templates/layout.html.py:82
+msgid "Community"
+msgstr ""
+
+#: templates/layout.html:57 templates/layout.html.py:81
+#: templates/jobs/index.html:39
+msgid "Jobs"
+msgstr ""
+
+#: templates/layout.html:58 templates/layout.html.py:84
+#: templates/sitemap.html:63
+msgid "Sitemap"
+msgstr ""
+
+#: templates/layout.html:83
+msgid "Support"
+msgstr ""
+
+#: templates/layout.html:101
+msgid "headquarters at "
+msgstr ""
+
 #: templates/partners.html:5
 msgid "Partners - GeoRemindMe"
 msgstr ""
 
 #: templates/partners.html:48
 msgid "Partners"
+msgstr ""
+
+#: templates/partners.html:67
+msgid "Universidad de Granada"
+msgstr ""
+
+#: templates/partners.html:69
+msgid ""
+"La <a href=\"http://internacional.ugr.es/\">Oficina de Relaciones "
+"Internacionales</a> de la <a href=\"http://www.ugr.es\">Universidad de "
+"Granada</a> utiliza GeoRemindMe para que cada año sus más de 2.000 "
+"estudiantes de intercambio puedan aprovechar al máximo su experiencia"
+msgstr ""
+
+#: templates/partners.html:70
+msgid ""
+"Gracias a GeoRemindMe los alumnos ahora tienen una nueva forma de "
+"comunicarse con sus mentores, de recibir información de la universidad y de "
+"compartir recomendaciones con sus compañeros"
+msgstr ""
+
+#: templates/partners.html:71
+msgid "<a href=\"#\">Nota de presa</a>"
 msgstr ""
 
 #: templates/press.html:5
@@ -652,16 +757,99 @@ msgstr ""
 msgid "Media releases"
 msgstr ""
 
+#: templates/press.html:43
+msgid ""
+"En esta sección se encuentra toda la información orientada a la prensa. "
+"Cualquier o solicitud de información, puede encontrar <a href=\\"
+msgstr ""
+
+#: templates/press.html:45
+msgid "15/06/2011"
+msgstr ""
+
+#: templates/press.html:45
+msgid ""
+"La Universidad de Granada y la empresa local GeoRemindMe llegan a un acuerdo "
+"de colaboración"
+msgstr ""
+
 #: templates/press.html:52
 msgid "Media appearances"
+msgstr ""
+
+#: templates/press.html:60 templates/press.html.py:68 templates/press.html:76
+#: templates/press.html.py:84
+msgid "29/03/11"
+msgstr ""
+
+#: templates/press.html:92
+msgid "15/03/11"
+msgstr ""
+
+#: templates/press.html:100
+msgid "8/03/11"
 msgstr ""
 
 #: templates/press.html:111
 msgid "Logotipos"
 msgstr ""
 
+#: templates/press.html:113
+msgid "Logo without background 1024x350"
+msgstr ""
+
+#: templates/press.html:113 templates/press.html.py:116
+#: templates/press.html:123 templates/press.html.py:127
+#: templates/press.html:128
+msgid "Color"
+msgstr ""
+
+#: templates/press.html:115
+msgid "Horizontal logo 1024x350"
+msgstr ""
+
+#: templates/press.html:117 templates/press.html.py:124
+msgid "Gray scale"
+msgstr ""
+
+#: templates/press.html:122
+msgid "Squared logo 1024x1170"
+msgstr ""
+
+#: templates/press.html:127
+msgid "Squared logo with border"
+msgstr ""
+
+#: templates/press.html:128
+msgid "Colorized chickens"
+msgstr ""
+
+#: templates/press.html:129
+msgid "Fichero RAW"
+msgstr ""
+
+#: templates/press.html:129
+msgid "Vectorial"
+msgstr ""
+
 #: templates/press.html:135
 msgid "Material adicional"
+msgstr ""
+
+#: templates/press.html:137
+msgid "Colaboraciones de la empresa"
+msgstr ""
+
+#: templates/press.html:138
+msgid "Premios y otros logros"
+msgstr ""
+
+#: templates/press.html:139
+msgid "Fotografías de la comunidad"
+msgstr ""
+
+#: templates/press.html:140
+msgid "Datos de los fundadores"
 msgstr ""
 
 #: templates/privacypolicy.html:5
@@ -672,23 +860,238 @@ msgstr "Política de privacidad - GeoRemindMe"
 msgid "Privacy policy"
 msgstr "Política de privacidad"
 
-#: templates/sitemap.html:63
-msgid "Sitemap"
+#: templates/sitemap.html:71
+msgid "Usuarios"
+msgstr ""
+
+#: templates/sitemap.html:72
+msgid ""
+"Todo lo que el usuario necesita para sacarle todo el provecho a la "
+"herramienta:"
+msgstr ""
+
+#: templates/sitemap.html:75
+msgid "Inicio</a> ; información sobre el proyecto"
+msgstr ""
+
+#: templates/sitemap.html:77
+msgid "Más información"
+msgstr ""
+
+#: templates/sitemap.html:77
+msgid "profundiza en más detalles de la herramienta"
+msgstr ""
+
+#: templates/sitemap.html:78
+#, fuzzy
+msgid "Login"
+msgstr "Identifícate"
+
+#: templates/sitemap.html:78
+msgid "menu de acceso a la herramienta"
+msgstr ""
+
+#: templates/sitemap.html:79
+msgid "información sobre novedades y avances del proyecto"
+msgstr ""
+
+#: templates/sitemap.html:80
+msgid "Help / Support"
+msgstr ""
+
+#: templates/sitemap.html:85
+#, fuzzy
+msgid "La empresa"
+msgstr "Saber más"
+
+#: templates/sitemap.html:86
+msgid "Toda la información sobre la empresa que trabaja con este proyecto:"
+msgstr ""
+
+#: templates/sitemap.html:88
+msgid "Equipo"
+msgstr ""
+
+#: templates/sitemap.html:88
+msgid "conoce a nuestros trabajdores"
+msgstr ""
+
+#: templates/sitemap.html:89
+msgid "Empleo"
+msgstr ""
+
+#: templates/sitemap.html:89
+msgid "información sobre ofertas de empleo"
+msgstr ""
+
+#: templates/sitemap.html:90
+#, fuzzy
+msgid "Contacto"
+msgstr "Formulario de contacto"
+
+#: templates/sitemap.html:90
+msgid "diferentes formas de contacto"
+msgstr ""
+
+#: templates/sitemap.html:91 templates/sitemap.html.py:111
+#: templates/sitemap.html:118
+msgid "Colaboradores"
+msgstr ""
+
+#: templates/sitemap.html:91
+msgid "instituciones y empresas con las que trabajamos"
+msgstr ""
+
+#: templates/sitemap.html:92
+msgid "Prensa"
+msgstr ""
+
+#: templates/sitemap.html:92
+msgid "apariciones y notas de prensa"
+msgstr ""
+
+#: templates/sitemap.html:97
+msgid "Comunidad de voluntarios"
+msgstr ""
+
+#: templates/sitemap.html:98
+msgid ""
+"Comunidad de usuarios voluntarios y amigos de la plataforma que nos ayudan a "
+"seguir creciendo y mejorando"
+msgstr ""
+
+#: templates/sitemap.html:100
+msgid "Fotos"
+msgstr ""
+
+#: templates/sitemap.html:100
+msgid "fotografías de eventos de la comunidad"
+msgstr ""
+
+#: templates/sitemap.html:101
+msgid "plataforma de trabajo colaborativo"
+msgstr ""
+
+#: templates/sitemap.html:102
+msgid "Voluntarios"
+msgstr ""
+
+#: templates/sitemap.html:105
+msgid "Programadores"
+msgstr ""
+
+#: templates/sitemap.html:108
+msgid "Desarrolladores Android"
+msgstr ""
+
+#: templates/sitemap.html:110 templates/sitemap.html.py:117
+msgid "Guía"
+msgstr ""
+
+#: templates/sitemap.html:110 templates/sitemap.html.py:117
+msgid "guía de iniciación para colaboradores"
+msgstr ""
+
+#: templates/sitemap.html:111
+msgid "listado de desarrolladores Android"
+msgstr ""
+
+#: templates/sitemap.html:115
+msgid "Desarrolladores Web"
+msgstr ""
+
+#: templates/sitemap.html:118
+msgid "listado de desarrolladores web"
+msgstr ""
+
+#: templates/sitemap.html:122
+msgid "sistema de control de versiones para el código"
+msgstr ""
+
+#: templates/sitemap.html:123
+msgid "API pública"
+msgstr ""
+
+#: templates/sitemap.html:123
+msgid "documentación y ejemplos de la API"
+msgstr ""
+
+#: templates/sitemap.html:124
+msgid "Licencias"
+msgstr ""
+
+#: templates/sitemap.html:124
+msgid "licencias aplicables al software"
+msgstr ""
+
+#: templates/sitemap.html:127
+msgid "Diseñadores"
+msgstr ""
+
+#: templates/sitemap.html:129
+msgid "Galería"
+msgstr ""
+
+#: templates/sitemap.html:129
+msgid "galería de las imágenes realizadas desde la comunidad"
+msgstr ""
+
+#: templates/sitemap.html:133
+msgid "Traductores"
+msgstr ""
+
+#: templates/sitemap.html:135
+msgid "herramienta web para realizar las traducciones"
+msgstr ""
+
+#: templates/sitemap.html:136
+msgid "Metodología de trabajo"
+msgstr ""
+
+#: templates/sitemap.html:136
+msgid "guía explicativa sobre la metodología seguida"
+msgstr ""
+
+#: templates/sitemap.html:155
+#, fuzzy
+msgid "Legal"
+msgstr "email"
+
+#: templates/sitemap.html:156
+msgid ""
+"Estamos comprometidos con la seguridad y el buen uso de los datos, informate "
+"sobre"
+msgstr ""
+
+#: templates/sitemap.html:158
+msgid "Nuestra política de privacidad"
+msgstr ""
+
+#: templates/sitemap.html:158
+msgid "información sobre cómo gestionamos tu privacidad"
+msgstr ""
+
+#: templates/sitemap.html:159
+msgid "Condiciones de uso"
+msgstr ""
+
+#: templates/sitemap.html:159
+msgid "condiciones para poder usar la herramienta"
 msgstr ""
 
 #: templates/support.html:5
 msgid "Support center - GeoRemindMe"
 msgstr ""
 
-#: templates/support.html:40
+#: templates/support.html:39
 msgid "Support center"
 msgstr ""
 
-#: templates/support.html:47
+#: templates/support.html:46
 msgid "Last comments"
 msgstr ""
 
-#: templates/support.html:48
+#: templates/support.html:47
 msgid ""
 "Meet the <a href='http://getsatisfaction.com/georemindme'>user community</a> "
 "and share your questions, suggestions and problems."
@@ -696,15 +1099,15 @@ msgstr ""
 "Conoce a la <a href='http://getsatisfaction.com/georemindme'>comunidad de "
 "usuarios</a> y comparte tus sugerencias, preguntas y problemas."
 
-#: templates/support.html:58
+#: templates/support.html:57
 msgid "<a href='http://getsatisfaction.com/georemindme'>Read more</a>."
 msgstr ""
 
-#: templates/support.html:62
+#: templates/support.html:61
 msgid "Quick search"
 msgstr ""
 
-#: templates/support.html:87
+#: templates/support.html:86
 msgid "Easy and quick feedback system"
 msgstr ""
 
@@ -936,12 +1339,207 @@ msgid ""
 "In Progress!</strong>)"
 msgstr ""
 
-#: templates/dev/index.html:34
+#: templates/dev/index.html:34 templates/dev/licensing.html:38
+#: templates/dev/licensing.html.py:44 templates/dev/licensing.html:55
+#: templates/dev/licensing.html.py:64
 msgid "Licenses"
 msgstr ""
 
 #: templates/dev/index.html:34
 msgid "learn how the code is licensed"
+msgstr ""
+
+#: templates/dev/licensing.html:8
+msgid "Open Software"
+msgstr ""
+
+#: templates/dev/licensing.html:9
+msgid ""
+"Open Software means that the <strong>project is open in every sense of the "
+"word</strong>, meaning that anyone should feel free to <strong>contribute</"
+"strong>, as the code and images can be studied, distributed, copied and used "
+"without any aditional permission."
+msgstr ""
+
+#: templates/dev/licensing.html:11
+msgid "We believe that Open Software benefits all the parties involved."
+msgstr ""
+
+#: templates/dev/licensing.html:13
+msgid "Benefits for users"
+msgstr ""
+
+#: templates/dev/licensing.html:15
+msgid ""
+"They can <strong>participate</strong> in the developement of the tool, "
+"making customization easier"
+msgstr ""
+
+#: templates/dev/licensing.html:16
+msgid ""
+"They can <strong>learn</strong> how to implement an app that involves "
+"geolocation and content sharing"
+msgstr ""
+
+#: templates/dev/licensing.html:17
+msgid "It guarantees a reliable code, as anyone can study how it works"
+msgstr ""
+
+#: templates/dev/licensing.html:18
+msgid "<strong>Meet</strong> people in the world with common interests"
+msgstr ""
+
+#: templates/dev/licensing.html:19
+#, fuzzy
+msgid "Learn about <strong>teleworking</strong>"
+msgstr "Aplicación <strong>en pruebas</strong>"
+
+#: templates/dev/licensing.html:20
+msgid ""
+"Your contributions to the tool can be <strong>included in your resume</"
+"strong>"
+msgstr ""
+
+#: templates/dev/licensing.html:21
+msgid ""
+"It guarantees that the <strong>app will remain active</strong>, no mater "
+"what hapens to our company or community: if we are not able to continue the "
+"project, some other group can take charge of it"
+msgstr ""
+
+#: templates/dev/licensing.html:24
+msgid "Benefits for our Start-Up"
+msgstr ""
+
+#: templates/dev/licensing.html:26
+msgid ""
+"<strong>A community of users</strong> willig to give us priceless customer "
+"<strong>feedback</strong>"
+msgstr ""
+
+#: templates/dev/licensing.html:27
+msgid "The community <strong>contributes</strong> to the project"
+msgstr ""
+
+#: templates/dev/licensing.html:28
+msgid "Bigger <strong>acknowledgement and media coverage</strong>of our work"
+msgstr ""
+
+#: templates/dev/licensing.html:29
+msgid "<strong>Transparency</strong> and <strong>credibility</strong>"
+msgstr ""
+
+#: templates/dev/licensing.html:30
+msgid "We can hire <strong>talented people</strong> from our own community"
+msgstr ""
+
+#: templates/dev/licensing.html:31
+msgid ""
+"The Open Software World Wide Community<strong>supports</strong> our project"
+msgstr ""
+
+#: templates/dev/licensing.html:32
+msgid ""
+"The<strong>satisfaction</strong> of sharing knowledge and not only a service"
+msgstr ""
+
+#: templates/dev/licensing.html:39
+msgid ""
+"This project has many contributions from our community. Not all of them "
+"share the same license, so we want to be specific and detailed on the "
+"licensing as we can"
+msgstr ""
+
+#: templates/dev/licensing.html:43
+#, fuzzy
+msgid "Android application"
+msgstr "Aplicación"
+
+#: templates/dev/licensing.html:46
+msgid ""
+"The source code of the Android App is licensed under <a href=\"http://www."
+"gnu.org/copyleft/gpl.html\">GPL v3</a>"
+msgstr ""
+
+#: templates/dev/licensing.html:47
+msgid ""
+"The Icon set created by Mardigann are licensed under <a href=\"http://"
+"creativecommons.org/licenses/by-nc-sa/3.0/\">CC BY-NC-SA 3.0</a>"
+msgstr ""
+
+#: templates/dev/licensing.html:48
+msgid ""
+"The Android icons are licensed under <a href=\"http://www.apache.org/"
+"licenses/LICENSE-2.0\">Apache license version 2.0</a>"
+msgstr ""
+
+#: templates/dev/licensing.html:50
+msgid ""
+"Find the <a href=\"https://github.com/GeoRemindMe/GeoRemindMe_Android"
+"\">source code on Github</a>"
+msgstr ""
+
+#: templates/dev/licensing.html:54
+#, fuzzy
+msgid "Facebook application"
+msgstr "Aplicación"
+
+#: templates/dev/licensing.html:57
+msgid ""
+"The source code of the Facebook App is licensed under  <a href=\"http://www."
+"fsf.org/licensing/licenses/agpl-3.0.html\">AGPL v3</a>"
+msgstr ""
+
+#: templates/dev/licensing.html:59 templates/dev/licensing.html.py:77
+msgid ""
+"Find the <a href=\"https://github.com/GeoRemindMe/GeoRemindMe_Web\">source "
+"code on Github</a>"
+msgstr ""
+
+#: templates/dev/licensing.html:63
+msgid "Project website"
+msgstr ""
+
+#: templates/dev/licensing.html:66
+msgid ""
+"The source code is licensed under  <a href=\"http://www.fsf.org/licensing/"
+"licenses/agpl-3.0.html\">AGPL v3</a>"
+msgstr ""
+
+#: templates/dev/licensing.html:67
+msgid ""
+"jQuery, accept <a href=\"http://jquery.org/license/\">GPL and MIT licenses</"
+"a>"
+msgstr ""
+
+#: templates/dev/licensing.html:69 templates/dev/licensing.html.py:73
+msgid "under"
+msgstr ""
+
+#: templates/dev/licensing.html:69
+#, fuzzy
+msgid "Apache license version 2.0"
+msgstr "Impresiones de pantalla, versiones, licencias, etc."
+
+#: templates/dev/licensing.html:71
+msgid "Graphic design licensing"
+msgstr ""
+
+#: templates/dev/licensing.html:73
+msgid "their free license agreement"
+msgstr ""
+
+#: templates/dev/licensing.html:74
+msgid ""
+"licensed as <a href=\"http://creativecommons.org/licenses/by-sa/3.0/us/\">CC "
+"Attribution-Share Alike 3.0</a> & <a href=\"http://scripts.sil.org/cms/"
+"scripts/page.php?site_id=nrsi&id=OFL\">OFL</a>"
+msgstr ""
+
+#: templates/dev/licensing.html:75
+msgid ""
+"L4D1S designs & icons under <a href=\"http://creativecommons.org/licenses/by-"
+"nc-sa/3.0/\">CC BY-NC-SA 3.0</a>"
 msgstr ""
 
 #: templates/dev/webdev_guide.html:17
@@ -1030,12 +1628,11 @@ msgstr ""
 
 #: templates/jobs/index.html:29
 msgid ""
-"En GeoRemindMe estamos deseando <strong>contratar a los mejores "
-"profesionales</strong>"
+"At GeoRemindMe we are willing to hire <strong>the best talents</strong>."
 msgstr ""
 
 #: templates/jobs/index.html:31
-msgid "These are the technologies used to make this work"
+msgid "These are the technologies we are using to make GeoRemindMe work"
 msgstr ""
 
 #: templates/jobs/index.html:33
@@ -1059,10 +1656,6 @@ msgid ""
 "A <a href=\"http://developers.facebook.com/\">Facebook application</a> that "
 "uses <a href=\"http://www.html5rocks.com/en/\">HTML5</a> and <a href="
 "\"http://www.css3.info/\">CSS3</a>"
-msgstr ""
-
-#: templates/jobs/index.html:39
-msgid "Jobs"
 msgstr ""
 
 #: templates/jobs/index.html:40
@@ -1126,11 +1719,11 @@ msgid "You have an app with more than 50k downloads and 4 or 5 star ratings"
 msgstr ""
 
 #: templates/jobs/index.html:75
-msgid "Te has visto todos los videos de Reto Meier y Romain Guy"
+msgid "You have watched all Retro Meier and Romain Guy videos"
 msgstr ""
 
 #: templates/jobs/index.html:76
-msgid "Cuando no tienes sueño te dedicas a estudiar el kernel de Android"
+msgid "During your sleepless nights, you study Android\\"
 msgstr ""
 
 #: templates/jobs/index.html:77
@@ -1204,6 +1797,38 @@ msgstr ""
 msgid "You have learned something about web semantics or used microformats"
 msgstr ""
 
+#: templates/team/design.html:10 templates/team/index.html:21
+#: templates/team/survey.html:38
+msgid "Designing"
+msgstr ""
+
+#: templates/team/design.html:11
+msgid ""
+"We are always working to have a better looking, because all of us knows, "
+"<strong>the graphic design and the interaction design are key to ensure an "
+"unforgettable experience</strong>"
+msgstr ""
+
+#: templates/team/design.html:12
+msgid ""
+"Because of that we are always testing new things, measuring common behaviors "
+"and asking to our users to know what can be improved to improve it"
+msgstr ""
+
+#: templates/team/design.html:13
+msgid ""
+"If you are interested on learn how do we do that or contribute, please be "
+"welcome to <a href=\\"
+msgstr ""
+
+#: templates/team/design.html:14
+msgid "Meet <a href=\\"
+msgstr ""
+
+#: templates/team/design.html:19
+msgid "Contributions gallery"
+msgstr ""
+
 #: templates/team/index.html:15
 msgid "Introduction"
 msgstr ""
@@ -1225,10 +1850,6 @@ msgstr ""
 
 #: templates/team/index.html:20 templates/team/survey.html:41
 msgid "Developing"
-msgstr ""
-
-#: templates/team/index.html:21 templates/team/survey.html:38
-msgid "Designing"
 msgstr ""
 
 #: templates/team/index.html:23

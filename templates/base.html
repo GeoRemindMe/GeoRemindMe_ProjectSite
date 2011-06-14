@@ -146,7 +146,7 @@
 				 {% get_available_languages as LANGUAGES %}
 				 {% get_current_language as LANGUAGE_CODE %}
 					<form action="/lang/" method="post">
-					<label accesskey="v" for="language-bar">{% trans "Language:" %}{{LANGUAGE_CODE}}</label>
+					<label accesskey="v" for="language-bar">{% trans "Language:" %}</label>
                         {% csrf_token %}
 						   <select name="lang" id="language-bar" onchange="this.form.submit()" onsubmit="this.form.submit()">
 						  {% for code, name in LANGUAGES %}

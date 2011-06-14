@@ -1,10 +1,7 @@
-# Create your views here.
-
 from geostatic.models import Page
 from django.shortcuts import get_object_or_404,render_to_response
 from django.template import RequestContext
 from django.http import HttpResponse
-from django.http import HttpResponseRedirect
 
 from django.core.urlresolvers import reverse
 from django.http import HttpResponseRedirect
@@ -41,21 +38,20 @@ def main(request,slug=""):
     return render_to_response(page.template, context_instance=RequestContext(request))
 
 def set_language(request):
-    if request.method == 'POST':
-        from django.conf import settings
-        available = dict(settings.LANGUAGES)
-        lang = request.POST.get('lang', settings.LANGUAGE_CODE)
-        next = request.POST.get('next', '/')
-        if lang in available: #we have the lang_code
-            request.session['LANGUAGE_CODE'] = lang
-        if request.session.get('user', None):
-            settings = request.session['user'].settings
-            settings.language = lang
-            settings.put()
-        return HttpResponseRedirect(next)
-        
-    return HttpResponseRedirect(request.path)
-        
-    return HttpResponseRedirect(request.path)    
+  if request.method == 'POST':
+      from django.conf import settings
+      available = dict(settings.LANGUAGES)
+      lang = request.POST.get('lang', settings.LANGUAGE_CODE)
+      next = request.POST.get('next', '/')
+      if lang in available: #we have the lang_code
+          from django.utils import translation
+          #request.session['LANGUAGE_CODE'] = lang
+          request.session["django_language"] = lang
+          translation.activate(lang)
+          request.LANGUAGE_CODE = translation.get_language()
+      
+      
+          return HttpResponseRedirect(next)
+      return HttpResponseRedirect(request.path)
     
     

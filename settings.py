@@ -9,7 +9,7 @@ TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
     (u'Rubén Dugo', 'rdugomartin@gmail.com'),
-    (u'Raúl Jiménez', 'hhkaos@gmail.com'),
+    (u'Raúl Jiménez', 'raul@georemindme.com'),
 )
 
 MANAGERS = ADMINS
@@ -78,6 +78,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
     #'django.contrib.messages.middleware.MessageMiddleware',
 )
 
@@ -108,7 +109,7 @@ TEMPLATE_CONTEXT_PROCESSORS = ("django.contrib.auth.context_processors.auth",
     "django.core.context_processors.media"
 )
 
-#Not used in local deployment
+#Not used in local deployment just in production server
 #SESSION_COOKIE_DOMAIN=".georemindme.com"
 
 LANGUAGES = (
