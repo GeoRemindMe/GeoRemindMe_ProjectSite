@@ -111,6 +111,8 @@ TEMPLATE_CONTEXT_PROCESSORS = ("django.contrib.auth.context_processors.auth",
     "django.core.context_processors.media"
 )
 
+SESSION_COOKIE_DOMAIN=".georemindme.com"
+
 LANGUAGES = (
   ('ca', u'Català'),
   #('de', 'Deutsch'),
