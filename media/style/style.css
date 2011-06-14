@@ -61,13 +61,13 @@ a.menu-open {
 }
 
 #signinBtn.openedLoginBtn{
-   background: url("/media/img/backgrounds/loginBtn.png") no-repeat scroll 0 -42px transparent;
+   background: url("/media/img/icons/loginBtn.png") no-repeat scroll 0 -42px transparent;
 }
 #signinBtn.openedLoginBtn:hover{
-   background: url("/media/img/backgrounds/loginBtn.png") no-repeat scroll 0 -63px transparent;
+   background: url("/media/img/icons/loginBtn.png") no-repeat scroll 0 -63px transparent;
 }
 .closedLoginBtn{
-   background: url("/media/img/backgrounds/loginBtn.png") no-repeat scroll 0 0 transparent;
+   background: url("/media/img/icons/loginBtn.png") no-repeat scroll 0 0 transparent;
 }
 #signinBtn {
 
@@ -195,7 +195,7 @@ a.signin p{
 }
 
 .right-arrow{
-	background: url("/media/img/flechita.png") no-repeat scroll 0 0 transparent;
+	background: url("/media/img/icons/flechita.png") no-repeat scroll 0 0 transparent;
 	display: block;
     height: 24px;
     line-height: 24px;

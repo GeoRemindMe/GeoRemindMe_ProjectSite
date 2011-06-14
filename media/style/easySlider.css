@@ -109,13 +109,13 @@
 	background:url("/media/img/reminder.png") no-repeat 50px 0;	
 }
 #fb-compatible{
-	background:url("/media/img/icons/fb.png") no-repeat 0px 0;	
+	background:url("/media/img/icons/social/fb.png") no-repeat 0px 0;	
 }
 #twitter-compatible{
-	background:url("/media/img/icons/twitter.png") no-repeat 0px 0;	
+	background:url("/media/img/icons/social/twitter.png") no-repeat 0px 0;	
 }
 #gcal-compatible{
-	background:url("/media/img/icons/gcal.png") no-repeat 0px 0;	
+	background:url("/media/img/icons/social/gcal.png") no-repeat 0px 0;	
 }
 
 
