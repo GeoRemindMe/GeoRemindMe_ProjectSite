@@ -5,7 +5,7 @@
 {% block title %}{% trans "Contact us - GeoRemindMe" %}{%endblock%}
 
 {% block extra_css %}
-	<link rel="stylesheet" type="text/css" href="http://static.georemindme.com/css/common.css" media="screen" /> 
+	<link rel="stylesheet" type="text/css" href="/media/style/common.css" media="screen" /> 
 {%endblock%}
 
 {% block extra_js %}
@@ -88,7 +88,7 @@ $(document).ready(function(){
 			   <div id="contact-form">
                <p>{% trans "You can also contact us using this form" %}</p>
                <form method="post" action=".">                 
-                  <img src="/static/webapp/img/mailInactive.png" alt="Email icon" title="{% trans "Enter your email address" %}" >
+                  <img src="/media/img/mailInactive.png" alt="Email icon" title="{% trans "Enter your email address" %}" >
                   <input type="text" value="{% trans "email" %}" name="userEmail" id="userEmail"  placeholder="email" onblur="checkFields();">
             
                   

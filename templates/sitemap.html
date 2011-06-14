@@ -5,13 +5,13 @@
 {% block title %}{% trans "Contact us - GeoRemindMe" %}{%endblock%}
 
 {% block extra_css %}
-	<link rel="stylesheet" type="text/css" href="http://static.georemindme.com/css/common.css" media="screen" /> 
-	<link rel="stylesheet" href="/static/webapp/style/jquery.treeview.css" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="/media/style/common.css" media="screen" /> 
+	<link rel="stylesheet" href="/media/style/jquery.treeview.css" type="text/css" />
 {%endblock%}
 
 {% block extra_js %}
 
-	<script type="text/javascript" src="/static/webapp/js/jquery.treeview.js"></script>
+	<script type="text/javascript" src="/media/js/jquery.treeview.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
 			$("#list-tree").treeview({collapsed: true});
@@ -74,8 +74,8 @@
 				<li>
 					<a href="http://www.georemindme.com">Inicio</a> ; información sobre el proyecto
 				</li>
-				<li><a href="https://georemindme.appspot.com/knowmore/">Más información</a> ; profundiza en más detalles de la herramienta</li>
-				<li><a href="https://georemindme.appspot.com/login/">Entrar</a> ; menu de acceso a la herramienta</li>
+				<li><a href="/knowmore/">Más información</a> ; profundiza en más detalles de la herramienta</li>
+				<li><a href="https://georemindme.appspot.com/">Entrar</a> ; menu de acceso a la herramienta</li>
 				<li><a href="http://blog.georemindme.com">Blog</a> ; información sobre novedades y avances del proyecto.</li>
 				<li><a href="http://help.georemindme.com">Help / Support</a> ; sugerencias y ayuda para usuarios</li>
 			</ul>

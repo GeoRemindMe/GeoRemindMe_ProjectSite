@@ -1,5 +1,12 @@
 {% extends 'content-table.html' %}
+{% load i18n %}
 
+{% block Jobs-Link %}<li class="menu-icons" id="Jobs">Jobs</li>{% endblock %}
+
+{% block breadCumbMenu %}
+    <span class="maqnav">></span>
+    Jobs
+{% endblock %}    
 
 {% block contenttable %}
 
@@ -9,7 +16,7 @@
 		<li><a href="#android-dev" class="anchor separator">{% trans 'Android Developer' %}</a></li> 
 		<li><a href="#interface-designer" class="anchor separator">{% trans 'User Interface Designer' %}</a></li> 
 		<li><a href="#web-dev" class="anchor separator">{% trans 'Web Developer' %}</a></li> 
-		<a href="http://static.georemindme.com/images/georemindme_dude.jpg"><img src="http://static.georemindme.com/images/georemindme_dude.jpg" style="width:184px" alt="GeoRemindMe"/></a>
+		<a href="/media/img/georemindme_dude.jpg"><img src="/media/img/georemindme_dude.jpg" style="width:184px" alt="GeoRemindMe"/></a>
 		<br>{% trans 'Author' %}: <a href="http://es.linkedin.com/pub/jose-luis-roz%C3%BAa-lucena/23/832/b71">José Luis Rozúa</a>
 	 </ul> 
 {% endblock %}
@@ -23,7 +30,7 @@
 
 			<p>{% trans 'These are the technologies used to make this work' %}:</p>
 			<ul>
-				<li>{% trans 'Google's cloud:<a href="http://code.google.com/intl/es-ES/appengine/">App Engine</a>' %}.</li>
+				<li>{% trans "Google\'s cloud:<a href=\"http://code.google.com/intl/es-ES/appengine/\">App Engine</a>" %}.</li>
 				<li>{% trans 'A web server created with <a href="https://www.djangoproject.com/">Python and Django</a>' %}.</li>
 				<li>{% trans 'An <a href="http://developer.android.com/index.html">Android</a> application' %}.</li>
 				<li>{% trans 'A <a href="http://developers.facebook.com/">Facebook application</a> that uses <a href="http://www.html5rocks.com/en/">HTML5</a> and <a href="http://www.css3.info/">CSS3</a>' %}.</li>
@@ -32,10 +39,10 @@
 			<h2 id="job">{% trans 'Jobs' %}</h2> 
             <p>{% trans 'If you would like to be part of our team you should sound like someone who:' %}</p>
 			<ul>
-				<li>{% trans 'Has already contributed to an open software project' %}.</li>
+				<li>{% trans 'Has already contributed to a free software project' %}.</li>
 				<li>{% trans 'Likes learning from your teammates' %}.</li>
-				<li>{% trans 'Doesn't have "this can't be done" in your vocabulary' %}.</li>
-				<li>{% trans 'Can't code without having a version control system, and you particularly like Git' %}.</li>
+				<li>{% trans "Doesn't have <this can't be done> in your vocabulary" %}.</li>
+				<li>{% trans "Can't code without having a version control system, and you particularly like Git" %}.</li>
 				<li>{% trans 'Upholds Scrum framework for project management' %}.</li>
 				<li>{% trans 'is either a Mac or a Linux user (or both)' %}.</li>
 				<li>{% trans 'Is fluent in english' %}.</li>
@@ -65,6 +72,8 @@
 			<li>{% trans 'You have already worked on a project related with geolocation or an LBS' %}.</li>
 			<li>{% trans 'You have experience building Android applications' %}.</li>
 			<li>{% trans 'You have an app with more than 50k downloads and 4 or 5 star ratings' %}.</li>
+			<li>{% trans 'Te has visto todos los videos de Reto Meier y Romain Guy' %}.</li>
+			<li>{% trans 'Cuando no tienes sueño te dedicas a estudiar el kernel de Android' %}.</li>
 			<li>{% trans 'You know StackOverflow like the back of your hand' %}.</li>
 			
 		</ul>

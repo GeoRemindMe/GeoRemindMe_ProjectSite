@@ -1,26 +1,27 @@
+{% load i18n %}
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
 <html xmlns="http://www.w3.org/1999/xhtml"> 
   <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
 	<title>{{ title }}</title>
 	 
-	<link rel="stylesheet" href="http://2.georemindme.appspot.com/static/webapp/style/screen.css" type="text/css" media="screen, projection" /> 
-	<link rel="stylesheet" href="http://2.georemindme.appspot.com/static/webapp/style/style.css" type="text/css" media="screen, projection" /> 
-	<link rel="stylesheet" href="http://2.georemindme.appspot.com/static/webapp/style/print.css" type="text/css" media="print" /> 
-	<link rel="stylesheet" href="http://2.georemindme.appspot.com/static/webapp/style/easySlider.css" type="text/css" media="screen, projection" />
+	<link rel="stylesheet" href="/media/style/screen.css" type="text/css" media="screen, projection" /> 
+	<link rel="stylesheet" href="/media/style/style.css" type="text/css" media="screen, projection" /> 
+	<link rel="stylesheet" href="/media/style/print.css" type="text/css" media="print" /> 
+	<link rel="stylesheet" href="/media/style/easySlider.css" type="text/css" media="screen, projection" />
 	 
 	 
 	 
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script> 
-	<script type="text/javascript" src="http://www.georemindme.com/static/webapp/js/jquery.preload-1.0.8-min.js"></script> 
+	<script type="text/javascript" src="/media/js/jquery.preload-1.0.8-min.js"></script> 
 	 
 	 
-	<script type="text/javascript" src="http://www.georemindme.com/static/webapp/js/static.js"></script> 
+	<script type="text/javascript" src="/media/js/static.js"></script> 
 	 
 	<!-- Loading lightbox plugin--> 
-	<script type="text/javascript" src="http://www.georemindme.com/static/webapp/js/jquery.lightbox-0.5.js"></script> 
-	<link rel="stylesheet" type="text/css" href="http://www.georemindme.com/static/webapp/style/jquery.lightbox-0.5.css" media="screen" /> 
-	<link rel="stylesheet" type="text/css" href="http://static.georemindme.com/css/common.css" media="screen" /> 
+	<script type="text/javascript" src="/media/js/jquery.lightbox-0.5.js"></script> 
+	<link rel="stylesheet" type="text/css" href="/media/style/jquery.lightbox-0.5.css" media="screen" /> 
+	<link rel="stylesheet" type="text/css" href="/media/style/common.css" media="screen" /> 
 	 <script type="text/javascript"> 
 		$(function() {
 			$('.screenshots a').lightBox();
@@ -53,11 +54,11 @@
 	<!--
 	<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script> 
 	--> 
-	 
-	<script type="text/javascript" src="http://www.georemindme.com/static/webapp/js/base.js"></script> 
+    <script type="text/javascript" src="/media/js/jquery.placeholder.js"></script> 
+	<script type="text/javascript" src="/media/js/base.js"></script> 
 	 
 	<!--[if IE]>
-	<link rel="stylesheet" href="../src/static/webapp/style/ie.css" type="text/css"
+	<link rel="stylesheet" href="/media/style/ie.css" type="text/css"
 	media="screen, projection" />
 	<![endif]--> 
 	 
@@ -72,31 +73,22 @@
    <div id="wait-mask"></div> 
    <div class="container" id="documentation">     
       <header> 
-         <span id="logo"><a href="/" title="Ir volando a la página de inicio. Pio! Pio!"><img src="http://www.georemindme.com/static/webapp/img/logoHeader.png" alt="GeoRemindMe"></a></span> 
-         <div id="top-menu"> 
+         <span id="logo"><a href="http://georemindme.com" title="Ir volando a la página de inicio. Pio! Pio!"><img src="/media/img/logoHeader.png" alt="GeoRemindMe"></a></span> 
+          <div id="top-menu"> 
 
 			<ul>
-				{% for item in menu_items %}
-					<li>
-					{% if item.name == active_section %} 
-						<span class="menu-icons" id="{{ item.name }}">{{ item.name }} </span>
-					{% else %}
-						<a class="menu-icons" href="{{ item.url }}" id="{{ item.name }}">{{ item.name }}</a>  
-					{% endif %}
-					
-					
-					 
-					
-					</li>
-				{% endfor %}
+                {% block Home-Link %} <li><a class="menu-icons" href="http://georemindme.com" id="Home">Home</a></li>{% endblock %}
+                {% block API-Link %}<li><a class="menu-icons" href="http://api.georemindme.com" id="API">API</a></li>{% endblock %}
+                {% block Community-Link %}<li><a class="menu-icons" href="http://team.georemindme.com" id="Community">Community</a></li>{% endblock %}
+                {% block Jobs-Link %}<li><a class="menu-icons" href="http://jobs.georemindme.com" id="Jobs">Jobs</a></li>{% endblock %}
+                {% block Sitemap-Link %}<li><a class="menu-icons" href="http://georemindme.com/sitemap" id="Sitemap">Sitemap</a></li>{% endblock %}
 			</ul>
 					
-		</div>  
+		</div> 
          <nav> 
-			<a href="http://www.georemindme.com">Home</a>
-			<span class="maqnav">></span>
-			<h1>{{ title }}</h1>
-         </nav> 
+			<a href="http://georemindme.com">Home</a>
+            {% block breadCumbMenu%}{% endblock %}
+         </nav>
          
 		
       </header> 
@@ -118,7 +110,7 @@
     <div id="footer" class="">
 		<div id="footer-nav">
 			<ul>
-			   <li><a href="http://blog.georemindme.com" title="{% trans "Know what's going on"%}"  accesskey="z"><strong>{% trans "Blog"%}</strong></a></li>
+			   <li><a href="http://blog.georemindme.com" title="{% trans "Know what's going on" %}"  accesskey="z"><strong>{% trans "Blog"%}</strong></a></li>
 			   <li><a href="http://jobs.georemindme.com" title="{% trans "Do you want to work with us?"%}">Jobs</a></li>
 			   <li><a href="http://team.georemindme.com" title="{% trans "Join the community now!"%}">Community</a></li>
 			   <li><a href="http://help.georemindme.com" title="{% trans "Contact us"%}">Support</a></li>
