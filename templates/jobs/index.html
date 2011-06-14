@@ -4,13 +4,13 @@
 {% block contenttable %}
 
 	<ul id="content-index"> 
-		<li><a href="#documentation" class="anchor separator" id="back-to-top">Back to top</a></li> 
-		<li><a href="#about" class="anchor separator">Sobre GeoRemindMe</a></li> 
-		<li><a href="#android-dev" class="anchor separator">Desarrollador Android</a></li> 
-		<li><a href="#interface-designer" class="anchor separator">Diseñador de interfaces</a></li> 
-		<li><a href="#web-dev" class="anchor separator">Desarrollador Web</a></li> 
+		<li><a href="#documentation" class="anchor separator" id="back-to-top">{% trans 'Back to top' %}</a></li> 
+		<li><a href="#about" class="anchor separator">{% trans 'About GeoRemindMe' %}</a></li> 
+		<li><a href="#android-dev" class="anchor separator">{% trans 'Android Developer' %}</a></li> 
+		<li><a href="#interface-designer" class="anchor separator">{% trans 'User Interface Designer' %}</a></li> 
+		<li><a href="#web-dev" class="anchor separator">{% trans 'Web Developer' %}</a></li> 
 		<a href="http://static.georemindme.com/images/georemindme_dude.jpg"><img src="http://static.georemindme.com/images/georemindme_dude.jpg" style="width:184px" alt="GeoRemindMe"/></a>
-		<br>Author: <a href="http://es.linkedin.com/pub/jose-luis-roz%C3%BAa-lucena/23/832/b71">José Luis Rozúa</a>
+		<br>{% trans 'Author' %}: <a href="http://es.linkedin.com/pub/jose-luis-roz%C3%BAa-lucena/23/832/b71">José Luis Rozúa</a>
 	 </ul> 
 {% endblock %}
 
@@ -18,41 +18,38 @@
 
 	<article class="content-box"> 
 		<div> 
-            <h2 id="about">Sobre GeoRemindMe</h2>
-            <p>En GeoRemindMe estamos deseando <strong>contratar a profesionales especialmente buenos</strong> (no necesariamente residentes en Granada).</p>
+            <h2 id="about">{% trans 'About GeoRemindMe' %}</h2>
+            <p>{% trans 'En GeoRemindMe estamos deseando <strong>contratar a los mejores profesionales</strong>' %}.</p>
 
-			<p>Actualmente nos encontramos desarrollando una <strong>herramienta social de recomendaciones y alertas geolocalizadas</strong> que pretende mejorar la vida de miles de personas.
-			Para ello estamos creando una aplicación web y una aplicación móvil en Android desde la que los usuarios podrán <strong>compartir y encontrar recomendaciones personalizadas para cada usuario basándose en: sus gustos, en su localización y en su entorno social</strong>.</p>
-
-			<p>¿Qué tecnologías estamos usando para hacerlo posible?</p>
+			<p>{% trans 'These are the technologies used to make this work' %}:</p>
 			<ul>
-				<li>La nube de Google usando <a href="http://code.google.com/intl/es-ES/appengine/">App Engine</a></li>
-				<li>Un servidor web creado con <a href="https://www.djangoproject.com/">Python y Django</a></li>
-				<li>Una aplicación <a href="http://developer.android.com/index.html">Android</a></li>
-				<li>Una <a href="http://developers.facebook.com/">aplicación web para Facebook</a> usando <a href="http://www.html5rocks.com/en/">HTML5</a> y <a href="http://www.css3.info/">CSS3</a></li>
+				<li>{% trans 'Google's cloud:<a href="http://code.google.com/intl/es-ES/appengine/">App Engine</a>' %}.</li>
+				<li>{% trans 'A web server created with <a href="https://www.djangoproject.com/">Python and Django</a>' %}.</li>
+				<li>{% trans 'An <a href="http://developer.android.com/index.html">Android</a> application' %}.</li>
+				<li>{% trans 'A <a href="http://developers.facebook.com/">Facebook application</a> that uses <a href="http://www.html5rocks.com/en/">HTML5</a> and <a href="http://www.css3.info/">CSS3</a>' %}.</li>
 			</ul>
 			
-			<h2 id="job">Empleo</h2> 
-            <p>Por lo que si te gustaría formar parte del equipo vamos a darte una serie de pistas que empezarían a describirte como candidato ideal:</p>
+			<h2 id="job">{% trans 'Jobs' %}</h2> 
+            <p>{% trans 'If you would like to be part of our team you should sound like someone who:' %}</p>
 			<ul>
-				<li>Has contribuido en algún otro proyecto de software libre.</li>
-				<li>Te gusta trabajar y aprender de tu entorno.</li>
-				<li>Si no existe la frase "no se puede hacer" en tu vocabulario.</li>
-				<li>No puedes programar sin usar control de versiones, especialmente Git.</li>
-				<li>Eres un gran defensor de Scrum.</li>
-				<li>Lo tuyo es más el pingüino o la manzana.</li>
-				<li>No le tienes miedo a hablar en inglés.</li>
-				<li>Has vivido alguna vez fuera de España.</li>
+				<li>{% trans 'Has already contributed to an open software project' %}.</li>
+				<li>{% trans 'Likes learning from your teammates' %}.</li>
+				<li>{% trans 'Doesn't have "this can't be done" in your vocabulary' %}.</li>
+				<li>{% trans 'Can't code without having a version control system, and you particularly like Git' %}.</li>
+				<li>{% trans 'Upholds Scrum framework for project management' %}.</li>
+				<li>{% trans 'is either a Mac or a Linux user (or both)' %}.</li>
+				<li>{% trans 'Is fluent in english' %}.</li>
+				<li>{% trans 'has lived abroad and enjoys travelling' %}.</li>
 			</ul>
 
-			<p>Para rematar la faena deberías entrar dentro de uno de estos perfiles:</p>
+			<p>{% trans 'You should fit in one of this positions:' %}</p>
 			<ul>
-				<li><a href="#android-dev">Desarrollador Android</a></li>
-				<li><a href="#interface-designer">Diseñador de interfaces</a></li>
-				<li><a href="#web-dev">Desarrollador web</a></li>
+				<li><a href="#android-dev">{% trans 'Android Developer' %}.</a></li>
+				<li><a href="#interface-designer">{% trans 'User Interface Designer' %}.</a></li>
+				<li><a href="#web-dev">{% trans 'Web Developer' %}.</a></li>
 			</ul>
             
-            <p><a href="#documentation" class="back-to-top">Back to top</a></p> 
+            <p><a href="#documentation" class="back-to-top">{% trans 'Back to top' %}</a></p> 
 		</div> 
 	 </article> 
        
@@ -61,59 +58,59 @@
          
 	 <article class="content-box"> 
 		<div> 
-		<h2 id="android-dev">Desarrollador Android</h2> 
-		<p>Si...</p>
+		<h2 id="android-dev">{% trans 'Android Developer' %}</h2> 
+		<p>{% trans 'If...' %}</p>
 		<ul>
 			
-			<li>Si tienes experiencia en el campo de la geolocalización</li>
-			<li>Si ya has desarrollado aplicaciones con Android.</li>
-			<li>Si tienes alguna aplicación con más de 50K descargas o una valoración media de 5 estrellas</li>
-			<li>Te conoces StackOverflow como la palma de tu mano.</li>
+			<li>{% trans 'You have already worked on a project related with geolocation or an LBS' %}.</li>
+			<li>{% trans 'You have experience building Android applications' %}.</li>
+			<li>{% trans 'You have an app with more than 50k downloads and 4 or 5 star ratings' %}.</li>
+			<li>{% trans 'You know StackOverflow like the back of your hand' %}.</li>
 			
 		</ul>
-		<p>Por favor envíanos tu CV (linkedin también vale) y enlaces a algunos de tus trabajos a jobs@georemindme.com</p>
+		<p>{% trans 'Please send your CV/resume/linkedIn and links to relevant projects worked on to jobs@georemindme.com' %}.</p>
 
-		<p><a href="#documentation" class="back-to-top">Back to top</a></p> 
+		<p><a href="#documentation" class="back-to-top">{% trans 'Back to top' %}</a></p> 
 		</div> 
 	 </article> 
 	 
 	 
 	 <article class="content-box"> 
 		<div> 
-		<h2 id="interface-designer">Diseñador de interfaces</h2>
-		<p>Si...</p>
+		<h2 id="interface-designer">{% trans 'User Interface Designer' %}</h2>
+		<p>{% trans 'If...' %}</p>
 		<ul>
-			<li>Conocimientos en usabilidad web y/o móvil.</li>
-			<li>Has leido a Jakob Nielssen y/o Steve Krug.</li>
-			<li>Estás familiarizado con el concepto experiencia de usuario, test de usabilidad, A/B, etc.</li>
-			<li>Te has leido las UX Guidelines de Android.</li>
-			<li>Sabes maquetar y ya has trabajado con HTML5 y CSS3.</li>
-			<li>Entiendes que la importancia de la accesibilidad.</li>
-			<li>No le tienes miedo al Internet Explorer y al cross-browsing.</li>
-			<li>Y además consideras que tienes un buen recorrido en este campo.</li>
+			<li>{% trans 'You have a working knowledge in web and/or mobile usability' %}.</li>
+			<li>{% trans 'You have red Jakob Nielssen and Steve Krug work' %}.</li>
+			<li>{% trans 'You are familiar with the concepts UX, usability test, A/B test, etc' %}.</li>
+			<li>{% trans 'You have red the Android UX Guidelines' %}.</li>
+			<li>{% trans 'You know how to do layouts and you have experience with HML5 and CSS3' %}.</li>
+			<li>{% trans 'You understand why accessibility is important' %}.</li>
+			<li>{% trans 'You are not afraid of Internet Explorer or cross-browsing' %}.</li>
+			<li>{% trans 'You have a broad experience in this field' %}.</li>
 		</ul>
-		<p>Por favor envíanos tu CV (linkedin también vale) y enlaces a algunos de tus trabajos a jobs@georemindme.com</p>
+		<p>{% trans 'Please send your CV/resume/linkedIn and links to relevant projects worked on to jobs@georemindme.com' %}</p>
 		
 		
-		<p><a href="#documentation" class="back-to-top">Back to top</a></p> 
+		<p><a href="#documentation" class="back-to-top">{% trans 'Back to top' %}</a></p> 
 		</div> 
 	 </article>
 
 	<article class="content-box"> 
 		<div> 
-		<h2 id="web-dev">Desarrollador Web</h2>
-		<p>Si...</p>
+		<h2 id="web-dev">{% trans 'Web Developer' %}</h2>
+		<p>{% trans 'If...' %}</p>
 		<ul>
-			<li>Hablas fluidamente Javascript y o bien Python o PHP</li>
-			<li>Has trabajando con Javascript y algún framework como jQuery, Sencha, o similar</li>
-			<li>Has desarrollado ya aplicaciones para Facebook</li>
-			<li>Te entiendes bien con apache y los servidores en general</li>
-			<li>Conoces bien Ajax y JSON.</li>
-			<li>Entiendes en que consiste el posicionamiento web</li>
-			<li>Alguna vez has leido sobre web semántica o usado micro-formatos</li>
+			<li>{% trans 'You speak fluently Javascript and one of:Python/PHP' %}.</li>
+			<li>{% trans 'You master Javascript and a framework like jQuery or Sencha' %}.</li>
+			<li>{% trans 'You have already developed Facebook Apps' %}.</li>
+			<li>{% trans 'You know your way with apache and any other web servers' %}.</li>
+			<li>{% trans 'You know Ajax and JSON pretty well' %}.</li>
+			<li>{% trans 'You know what SEO is about' %}.</li>
+			<li>{% trans 'You have learned something about web semantics or used microformats' %}.</li>
 		</ul>
-		<p>Por favor envíanos tu CV (linkedin también vale) y enlaces a algunos de tus trabajos a jobs@georemindme.com</p>
-		<p><a href="#documentation" class="back-to-top">Back to top</a></p> 
+		<p>{% trans 'Please send your CV/resume/linkedIn and links to relevant projects worked on to jobs@georemindme.com' %}.</p>
+		<p><a href="#documentation" class="back-to-top">{% trans 'Back to top' %}</a></p> 
 		</div> 
 	 </article>
 {% endblock %}
