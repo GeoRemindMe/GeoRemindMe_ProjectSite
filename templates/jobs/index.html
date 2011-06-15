@@ -1,11 +1,11 @@
 {% extends 'content-table.html' %}
 {% load i18n %}
 
-{% block Jobs-Link %}<li class="menu-icons" id="Jobs">Jobs</li>{% endblock %}
+{% block Jobs-Link %}<li class="menu-icons" id="Jobs">{% trans 'Jobs' %}</li>{% endblock %}
 
 {% block breadCumbMenu %}
     <span class="maqnav">></span>
-    Jobs
+    {% trans 'Jobs' %}
 {% endblock %}    
 
 {% block contenttable %}

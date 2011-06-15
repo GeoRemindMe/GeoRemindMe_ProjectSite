@@ -115,6 +115,21 @@
 			   <li><a href="http://team.georemindme.com" title="{% trans "Join the community now!"%}">Community</a></li>
 			   <li><a href="http://help.georemindme.com" title="{% trans "Contact us"%}">Support</a></li>
 			   <li><a href="http://www.georemindme.com/sitemap" title="{% trans "Looking for some info?"%}">Sitemap</a></li>
+               <li>
+				 {% get_available_languages as LANGUAGES %}
+				 {% get_current_language as LANGUAGE_CODE %}
+					<form action="/lang/" method="post">
+                        <label accesskey="v" for="language-bar">{% trans "Language:" %}</label>
+                        {% csrf_token %}
+                            <select name="lang" id="language-bar" onchange="this.form.submit()" onsubmit="this.form.submit()">
+                                {% for code, name in LANGUAGES %}
+                                    <option {%if LANGUAGE_CODE == code %}selected="selected"{% endif %} value="{{code}}" hreflang="{{code}}">{{name}}</option>
+                                {% endfor %}
+                            </select>
+						{% csrf_token %}
+					   <input type="hidden" name="next" value="{{ request.path }}" />
+					</form>
+				</li>
 		   </ul>
 		<p>{% trans "<strong>GeoRemindMe 2011</strong>,headquarters at <a href='http://maps.google.com/maps/ms?ie=UTF8&hl=en&msa=0&msid=204520629691711228427.0004a5735677747224788&ll=37.147913,-3.608596&spn=0.00289,0.004823&t=h&z=18'>PTS, Avda de la Innovación, 18100 Armilla (Granada), Spain</a>"%}</p>
 		</div>

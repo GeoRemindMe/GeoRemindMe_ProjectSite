@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-06-15 02:46+0200\n"
+"POT-Creation-Date: 2011-06-15 04:09+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -120,11 +120,12 @@ msgstr ""
 msgid "Looking for some info?"
 msgstr ""
 
-#: templates/base.html:155 templates/layout.html:89
+#: templates/base.html:155 templates/content-table.html:122
+#: templates/layout.html:89
 msgid "Language:"
 msgstr ""
 
-#: templates/base.html:167 templates/content-table.html:119
+#: templates/base.html:167 templates/content-table.html:134
 msgid ""
 "<strong>GeoRemindMe 2011</strong>,headquarters at <a href='http://maps."
 "google.com/maps/ms?"
@@ -649,6 +650,7 @@ msgid "Community"
 msgstr ""
 
 #: templates/layout.html:57 templates/layout.html.py:81
+#: templates/jobs/index.html:4 templates/jobs/index.html.py:8
 #: templates/jobs/index.html:39
 msgid "Jobs"
 msgstr ""
@@ -1235,7 +1237,10 @@ msgstr ""
 #: templates/dev/index.html:17
 msgid ""
 "We are thankfull for our users <a href='http://getsatisfaction.com/"
-"georemindme/'>feedback</a>. There are many <a href=\\"
+"georemindme/'>feedback</a>. There are many <a href='http://getsatisfaction."
+"com/georemindme/ideas/popular'>ideas and suggestions</a> yet to be "
+"implemented. The good news are that <strong>our open software project is "
+"open to anyone who wants to collaborate</strong>."
 msgstr ""
 
 #: templates/dev/index.html:18
