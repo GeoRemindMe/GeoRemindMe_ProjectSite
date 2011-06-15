@@ -1,3 +1,4 @@
 *.pyc
+settings.py
 georemindme_site
 media/admin_tools
