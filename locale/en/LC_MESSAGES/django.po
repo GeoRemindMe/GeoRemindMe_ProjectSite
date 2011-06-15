@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-06-15 09:58+0200\n"
+"POT-Creation-Date: 2011-06-15 11:07+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -857,6 +857,10 @@ msgstr ""
 msgid "Help / Support"
 msgstr ""
 
+#: templates/sitemap.html:84
+msgid "Ask questions, share ideas, report problems, \tgive praises."
+msgstr ""
+
 #: templates/sitemap.html:89
 msgid "The start-up"
 msgstr ""
@@ -1703,7 +1707,7 @@ msgid "You have a working knowledge in web and/or mobile usability"
 msgstr ""
 
 #: templates/jobs/index.html:93
-msgid "You have red Jakob Nielssen and Steve Krug work"
+msgid "You have read Jakob Nielssen and Steve Krug work"
 msgstr ""
 
 #: templates/jobs/index.html:94
@@ -1711,7 +1715,7 @@ msgid "You are familiar with the concepts UX, usability test, A/B test, etc"
 msgstr ""
 
 #: templates/jobs/index.html:95
-msgid "You have red the Android UX Guidelines"
+msgid "You have read the Android UX Guidelines"
 msgstr ""
 
 #: templates/jobs/index.html:96
