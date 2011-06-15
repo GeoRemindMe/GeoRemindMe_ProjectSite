@@ -79,7 +79,6 @@
             <p class="center">
                {% trans "Install it from:" %}<br>
                {% trans "Android Market (<a href='#other-versions' class='anchor separator'>Coming soon</a>)" %}<br>
-               {% trans "App Store (<a href='#other-versions' class='anchor separator'>Coming soon</a>)" %}
             </p>
             
             
@@ -91,7 +90,7 @@
             <p class="screenshots">
                <a title="{% trans "Screenshot Web Desktop version: Dahsboard" %}" href="/media/img/screenshots/webdesktop/Dashboard.png"><img src="/media/img/screenshots/webdesktop/Dashboard.png" height="72" alt="" /></a>
             </p>
-            <p  class="center">{% trans "Sign in through the <a href='/'>home page</a>" %}</p>
+            <p  class="center">{% trans "Ask an invitation through the <a href='/'>home page</a>" %}</p>
             <p class="footer-notes">{% trans "Minimum requirements: IE 9, FF 2.0, Chrome, Safari, Opera" %}</p>
          </section>
          
@@ -102,7 +101,7 @@
                <a title="{% trans "Screenshot Web Mobile version: Home" %}" href="/media/img/screenshots/webmobile/webmobile_home.png"><img src="/media/img/screenshots/webmobile/webmobile_home.png" height="72" alt="" /></a>
                <a title="{% trans "Screenshot Web Mobile version: Map" %}" href="/media/img/screenshots/webmobile/webmobile_map.png"><img src="/media/img/screenshots/webmobile/webmobile_map.png" height="72" alt="" /></a>
             </p>
-            <p class="center">{% trans "Access through: <a href='http://m.georemindme.com'>http://m.georemindme.com</a>" %}</p>
+            <p class="center">{% trans "Access through: <a href='http://m.georemindme.com'>http://m.georemindme.com</a> (under development)" %}</p>
             <p class="footer-notes">
                {% trans "Minimum requirements: an active account and enabled Javascript." %}
             </p>
@@ -206,20 +205,26 @@
                <td>FF*, IE*, Chrome, Safari</td>
             </tr>
             <tr>
-               <td class="webmobile-app tdIcon">{% trans "Mobile web app" %}</td>
-               <td>{% trans "Mid April" %}</td>
-               <td>1.0</td>
-               <td>FF*, IE*, Chrome, Safari</td>
-            </tr>
-            <tr>
                <td id="android-app" class="tdIcon">Android</td>
-               <td>{% trans "Late May" %}</td>
+               <td>{% trans "Late June" %}</td>
                <td>1.0</td>
                <td>Android Eclair (>2.0)</td>
             </tr>
             <tr>
+               <td class="webdesktop-app tdIcon">{% trans "Facebook app" %}</td>
+               <td>{% trans "Before September" %}</td>
+               <td>1.0</td>
+               <td>FF*, IE*, Chrome, Safari</td>
+            </tr>
+            <tr>
+               <td class="webmobile-app tdIcon">{% trans "Mobile web app" %}</td>
+               <td>{% trans "No launch date yet" %}</td>
+               <td>1.0</td>
+               <td>FF*, IE*, Chrome, Safari</td>
+            </tr>
+            <tr>
                <td class="apple-app tdIcon">iPhone</td>
-               <td>{% trans "Late May"%}</td>
+               <td>{% trans "No launch date yet"%}</td>
                <td>1.0</td>
                <td>iOS 4</td>
             </tr>
