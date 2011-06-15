@@ -281,16 +281,16 @@ p.loginPassword input{
 }
 
 #startBtn.enabled{
-   background: url("/media/img/startBtn.png");
+   background: url("/media/img/backgrounds/startBtn.png");
    color:white;
 }
 #startBtn.disabled{
-   background: url("/media/img/startBtn.png") repeat scroll 0 -54px transparent;
+   background: url("/media/img/backgroundsstartBtn.png") repeat scroll 0 -54px transparent;
    color:black;
 }
 
 #startBtn.enabled:hover{
-   background: url("/media/img/startBtn.png") repeat scroll 0 -27px transparent;
+   background: url("/media/img/backgroundsstartBtn.png") repeat scroll 0 -27px transparent;
    color: #555;
 }
 
