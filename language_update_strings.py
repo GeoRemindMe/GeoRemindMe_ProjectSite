@@ -3,6 +3,7 @@
 
 
 from os import path
+from settings import LANGUAGES
 BASE_DIR = path.normpath(path.dirname(__file__))
 
 ''' 
@@ -21,13 +22,13 @@ RFC 5646: http://www.rfc-editor.org/rfc/rfc5646.txt
 LANGTAG: http://www.langtag.net
 W3C: http://www.w3.org/International
 '''
-LANGUAGES = (
-	('ca', u'Català'),
-	('en', 'English'),
-	('es', u'Español'),
-)
+
 
 import commands
+
+print '\n*****************'
+print 'Checking new strings...'
+print 'Updatings language files...\n'
 
 for lang in LANGUAGES:
 	if commands.getstatusoutput('django-admin makemessages -l '+lang[0])[0]==0:#creates german (de) .po
@@ -37,5 +38,5 @@ for lang in LANGUAGES:
 	else:
 		print lang[1] + ' strings couldn\'t be updated at \'locale/'+lang[0]+'/LC_MESSAGES/django.po\''
 		
-print 'Now look if there is any translation tagged with #fuzzy or without been translated'
+print '*****************\n'
 		

@@ -8,42 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="/media/style/common.css" media="screen" /> 
 {%endblock%}
 
-{% block extra_js %}
-<script type="text/javascript">
-function checkFields()
-{
-    if (echeck($('#userEmail').val()) && $('#msg').val())
-    {
-        emailOK=passOK=true;
-        renderStartBtn();
-    }
-    else
-    {
-        emailOK=passOK=false;
-        renderStartBtn();
-    }
-    
-}
-$(document).ready(function(){
-    $('#msg,#userEmail').one('focus',function(){$(this).val('');});
-    
-    $('#startBtn').click(function(e){
-       e.preventDefault();
-       $("#wait-mask").show();
-       $.ajax({
-           url: AJAX_URL+"contact/",
-           type: "post",
-           data: $("form").serialize(),
-           async:true,
-           success: function(){ $("#wait-mask").hide(); $('#sentMsg').removeClass("msgNoOK").addClass("msgOK");$('#sentMsg span').text("{% trans "Message sent succesfully!" %}");$('#msg,#userEmail').val('');},
-           error: function(){ $("#wait-mask").hide(); $('#sentMsg').removeClass("msgOK").addClass("msgNoOK");$('#sentMsg span').text("{% trans "Error sending the message" %}");}           
-           });
-        
-    });
-});
-</script> 
-
-{%endblock%}
+{% block login %} {%endblock%}
 
 {%block section%}id="contact-section"{%endblock%}
 

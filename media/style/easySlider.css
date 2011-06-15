@@ -45,11 +45,11 @@
 			display:block;
 			width:30px;
 			height:77px;
-			background:url("/static/webapp/img/easySlider/btn_prev.png") no-repeat 0 0;	
+			background:url("/media/img/easySlider/btn_prev.png") no-repeat 0 0;	
 			text-indent: -8000px
 			}	
 		#nextBtn a{ 
-			background:url("/static/webapp/img/easySlider/btn_next.png") no-repeat 0 0;	
+			background:url("/media/img/easySlider/btn_next.png") no-repeat 0 0;	
 			}								
 	
 	/* // slider */													
@@ -78,44 +78,44 @@
 /* // content */
 
 #share-icon{
-	background:url("/static/webapp/img/easySlider/share.png") no-repeat 5px 10px;	
+	background:url("/media/img/easySlider/share.png") no-repeat 5px 10px;	
 }
 #rate-icon{
-	background:url("/static/webapp/img/easySlider/rate.png") no-repeat 5px 10px;	
+	background:url("/media/img/easySlider/rate.png") no-repeat 5px 10px;	
 }
 #search-icon{
-	background:url("/static/webapp/img/easySlider/search.png") no-repeat 5px 10px;	
+	background:url("/media/img/easySlider/search.png") no-repeat 5px 10px;	
 }
 #print-icon{
-	background:url("/static/webapp/img/easySlider/print.png") no-repeat 5px 10px;	
+	background:url("/media/img/easySlider/print.png") no-repeat 5px 10px;	
 }
 
 #suscription-icon{
-	background:url("/static/webapp/img/easySlider/suscription.png") no-repeat 5px 10px;	
+	background:url("/media/img/easySlider/suscription.png") no-repeat 5px 10px;	
 }
 #checkin-icon{
-	background:url("/static/webapp/img/easySlider/checkin.png") no-repeat 20px 10px;	
+	background:url("/media/img/easySlider/checkin.png") no-repeat 20px 10px;	
 }
 #customize-icon{
-	background:url("/static/webapp/img/easySlider/customize.png") no-repeat 5px 10px;	
+	background:url("/media/img/easySlider/customize.png") no-repeat 5px 10px;	
 }
 #whatsup-icon{
-	background:url("/static/webapp/img/whatsup.png") no-repeat 50px 0;	
+	background:url("/media/img/whatsup.png") no-repeat 50px 0;	
 }
 #explore-icon{
-	background:url("/static/webapp/img/explore.png") no-repeat 50px 0;	
+	background:url("/media/img/explore.png") no-repeat 50px 0;	
 }
 #reminder-icon{
-	background:url("/static/webapp/img/reminder.png") no-repeat 50px 0;	
+	background:url("/media/img/reminder.png") no-repeat 50px 0;	
 }
 #fb-compatible{
-	background:url("/static/webapp/img/fb.png") no-repeat 0px 0;	
+	background:url("/media/img/icons/social/fb.png") no-repeat 0px 0;	
 }
 #twitter-compatible{
-	background:url("/static/webapp/img/twitter.png") no-repeat 0px 0;	
+	background:url("/media/img/icons/social/twitter.png") no-repeat 0px 0;	
 }
 #gcal-compatible{
-	background:url("/static/webapp/img/gcal.png") no-repeat 0px 0;	
+	background:url("/media/img/icons/social/gcal.png") no-repeat 0px 0;	
 }
 
 

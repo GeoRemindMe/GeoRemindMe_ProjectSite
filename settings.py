@@ -9,7 +9,7 @@ TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
     (u'Rubén Dugo', 'rdugomartin@gmail.com'),
-    (u'Raúl Jiménez', 'hhkaos@gmail.com'),
+    (u'Raúl Jiménez', 'raul@georemindme.com'),
 )
 
 MANAGERS = ADMINS
@@ -37,7 +37,7 @@ TIME_ZONE = 'Europe/Madrid'
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
-LANGUAGE_CODE = 'es-es'
+LANGUAGE_CODE = 'en'
 
 SITE_ID = 1
 
@@ -78,20 +78,18 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
     #'django.contrib.messages.middleware.MessageMiddleware',
 )
 
-ROOT_URLCONF = 'project_site.urls'
+
+ROOT_URLCONF = 'urls'
 
 TEMPLATE_DIRS = (
     path.join(BASE_DIR,"templates"),
 )
 
 INSTALLED_APPS = (
-    'admin_tools',
-    'admin_tools.theming',
-    'admin_tools.menu',
-    'admin_tools.dashboard',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -111,10 +109,11 @@ TEMPLATE_CONTEXT_PROCESSORS = ("django.contrib.auth.context_processors.auth",
     "django.core.context_processors.media"
 )
 
+#Not used in local deployment just in production server
 SESSION_COOKIE_DOMAIN=".georemindme.com"
 
 LANGUAGES = (
-  ('ca', u'Català'),
+#  ('ca', u'Català'),
   #('de', 'Deutsch'),
   ('en', 'English'),
   ('es', u'Español'),

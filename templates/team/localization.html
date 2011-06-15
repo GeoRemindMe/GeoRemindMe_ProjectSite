@@ -1,5 +1,12 @@
 {% extends 'layout.html' %}
+{% load i18n %}
 
+{% block breadCumbMenu %}
+    <span class="maqnav">></span>
+    <a href="http://team.georemindme.com">{% trans "Community" %}</a>
+    <span class="maqnav">></span>
+    <span class="maqnav">{% trans "Localization" %}</span>
+{% endblock %}  
 
 {% block content %}
 

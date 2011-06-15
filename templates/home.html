@@ -18,34 +18,6 @@
 			
 		});
 		
-	   /*
-		* Here the triggers with animations and validations of the 
-		* register form
-	   */
-		$("input[name='registerEmail']")
-			.focus(function(){
-			 if ($(this).val()=="email") 
-				$(this).val('');
-			 $('#imgEmailLogin').attr('src','/media/img/mailActive.png');
-		  })
-			.blur(checkEmail);
-		
-	   
-		$("#userRegisterPass1,#userRegisterPass2")
-		  .blur(checkPasswords)
-		  .keyup(checkPasswords)
-		  .focus(function(){$('#imgPasswordLogin').attr('src','/media/img/icons/passIconActive.png')})
-		  .blur(function(){$('#imgPasswordLogin').attr('src','/media/img/icons/passIconInactive.png')});
-
-		  
-	   //With this you can check the terms making click on the text
-	   $('#textTermsCheckbox').click(function(){
-		  if(!$("#termsCheckbox").is(':checked'))
-			 $("#termsCheckbox").attr('checked',true);
-		  else
-			 $("#termsCheckbox").attr('checked',false);
-	   });
-	   
 	   
 	   {% if login%}setTimeout(function(){$('#signinBtn').click();},500);{%endif%}
 	});
@@ -54,6 +26,9 @@
 
 
 {%block tooltipLogo%}{%endblock%}
+
+{% block login %} {%endblock%}
+
 {%block section%}id="private-beta"{%endblock%}
 {% block content %}
 
@@ -61,25 +36,25 @@
       <h2>{% trans "GeoRemindMe es una herramienta para gestionar recomendaciones <em>a través de tus redes sociales</em>." %}</h2>
      
      <ul id="benefits">
-		<li id="whatsup-icon"><strong>Encuentra</strong> cosas interesantes que hacer.</li>
-		<li id="explore-icon"><strong>Descubre</strong> y explora nuevas zonas.</li>
-		<li id="reminder-icon"><strong>No olvides</strong> lo que querías hacer.</li>
+		<li id="whatsup-icon">{% trans "<strong>Encuentra</strong> cosas interesantes que hacer" %}.</li>
+		<li id="explore-icon">{% trans "<strong>Descubre</strong> y explora nuevas zonas" %}.</li>
+		<li id="reminder-icon">{% trans "<strong>No olvides</strong> lo que querías hacer" %}.</li>
      </ul>
     
       
 		<span id="description-list">
 			
-			<p>Todo esto gracias a que podrás:</p>
+			<p>{% trans "Todo esto gracias a que podrás" %}:</p>
 			<div id="slider-container">
 				<div id="slider">
 					<ul>
-						<li id="share-icon"><span class="slide-icon"><strong>Compartir y recibir recomendaciones</strong> de tus contactos, instituciones, etc..</span></li>
-						<li id="customize-icon"><span class="slide-icon">Recibir <strong>recomendaciones personalizadas</strong> en base a tus gustos, localización, etc</span></li>
-						<li id="search-icon"><span class="slide-icon"><strong>Buscar y filtrar</strong> recomendaciones de otras personas.</span></li>
-						<li id="suscription-icon"><span class="slide-icon"><strong>Seguir</strong> a los usuarios y comercios que te interesen.</span></li>
-						<li id="print-icon"><span class="slide-icon"><strong>Descargar o imprimir</strong> rutas de diferentes zonas de la ciudad.</span></li>
-						<li id="rate-icon"><span class="slide-icon"><strong>Apoyar y comentar</strong> las recomendaciones.</span></li>
-						<li id="checkin-icon"><span class="slide-icon">Y en un futuro... queremos <strong>ofrecerte cupones</strong> de descuento para disfrutarlos donde estés.</span></li>
+						<li id="share-icon"><span class="slide-icon">{% trans "<strong>Compartir y recibir recomendaciones</strong> de tus contactos, instituciones, etc..." %}</span></li>
+						<li id="customize-icon"><span class="slide-icon">{% trans "Recibir <strong>recomendaciones personalizadas</strong> en base a tus gustos, localización, etc" %}</span></li>
+						<li id="search-icon"><span class="slide-icon">{% trans "<strong>Buscar y filtrar</strong> recomendaciones de otras personas" %}.</span></li>
+						<li id="suscription-icon"><span class="slide-icon">{% trans "<strong>Seguir</strong> a los usuarios y comercios que te interesen" %}.</span></li>
+						<li id="print-icon"><span class="slide-icon">{% trans "<strong>Descargar o imprimir</strong> rutas de diferentes zonas de la ciudad" %}.</span></li>
+						<li id="rate-icon"><span class="slide-icon">{% trans "<strong>Apoyar y comentar</strong> las recomendaciones" %}.</span></li>
+						<li id="checkin-icon"><span class="slide-icon">{% trans "Y en un futuro... queremos <strong>ofrecerte cupones</strong> de descuento para disfrutarlos donde estés" %}.</span></li>
 					</ul>
 				</div>
 			</div>
@@ -92,7 +67,7 @@
 				</form> 
 			</div>
 			
-			<p id="p-compatible">Compatible con:</p>
+			<p id="p-compatible">{% trans "Compatible con" %}:</p>
 			<ul id="compatible">
 				<li id="fb-compatible"><span>Facebook</span></li>
 				<li id="twitter-compatible"><span>Twitter</span></li>

@@ -10,6 +10,7 @@
 
 {%endblock%}
 
+{% block login %} {%endblock%}
 {{%block extra_js%}
 	<script type="text/javascript" src="/media/js/easySlider1.5.js"></script>
 	<script type="text/javascript">
@@ -40,9 +41,9 @@
 			<section id="press-left"> 
 			
 				<h3 id="media-releases" class="menu-icons">{% trans "Media releases" %}</h3> 
-				<p>En esta sección se encuentra toda la información orientada a la prensa. Cualquier o solicitud de información, puede encontrar <a href="/contact/">nuestros datos de contacto aquí</a>.</p>
+				<p>{% trans "En esta sección se encuentra toda la información orientada a la prensa. Cualquier o solicitud de información, puede encontrar <a href=\"/contact/\">nuestros datos de contacto aquí</a>" %}.</p>
 				<ul>
-					<li>15/06/2011: <a href="#">La Universidad de Granada y la empresa local GeoRemindMe llegan a un acuerdo de colaboración</a></li>
+					<li>{% trans "15/06/2011" %}: <a href="#">{% trans "La Universidad de Granada y la empresa local GeoRemindMe llegan a un acuerdo de colaboración" %}</a></li>
 				</ul>
             
             </section>
@@ -57,7 +58,7 @@
 							<a href="/media/press/abc.es.pdf">
 								<img src="/media/press/abc.es.png" alt="GranadaHoy newspaper screenshot">
 							</a>
-							<span>ABC.es - 29/03/11</span>
+							<span>ABC.es - {% trans "29/03/11" %}</span>
 						</div>
 					</li>
 					<li>
@@ -65,7 +66,7 @@
 							<a href="/media/press/capital.es.pdf">
 								<img src="/media/press/capital.es.png" alt="Capital.es newspaper screenshot">
 							</a>
-							<span>Capital.es - 29/03/11</span>
+							<span>Capital.es - {% trans "29/03/11" %}</span>
 						</div>
 					</li>
 					<li>
@@ -73,7 +74,7 @@
 							<a href="/media/press/elEconomista.es.pdf">
 								<img src="/media/press/elEconomista.es.png" alt="elEconomista newspaper screenshot">
 							</a>
-							<span>elEconomista.es - 29/03/11</span>
+							<span>elEconomista.es - {% trans "29/03/11" %}</span>
 						</div>
 					</li>
 					<li>
@@ -81,7 +82,7 @@
 							<a href="/media/press/finanzas.com.pdf">
 								<img src="/media/press/finanzas.com.png" alt="Finanzas.com newspaper screenshot">
 							</a>
-							<span>Finanzas.com - 29/03/11</span>
+							<span>Finanzas.com - {% trans "29/03/11" %}</span>
 						</div>
 					</li>
 					<li>
@@ -89,7 +90,7 @@
 							<a href="/media/press/granadaempresas.pdf">
 								<img src="/media/press/granadaempresas.png" alt="Diptación de Granada screenshot">
 							</a>
-							<span>Diputación de Granada.es - 15/03/11</span>
+							<span>Diputación de Granada.es - {% trans "15/03/11" %}</span>
 						</div>
 					</li>
 					<li>
@@ -97,7 +98,7 @@
 							<a href="http://www.flickr.com/photos/hhkaos/5505760843/sizes/m/in/photostream/">
 								<img src="http://farm6.static.flickr.com/5055/5505760843_3018678050.jpg" alt="GranadaHoy newspaper picture">
 							</a>
-							<span>Granada Hoy - 8/03/11</span>
+							<span>Granada Hoy - {% trans "8/03/11" %}</span>
 						</div>
 					</li>
 					
@@ -110,23 +111,23 @@
             <section id="press-left"> 
 				<h3 class="blue-chicken menu-icons">{% trans "Logotipos" %}</h3> 
 				<ul>
-					<li>Logo without background 1024x350 (<a href="/media/press/LogoColorWithoutBG1024x350.png">Color</a>)</li>				
+					<li>{% trans "Logo without background 1024x350" %} (<a href="/media/press/LogoColorWithoutBG1024x350.png">{% trans "Color" %}</a>)</li>				
 					<li>
-						Horizontal logo 1024x350 (
-						<a href="/media/press/LogoColor1024x350.png">Color</a> |
-						<a href="/media/press/LogoGrayScale-1024x350.png">Gray scale</a>
+						{% trans "Horizontal logo 1024x350" %} (
+						<a href="/media/press/LogoColor1024x350.png">{% trans "Color" %}</a> |
+						<a href="/media/press/LogoGrayScale-1024x350.png">{% trans "Gray scale" %}</a>
 						)
 					</li>
 					
 					<li>
-						Squared logo 1024x1170 (
-						<a href="/media/press/LogoColor-1024x1170.png">Color</a> |
-						<a href="/media/press/LogoGrayScale-1024x1170.png">Gray scale</a>
+						{% trans "Squared logo 1024x1170" %} (
+						<a href="/media/press/LogoColor-1024x1170.png">{% trans "Color" %}</a> |
+						<a href="/media/press/LogoGrayScale-1024x1170.png">{% trans "Gray scale" %}</a>
 						)
 					</li>
-					<li>Squared logo with border (<a href="/media/press/LogoWithBorder.png">Color</a>)</li>
-					<li>Colorized chickens (<a href="/media/press/LogoColorized.png">Color</a>)</li>
-					<li>Fichero RAW (<a href="/media/press/RAWLogo.svg">Vectorial</a>)</li>
+					<li>{% trans "Squared logo with border" %} (<a href="/media/press/LogoWithBorder.png">{% trans "Color" %}</a>)</li>
+					<li>{% trans "Colorized chickens" %} (<a href="/media/press/LogoColorized.png">{% trans "Color" %}</a>)</li>
+					<li>{% trans "Fichero RAW" %} (<a href="/media/press/RAWLogo.svg">{% trans "Vectorial" %}</a>)</li>
 					
 				</ul>
 				
@@ -134,10 +135,10 @@
             <section id="press-right"> 
 				<h3 id="presentation" class="menu-icons">{% trans "Material adicional" %}</h3> 
 				<ul>
-					<li><a href="/partners/">Colaboraciones de la empresa</a></li>
-					<li><a href="http://blog.georemindme.com/es/es/category/logros-2/">Premios y otros logros</a></li>
-					<li><a href="http://www.flickr.com/groups/1620000@N25/pool/">Fotografías de la comunidad</a></li>
-					<li><a href="/team/">Datos de los fundadores</a></li>
+					<li><a href="/partners/">{% trans "Colaboraciones de la empresa" %}</a></li>
+					<li><a href="http://blog.georemindme.com/es/es/category/logros-2/">{% trans "Premios y otros logros" %}</a></li>
+					<li><a href="http://www.flickr.com/groups/1620000@N25/pool/">{% trans "Fotografías de la comunidad" %}</a></li>
+					<li><a href="/team/">{% trans "Datos de los fundadores" %}</a></li>
 					
 				</ul>
             </section>

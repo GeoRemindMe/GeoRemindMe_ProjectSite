@@ -70,17 +70,6 @@ function renderStartBtn(){
 	}
 }
 
-//This function checks the registration form
-function validateForm(){
-	if(!$("#termsCheckbox").attr('checked')){
-		$('#errorTerms').html('Para continuar es necesario marcar esta casilla.');
-		checkPasswords();
-		return false;
-	}else{
-		$('#errorTerms').html('');
-		return checkPasswords();
-	}
-}
 
 //This function checks if an string corresponds to an email
 function echeck(email) {
@@ -92,7 +81,7 @@ function echeck(email) {
 function checkEmail(event)
 {
 	
-	$('#imgEmailLogin').attr('src','/static/webapp/img/mailInactive.png');
+	$('#imgEmailLogin').attr('src','/media/img/icons/mailInactive.png');
 	if ($(this).val()=="") {
 		$(this).val('email');
 		$('#txtMsgRegisterEmail').html('');
@@ -142,50 +131,6 @@ function checkEmail(event)
 	}
 }
 
-//This function is used to check if both passwords are the same
-function checkPasswords(event){
-
-	passOK = false;
-
-	if(($('#userRegisterPass1').val()!=$('#userRegisterPass2').val())){
-		//If they are differents and the second has been written
-		
-		if (event.type!='keyup')
-		{
-			$('#msgRegisterPass')
-				.removeClass('msgOK')
-				.addClass('msgNoOK')
-				.html('Las contraseñas no coinciden')
-				.show();
-		}
-		
-		renderStartBtn();
-		return false;
-	}
-	else{
-		if($('#userRegisterPass1').val().length<6){
-			//If the are equals but they are not longer than 6 caracters
-			
-			if (event.type!='keyup')
-			{
-				$('#msgRegisterPass')
-					.removeClass('msgOK')
-					.addClass('msgNoOK')
-					.html('Las contraseñas tienen que tener 6 o más caracteres')
-					.show();
-			}
-			
-			renderStartBtn();
-			return false;
-		}else{
-			$('#msgRegisterPass').html('');
-			$('#msgRegisterPass').hide();
-			passOK = true;
-			renderStartBtn();
-			return true;
-		}
-	}
-}
 
 //Here we add the behaviours to all the elements
 $(document).ready(function(){
@@ -227,11 +172,11 @@ $(document).ready(function(){
     
 
 	$('#username').focus(function(){
-			$('.loginMail').css('background-image','url("/static/webapp/img/mailActive.png")');
+			$('.loginMail').css('background-image','url("/media/img/icons/mailActive.png")');
 		})
 		.one('focus',function(){$(this).val('');})
 		.blur(function(){
-			$('.loginMail').css('background-image','url("/static/webapp/img/mailInactive.png")');
+			$('.loginMail').css('background-image','url("/media/img/icons/mailInactive.png")');
 			if($(this).val().length>0 && !echeck($(this).val())){
 					$('#msgLoginEmail').removeClass('msgOK');
 					$('#msgLoginEmail').addClass('msgNoOK');
@@ -245,11 +190,11 @@ $(document).ready(function(){
 		});
 		
 	$('#password').focus(function(){
-			$('.loginPassword').css('background-image','url("/static/webapp/img/passIconActive.png")');
+			$('.loginPassword').css('background-image','url("/media/img/icons/passIconActive.png")');
 		})
 		.one('focus',function(){$(this).val('');})
 		.blur(function(){
-			$('.loginPassword').css('background-image','url("/static/webapp/img/passIconInactive.png")');
+			$('.loginPassword').css('background-image','url("/media/img/icons/passIconInactive.png")');
 		})		
 		.keypress(function(e)
 		{
@@ -258,10 +203,10 @@ $(document).ready(function(){
 			
 		});
 	
-	$('#signin_submit').click(login);
+	//~ $('#signin_submit').click(login);
 	
 	$.preload([ 'passIconInactive', 'passIconActive', 'mailInactive', 'mailActive','loginBtn' ], {
-		base:'/static/webapp/img/',
+		base:'/media/img/icons/',
 		ext:'.png'
 	});
 	

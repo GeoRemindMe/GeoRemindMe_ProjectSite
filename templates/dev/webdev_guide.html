@@ -1,5 +1,14 @@
 {% extends 'layout.html' %}
+{% load i18n %}
 
+{% block breadCumbMenu %}
+    <span class="maqnav">></span>
+    <a href="http://team.georemindme.com">{% trans "Community" %}</a>
+    <span class="maqnav">></span>
+    <a href="http://dev.georemindme.com">{% trans "Developers" %}</a>
+    <span class="maqnav">></span>
+    <span class="maqnav">{% trans "Web developers" %}</span>
+{% endblock %}    
 
 {% block content %}
 
@@ -23,7 +32,7 @@
 					<ol>
 						<li>{% trans '<a href="https://github.com/GeoRemindMe/GeoRemindMe_Web/wiki/Coding-Style-Guide">Coding style guide</a>' %}</li>
 						<li>{% trans '<a href="https://github.com/GeoRemindMe/GeoRemindMe_Web/wiki/How-to-update-languages">How to update languages</a>' %}</li>
-						<li>{% trans 'How to add a contribution</li>
+						<li>{% trans 'How to add a contribution' %}</li>
 						<li>{% trans 'Generating documentation with <a href="http://sphinx.pocoo.org/">Sphinx</a>' %}</li>
 					</ol>
 				</li>
@@ -56,7 +65,7 @@
         <section class="community-box"> 
             <h3 id="photos" class="menu-icons">{% trans 'Quick overview' %}</h3>
             <p>{% trans 'This sketch explains some of the modules that make up the client and server aplications and how this two are related:' %}</p>
-            <a href="http://static.georemindme.com/images/doc/web-scheme.png"><img src="http://static.georemindme.com/images/doc/web-scheme_thumb.png" /></a>
+            <a href="/media/img/doc/web-scheme.png"><img src="/media/img/doc/web-scheme_thumb.png" /></a>
             <p class="center"><em>{% trans 'Quick overview of the web architecture (4th May 2011)' %}</em></p>
 			
         </section>

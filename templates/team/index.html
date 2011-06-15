@@ -1,5 +1,12 @@
 {% extends 'layout.html' %}
+{% load i18n %}
 
+{% block Community-Link %}<li class="menu-icons" id="Community">Community</li>{% endblock %}
+
+{% block breadCumbMenu %}
+    <span class="maqnav">></span>
+    Community
+{% endblock %}    
 
 {% block content %}
 
@@ -12,10 +19,12 @@
 				<li id="localization" class="menu-icons"><a href="localization/">{% trans "Localizing (translating)" %}</a></li>
 				<li id="developers" class="menu-icons"><a href="http://dev.georemindme.com">{% trans "Developing" %}</a></li>
 				<li id="design" class="menu-icons"><a href="design/">{% trans "Designing" %}</a></li>
+<!--
 				<li id="local-groups" class="menu-icons"><a href="local-groups/">{% trans "Creating an local group" %}</a></li>
+-->
 			</ul>
 			<p>{% trans "We don't want you to feel alone while collaborating, so you will be <strong>in touch with a mentor</strong> from the GeoRemindMe team or an older member of the community that will guide your first steps and progress and will answer your questions." %}</p>
-			<p>{% trans "Further questions? Please feel free to <a href="https://teambox.com/public/georemindme-2">contact us</a> and have a look at our <a href="https://github.com/GeoRemindMe/GeoRemindMe_Web/wiki/FAQ">wiki-FAQ</a>" %}</p>
+			<p>{% trans 'Further questions? Please feel free to <a href="https://teambox.com/public/georemindme-2">contact us</a> and have a look at our <a href="https://github.com/GeoRemindMe/GeoRemindMe_Web/wiki/FAQ">wiki-FAQ</a>' %}</p>
 		</section>	
 		
 		<section class="community-box"> 
