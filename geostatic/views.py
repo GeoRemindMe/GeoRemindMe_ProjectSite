@@ -42,6 +42,8 @@ def keepuptodate(request):
     
     send_mail('Formulario de contacto', data, request.POST.get('user-email',''),
     ['info@georemindme.com'], fail_silently=False)
+    
+    return HttpResponse()
 
 def main(request,slug=""):
 
