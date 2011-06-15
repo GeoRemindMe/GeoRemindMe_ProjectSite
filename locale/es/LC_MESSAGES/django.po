@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: GeoRemindMe\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-06-15 02:46+0200\n"
-"PO-Revision-Date: 2011-06-15 01:56+0000\n"
+"PO-Revision-Date: 2011-06-15 02:03+0000\n"
 "Last-Translator: hhkaos <hhkaos@gmail.com>\n"
 "Language-Team: Spanish (Castilian) (http://www.transifex.net/projects/p/georemindme/team/es/)\n"
 "MIME-Version: 1.0\n"
@@ -687,7 +687,7 @@ msgstr ""
 #: templates/team/design.html:6 templates/team/localization.html:6
 #: templates/team/survey.html:6
 msgid "Community"
-msgstr ""
+msgstr "Comunidad"
 
 #: templates/layout.html:57 templates/layout.html.py:81
 #: templates/jobs/index.html:39
