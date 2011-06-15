@@ -31,7 +31,17 @@ def contact(request):
     ['info@georemindme.com'], fail_silently=False)
     
     return HttpResponse()
+
+@ajax_request
+def keepuptodate(request):    
+    data = ''
+    for k in request.POST.keys():
+        if k.endswith("version"):
+            data+=(k+"<br/>")
+
     
+    send_mail('Formulario de contacto', data, request.POST.get('user-email',''),
+    ['info@georemindme.com'], fail_silently=False)
 
 def main(request,slug=""):
 

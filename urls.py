@@ -11,6 +11,7 @@ urlpatterns = patterns('',
     
     (r'^admin/', include(admin.site.urls)),
     (r'^ajax/contact/', 'geostatic.views.contact'),
+    (r'^ajax/keep-up-to-date/', 'geostatic.views.keepuptodate'),
     (r'^%s/(?P<path>.*)$' % settings.MEDIA_URL[1:-1], 'django.views.static.serve', {'document_root' : settings.MEDIA_ROOT}),
     url(r'^lang/$', 'geostatic.views.set_language'),
     (r'favicon\.ico$', 'django.views.generic.simple.redirect_to', {'url': '/media/favicon.ico'}),
