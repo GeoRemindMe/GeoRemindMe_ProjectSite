@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-06-15 04:09+0200\n"
+"POT-Creation-Date: 2011-06-15 04:16+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -154,7 +154,8 @@ msgstr ""
 msgid "Contact us - GeoRemindMe"
 msgstr ""
 
-#: templates/contact.html:17 templates/knowmore.html:48
+#: templates/contact.html:17 templates/content-table.html:80
+#: templates/content-table.html.py:89 templates/knowmore.html:48
 #: templates/layout.html:54 templates/layout.html.py:63
 #: templates/partners.html:13 templates/press.html:33
 #: templates/privacypolicy.html:24 templates/sitemap.html:63
@@ -224,6 +225,28 @@ msgstr ""
 
 #: templates/contact.html:63
 msgid "Please fill up all fields"
+msgstr ""
+
+#: templates/content-table.html:81 templates/layout.html:55
+msgid "API"
+msgstr ""
+
+#: templates/content-table.html:82 templates/layout.html:56
+#: templates/layout.html.py:82 templates/dev/android_guide.html:7
+#: templates/dev/webdev_guide.html:6 templates/team/design.html:6
+#: templates/team/localization.html:6 templates/team/survey.html:6
+msgid "Community"
+msgstr ""
+
+#: templates/content-table.html:83 templates/layout.html:57
+#: templates/layout.html.py:81 templates/jobs/index.html:4
+#: templates/jobs/index.html.py:8 templates/jobs/index.html:39
+msgid "Jobs"
+msgstr ""
+
+#: templates/content-table.html:84 templates/layout.html:58
+#: templates/layout.html.py:84 templates/sitemap.html:65
+msgid "Sitemap"
 msgstr ""
 
 #: templates/home.html:36
@@ -636,28 +659,6 @@ msgstr ""
 msgid ""
 "You can also <a href='http://feeds.feedburner.com/GeoRemindMe'>subscribe to "
 "the RSS</a> of our blog so you won&#39;t miss anything juicy."
-msgstr ""
-
-#: templates/layout.html:55
-msgid "API"
-msgstr ""
-
-#: templates/layout.html:56 templates/layout.html.py:82
-#: templates/dev/android_guide.html:7 templates/dev/webdev_guide.html:6
-#: templates/team/design.html:6 templates/team/localization.html:6
-#: templates/team/survey.html:6
-msgid "Community"
-msgstr ""
-
-#: templates/layout.html:57 templates/layout.html.py:81
-#: templates/jobs/index.html:4 templates/jobs/index.html.py:8
-#: templates/jobs/index.html:39
-msgid "Jobs"
-msgstr ""
-
-#: templates/layout.html:58 templates/layout.html.py:84
-#: templates/sitemap.html:65
-msgid "Sitemap"
 msgstr ""
 
 #: templates/layout.html:83
