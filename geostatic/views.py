@@ -8,11 +8,30 @@ from django.http import HttpResponseRedirect
 from django.shortcuts import render_to_response
 from django.template import RequestContext
 from django.utils.translation import ugettext as _
+from django.core.mail import send_mail
 
 
 import urlparse
 import re
 
+
+from django.http import HttpResponseBadRequest
+def ajax_request(func):
+    def _wrapper(*args, **kwargs):
+        request = args[0]
+        if request.method <> "POST" or not request.is_ajax():
+            return HttpResponseBadRequest("Not AJAX or POST", mimetype="text/plain")
+        return func(*args, **kwargs)
+    return _wrapper
+
+@ajax_request
+def contact(request):
+        
+    send_mail('Formulario de contacto', request.POST.get('msg',''), request.POST.get('userEmail',''),
+    ['info@georemindme.com'], fail_silently=False)
+    
+    return HttpResponse()
+    
 
 def main(request,slug=""):
 
