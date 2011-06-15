@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-06-15 04:31+0200\n"
+"POT-Creation-Date: 2011-06-15 04:39+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -233,9 +233,10 @@ msgstr ""
 
 #: templates/content-table.html:82 templates/layout.html:56
 #: templates/layout.html.py:82 templates/dev/android_guide.html:7
-#: templates/dev/webdev_guide.html:6 templates/team/design.html:6
-#: templates/team/index.html:4 templates/team/index.html.py:8
-#: templates/team/localization.html:6 templates/team/survey.html:6
+#: templates/dev/index.html:6 templates/dev/webdev_guide.html:6
+#: templates/team/design.html:6 templates/team/index.html:4
+#: templates/team/index.html.py:8 templates/team/localization.html:6
+#: templates/team/survey.html:6
 msgid "Community"
 msgstr ""
 
@@ -1923,10 +1924,10 @@ msgid ""
 "<strong>GeoRemindMe</strong> is a tool that will help you discover through "
 "your smartphone* and a facebook aplication fun, unique, traditional or "
 "breath-taking places during your stay in Granada. In collaboration with the "
-"<a href='http://www.ugr.es\\'>University of Granada (UGR)</a> and the <a "
+"<a href='http://www.ugr.es'>University of Granada (UGR)</a> and the <a "
 "href='http://internacional.ugr.es/pages/perfiles/estudiantes/programa-"
-"mentores-de-la-ugr\\'>buddy programme</a> we are creating this tool that "
-"will be available for your use before you arrive to Spain."
+"mentores-de-la-ugr'>buddy programme</a> we are creating this tool that will "
+"be available for your use before you arrive to Spain."
 msgstr ""
 
 #: templates/team/survey.html:21
@@ -1981,16 +1982,16 @@ msgstr ""
 
 #: templates/team/survey.html:37
 msgid ""
-"This is a <a href='http://dev.georemindme.com/licensing\\'>open software "
+"This is a <a href='http://dev.georemindme.com/licensing'>open software "
 "project</a> so we are happy to welcome you if you are interested in "
 "collaborating with us:"
 msgstr ""
 
 #: templates/team/survey.html:49
 msgid ""
-"You can find more on this on our <a href='http://team.georemindme.com/"
-"\\'>community site</a> were you can meet the team and choose the area where "
-"you will be more comfortable collaborating on."
+"You can find more on this on our <a href='http://team.georemindme."
+"com/'>community site</a> were you can meet the team and choose the area "
+"where you will be more comfortable collaborating on."
 msgstr ""
 
 #: templates/team/survey.html:50
