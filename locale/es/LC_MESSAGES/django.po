@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GeoRemindMe\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-06-15 04:16+0200\n"
-"PO-Revision-Date: 2011-06-15 02:19+0000\n"
+"POT-Creation-Date: 2011-06-15 04:31+0200\n"
+"PO-Revision-Date: 2011-06-15 02:35+0000\n"
 "Last-Translator: hhkaos <hhkaos@gmail.com>\n"
 "Language-Team: Spanish (Castilian) (http://www.transifex.net/projects/p/georemindme/team/es/)\n"
 "MIME-Version: 1.0\n"
@@ -242,6 +242,7 @@ msgstr ""
 #: templates/content-table.html:82 templates/layout.html:56
 #: templates/layout.html.py:82 templates/dev/android_guide.html:7
 #: templates/dev/webdev_guide.html:6 templates/team/design.html:6
+#: templates/team/index.html:4 templates/team/index.html.py:8
 #: templates/team/localization.html:6 templates/team/survey.html:6
 msgid "Community"
 msgstr "Comunidad"
@@ -1099,6 +1100,14 @@ msgstr "<a href='http://getsatisfaction.com/georemindme'>Leer más</a>."
 #: templates/support.html:63
 msgid "Quick search"
 msgstr "Búsqueda rápida"
+
+#: templates/support.html:75
+msgid "Look if someone though about it before: questions, ideas and problems"
+msgstr ""
+
+#: templates/support.html:77
+msgid "Continue"
+msgstr ""
 
 #: templates/support.html:88
 msgid "Easy and quick feedback system"
@@ -1963,21 +1972,15 @@ msgstr ""
 #: templates/team/design.html:19
 msgid ""
 "If you are interested on learn how do we do that or contribute, please be "
-"welcome to <a href='https://teambox.com/public/georemindme-2/\\'>join us</a>"
-" at the community"
+"welcome to <a href='https://teambox.com/public/georemindme-2/'>join us</a> "
+"at the community"
 msgstr ""
-"Si estás interesado en aprender como lo hacemos o contribuir, se bienvenido "
-"y <a href=\\'https://teambox.com/public/georemindme-2/\\'>únete a nuestra "
-"comunidad</a> (no conlleva ningún compromiso)"
 
 #: templates/team/design.html:20
 msgid ""
-"Meet <a href='https://teambox.com/public/georemindme-2/designing\\'>here "
-"some designers and front-end developers</a> that has been working with us"
+"Meet <a href='https://teambox.com/public/georemindme-2/designing'>here some "
+"designers and front-end developers</a> that has been working with us"
 msgstr ""
-"Conoce a algunos <a "
-"href='https://teambox.com/public/georemindme-2/designing\\'> diseñadores y "
-"maquetadores que han contribuido con el proyecto</a>\n"
 
 #: templates/team/design.html:25
 msgid "Contributions gallery"
@@ -1992,7 +1995,7 @@ msgid ""
 "<strong>GeoRemindme has a strong and happy community of "
 "contributors</strong> were everyone is helping to create a better "
 "experience. We like working all together as a team, that's why we host <a "
-"href='http://www.flickr.com/groups/1620000@N25/pool/with/5614194428/\\'>hackathons</a>"
+"href='http://www.flickr.com/groups/1620000@N25/pool/with/5614194428/'>hackathons</a>"
 " pretty often, were we learn about new technologies, free software and (of "
 "course) have a great time."
 msgstr ""
@@ -2006,12 +2009,12 @@ msgstr ""
 #: templates/team/index.html:17
 msgid ""
 "Are you interested in joining the community? We are a <a "
-"href='http://dev.georemindme.com/licensing\\'>open software project</a>, "
-"learn more about how you can contribute here and choose from the list below "
-"where you will be more comfortable collaborating on:"
+"href='http://dev.georemindme.com/licensing'>open software project</a>, learn"
+" more about how you can contribute here and choose from the list below where"
+" you will be more comfortable collaborating on:"
 msgstr ""
 "¿Estás interesado en unirte a la comunidad? Somos un <a "
-"href='http://dev.georemindme.com/licensing\\'>proyecto de software "
+"href='http://dev.georemindme.com/licensing'>proyecto de software "
 "abierto</a>, infórmate más sobre como puedes contribuir aquí y elige cual es"
 " la forma en la que te gustaría colaborar:"
 

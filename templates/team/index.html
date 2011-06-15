@@ -1,11 +1,11 @@
 {% extends 'layout.html' %}
 {% load i18n %}
 
-{% block Community-Link %}<li class="menu-icons" id="Community">Community</li>{% endblock %}
+{% block Community-Link %}<li class="menu-icons" id="Community">{% trans "Community" %}</li>{% endblock %}
 
 {% block breadCumbMenu %}
     <span class="maqnav">></span>
-    Community
+    {% trans "Community" %}
 {% endblock %}    
 
 {% block content %}
@@ -13,8 +13,8 @@
 	<article style="text-align:left;" id="community-content"> 
 		<section class="community-box"> 
 			<h3 id="presentation" class="menu-icons">{% trans "Introduction" %}</h3> 
-			<p>{% trans "<strong>GeoRemindme has a strong and happy community of contributors</strong> were everyone is helping to create a better experience. We like working all together as a team, that's why we host <a href='http://www.flickr.com/groups/1620000@N25/pool/with/5614194428/\'>hackathons</a> pretty often, were we learn about new technologies, free software and (of course) have a great time." %}</p>
-			<p>{% trans "Are you interested in joining the community? We are a <a href='http://dev.georemindme.com/licensing\'>open software project</a>, learn more about how you can contribute here and choose from the list below where you will be more comfortable collaborating on:" %}</p>
+			<p>{% trans "<strong>GeoRemindme has a strong and happy community of contributors</strong> were everyone is helping to create a better experience. We like working all together as a team, that's why we host <a href='http://www.flickr.com/groups/1620000@N25/pool/with/5614194428/'>hackathons</a> pretty often, were we learn about new technologies, free software and (of course) have a great time." %}</p>
+			<p>{% trans "Are you interested in joining the community? We are a <a href='http://dev.georemindme.com/licensing'>open software project</a>, learn more about how you can contribute here and choose from the list below where you will be more comfortable collaborating on:" %}</p>
 			<ul id="contribution-types">
 				<li id="localization" class="menu-icons"><a href="localization/">{% trans "Localizing (translating)" %}</a></li>
 				<li id="developers" class="menu-icons"><a href="http://dev.georemindme.com">{% trans "Developing" %}</a></li>

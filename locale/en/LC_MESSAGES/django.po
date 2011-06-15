@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-06-15 04:16+0200\n"
+"POT-Creation-Date: 2011-06-15 04:31+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -234,6 +234,7 @@ msgstr ""
 #: templates/content-table.html:82 templates/layout.html:56
 #: templates/layout.html.py:82 templates/dev/android_guide.html:7
 #: templates/dev/webdev_guide.html:6 templates/team/design.html:6
+#: templates/team/index.html:4 templates/team/index.html.py:8
 #: templates/team/localization.html:6 templates/team/survey.html:6
 msgid "Community"
 msgstr ""
@@ -1057,6 +1058,14 @@ msgstr ""
 msgid "Quick search"
 msgstr ""
 
+#: templates/support.html:75
+msgid "Look if someone though about it before: questions, ideas and problems"
+msgstr ""
+
+#: templates/support.html:77
+msgid "Continue"
+msgstr ""
+
 #: templates/support.html:88
 msgid "Easy and quick feedback system"
 msgstr ""
@@ -1779,14 +1788,14 @@ msgstr ""
 #: templates/team/design.html:19
 msgid ""
 "If you are interested on learn how do we do that or contribute, please be "
-"welcome to <a href='https://teambox.com/public/georemindme-2/\\'>join us</a> "
+"welcome to <a href='https://teambox.com/public/georemindme-2/'>join us</a> "
 "at the community"
 msgstr ""
 
 #: templates/team/design.html:20
 msgid ""
-"Meet <a href='https://teambox.com/public/georemindme-2/designing\\'>here "
-"some designers and front-end developers</a> that has been working with us"
+"Meet <a href='https://teambox.com/public/georemindme-2/designing'>here some "
+"designers and front-end developers</a> that has been working with us"
 msgstr ""
 
 #: templates/team/design.html:25
@@ -1802,7 +1811,7 @@ msgid ""
 "<strong>GeoRemindme has a strong and happy community of contributors</"
 "strong> were everyone is helping to create a better experience. We like "
 "working all together as a team, that's why we host <a href='http://www."
-"flickr.com/groups/1620000@N25/pool/with/5614194428/\\'>hackathons</a> pretty "
+"flickr.com/groups/1620000@N25/pool/with/5614194428/'>hackathons</a> pretty "
 "often, were we learn about new technologies, free software and (of course) "
 "have a great time."
 msgstr ""
@@ -1810,7 +1819,7 @@ msgstr ""
 #: templates/team/index.html:17
 msgid ""
 "Are you interested in joining the community? We are a <a href='http://dev."
-"georemindme.com/licensing\\'>open software project</a>, learn more about how "
+"georemindme.com/licensing'>open software project</a>, learn more about how "
 "you can contribute here and choose from the list below where you will be "
 "more comfortable collaborating on:"
 msgstr ""
