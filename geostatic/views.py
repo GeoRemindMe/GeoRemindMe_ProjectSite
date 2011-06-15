@@ -40,7 +40,7 @@ def keepuptodate(request):
             data+=(k+"<br/>")
 
     
-    send_mail('Formulario de contacto', data, request.POST.get('user-email',''),
+    send_mail('Usuario quiere recibir novedades', data, request.POST.get('user-email',''),
     ['info@georemindme.com'], fail_silently=False)
     
     return HttpResponse()
