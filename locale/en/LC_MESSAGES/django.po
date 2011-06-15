@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-06-15 11:07+0200\n"
+"POT-Creation-Date: 2011-06-15 11:38+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -111,9 +111,25 @@ msgstr ""
 msgid "Do you want to work with us?"
 msgstr ""
 
+#: templates/base.html:147 templates/content-table.html:83
+#: templates/layout.html:56 templates/layout.html.py:80
+#: templates/sitemap.html:93 templates/jobs/index.html:4
+#: templates/jobs/index.html.py:8 templates/jobs/index.html:39
+msgid "Jobs"
+msgstr ""
+
 #: templates/base.html:148 templates/content-table.html:115
 #: templates/layout.html:81
 msgid "Join the community now!"
+msgstr ""
+
+#: templates/base.html:148 templates/content-table.html:82
+#: templates/layout.html:55 templates/layout.html.py:81
+#: templates/dev/android_guide.html:7 templates/dev/index.html:6
+#: templates/dev/webdev_guide.html:6 templates/team/design.html:6
+#: templates/team/index.html:4 templates/team/index.html.py:8
+#: templates/team/localization.html:6 templates/team/survey.html:6
+msgid "Community"
 msgstr ""
 
 #: templates/base.html:149 templates/content-table.html:116
@@ -121,9 +137,19 @@ msgstr ""
 msgid "Contact us"
 msgstr ""
 
+#: templates/base.html:149 templates/layout.html:82
+msgid "Support"
+msgstr ""
+
 #: templates/base.html:150 templates/content-table.html:117
 #: templates/layout.html:83
 msgid "Looking for some info?"
+msgstr ""
+
+#: templates/base.html:150 templates/content-table.html:84
+#: templates/layout.html:57 templates/layout.html.py:83
+#: templates/sitemap.html:65
+msgid "Sitemap"
 msgstr ""
 
 #: templates/base.html:155 templates/content-table.html:122
@@ -160,7 +186,17 @@ msgstr ""
 msgid "Contact us - GeoRemindMe"
 msgstr ""
 
-#: templates/contact.html:17 templates/content-table.html:80
+#: templates/contact.html:38 templates/knowmore.html:35
+#: templates/sitemap.html:49
+msgid "Message sent succesfully!"
+msgstr ""
+
+#: templates/contact.html:39 templates/knowmore.html:36
+#: templates/sitemap.html:50
+msgid "Error sending the message"
+msgstr ""
+
+#: templates/contact.html:55 templates/content-table.html:80
 #: templates/content-table.html.py:89 templates/knowmore.html:48
 #: templates/layout.html:53 templates/layout.html.py:62
 #: templates/partners.html:13 templates/press.html:33
@@ -169,93 +205,72 @@ msgstr ""
 msgid "Home"
 msgstr ""
 
-#: templates/contact.html:19
+#: templates/contact.html:57
 msgid "Company contact"
 msgstr ""
 
-#: templates/contact.html:25
+#: templates/contact.html:63
 msgid "We are a rather nice and open bunch of people. Get in touch with us!"
 msgstr ""
 
-#: templates/contact.html:28
+#: templates/contact.html:66
 msgid "Company information"
 msgstr ""
 
-#: templates/contact.html:30
+#: templates/contact.html:68
 msgid "Email"
 msgstr ""
 
-#: templates/contact.html:32
+#: templates/contact.html:70
 msgid "Telephone"
 msgstr ""
 
-#: templates/contact.html:33
+#: templates/contact.html:71
 msgid "or"
 msgstr ""
 
-#: templates/contact.html:34
+#: templates/contact.html:72
 msgid "Address"
 msgstr ""
 
-#: templates/contact.html:35 templates/layout.html:100
+#: templates/contact.html:73 templates/layout.html:100
 msgid "Spain"
 msgstr ""
 
-#: templates/contact.html:45
+#: templates/contact.html:83
 msgid "Business profile"
 msgstr ""
 
-#: templates/contact.html:52
+#: templates/contact.html:90
 msgid "Contact form"
 msgstr ""
 
-#: templates/contact.html:54
+#: templates/contact.html:92
 msgid "You can also contact us using this form"
 msgstr ""
 
-#: templates/contact.html:56
+#: templates/contact.html:94
 msgid "Enter your email address"
 msgstr ""
 
-#: templates/contact.html:57
+#: templates/contact.html:95
 msgid "email"
 msgstr ""
 
-#: templates/contact.html:60
+#: templates/contact.html:98
 msgid "Write your message here..."
 msgstr ""
 
-#: templates/contact.html:63
+#: templates/contact.html:101
 msgid "Send"
 msgstr ""
 
-#: templates/contact.html:63
+#: templates/contact.html:101
 msgid "Please fill up all fields"
 msgstr ""
 
 #: templates/content-table.html:81 templates/layout.html:54
 msgid "API"
-msgstr ""
-
-#: templates/content-table.html:82 templates/layout.html:55
-#: templates/layout.html.py:81 templates/dev/android_guide.html:7
-#: templates/dev/index.html:6 templates/dev/webdev_guide.html:6
-#: templates/team/design.html:6 templates/team/index.html:4
-#: templates/team/index.html.py:8 templates/team/localization.html:6
-#: templates/team/survey.html:6
-msgid "Community"
-msgstr ""
-
-#: templates/content-table.html:83 templates/layout.html:56
-#: templates/layout.html.py:80 templates/sitemap.html:93
-#: templates/jobs/index.html:4 templates/jobs/index.html.py:8
-#: templates/jobs/index.html:39
-msgid "Jobs"
-msgstr ""
-
-#: templates/content-table.html:84 templates/layout.html:57
-#: templates/layout.html.py:83 templates/sitemap.html:65
-msgid "Sitemap"
 msgstr ""
 
 #: templates/home.html:36
@@ -384,14 +399,6 @@ msgstr ""
 
 #: templates/knowmore.html:25
 msgid "Email wrong"
-msgstr ""
-
-#: templates/knowmore.html:35 templates/sitemap.html:49
-msgid "Message sent succesfully!"
-msgstr ""
-
-#: templates/knowmore.html:36 templates/sitemap.html:50
-msgid "Error sending the message"
 msgstr ""
 
 #: templates/knowmore.html:50
@@ -667,10 +674,6 @@ msgid ""
 "the RSS</a> of our blog so you won&#39;t miss anything juicy."
 msgstr ""
 
-#: templates/layout.html:82
-msgid "Support"
-msgstr ""
-
 #: templates/layout.html:100
 msgid "headquarters at "
 msgstr ""
@@ -689,7 +692,7 @@ msgstr ""
 
 #: templates/partners.html:36
 msgid ""
-"La <a href=\"http://internacional.ugr.es/\">Office for International "
+"The <a href=\"http://internacional.ugr.es/\">Office for International "
 "Relations</a> of the <a href=\"http://www.ugr.es\">University of Granada</a> "
 "uses GeoRemindMe so that over 2.000 exchange students every year can enjoy a "
 "better experience abroad."
@@ -721,7 +724,7 @@ msgstr ""
 #: templates/press.html:44
 msgid ""
 "Here you will find the latests news about GeoRemindMe. If you wish to "
-"contact us, pleas refer to our <a href='/contact/'>contact information</a>"
+"contact us, please refer to our <a href='/contact/'>contact information</a>"
 msgstr ""
 
 #: templates/press.html:46
@@ -798,7 +801,7 @@ msgid "Miscellaneous"
 msgstr ""
 
 #: templates/press.html:138
-msgid "Colaboraciones de la empresa"
+msgid "Company partnerships"
 msgstr ""
 
 #: templates/press.html:139
@@ -846,7 +849,7 @@ msgid "Login"
 msgstr ""
 
 #: templates/sitemap.html:81
-msgid "menu de acceso a la herramienta"
+msgid "Tool Menu"
 msgstr ""
 
 #: templates/sitemap.html:83
@@ -890,6 +893,7 @@ msgid "Get in touch with us"
 msgstr ""
 
 #: templates/sitemap.html:95 templates/sitemap.html.py:115
+#: templates/sitemap.html:122
 msgid "Collaborators"
 msgstr ""
 
@@ -936,8 +940,8 @@ msgstr ""
 msgid "Developers"
 msgstr ""
 
-#: templates/sitemap.html:112
-msgid "Android developers Android"
+#: templates/sitemap.html:112 templates/dev/android_guide.html:11
+msgid "Android developers"
 msgstr ""
 
 #: templates/sitemap.html:114 templates/sitemap.html.py:121
@@ -958,10 +962,6 @@ msgstr ""
 
 #: templates/sitemap.html:121
 msgid "Read this guide to learn how you can start collaborating today"
-msgstr ""
-
-#: templates/sitemap.html:122
-msgid "Colaboradores"
 msgstr ""
 
 #: templates/sitemap.html:122
@@ -1071,7 +1071,9 @@ msgid "Quick search"
 msgstr ""
 
 #: templates/support.html:75
-msgid "Look if someone though about it before: questions, ideas and problems"
+msgid ""
+"Use the search function before posting. Chances are your question, idea or "
+"problem has already been answered."
 msgstr ""
 
 #: templates/support.html:77
@@ -1155,10 +1157,6 @@ msgid ""
 "you are interested you are much welcomed to <strong><a href=\"https://"
 "teambox.com/projects/georemindme-2\">join our community of developers!</a></"
 "strong>."
-msgstr ""
-
-#: templates/dev/android_guide.html:11
-msgid "Android developers"
 msgstr ""
 
 #: templates/dev/android_guide.html:19 templates/dev/index.html:22
@@ -1249,11 +1247,11 @@ msgstr ""
 
 #: templates/dev/index.html:17
 msgid ""
-"We are thankfull for our users <a href='http://getsatisfaction.com/"
+"We are thankful for our users <a href='http://getsatisfaction.com/"
 "georemindme/'>feedback</a>. There are many <a href='http://getsatisfaction."
 "com/georemindme/ideas/popular'>ideas and suggestions</a> yet to be "
-"implemented. The good news are that <strong>our open software project is "
-"open to anyone who wants to collaborate</strong>."
+"implemented. Good news are that <strong>our open software project is open to "
+"anyone who wants to collaborate</strong>."
 msgstr ""
 
 #: templates/dev/index.html:18
@@ -1688,7 +1686,7 @@ msgid "You have watched all Retro Meier and Romain Guy videos"
 msgstr ""
 
 #: templates/jobs/index.html:76
-msgid "During your sleepless nights, you study Android\\'s Kernel"
+msgid "During your sleepless nights, you study Android's Kernel"
 msgstr ""
 
 #: templates/jobs/index.html:77
@@ -1782,9 +1780,8 @@ msgstr ""
 
 #: templates/team/design.html:19
 msgid ""
-"If you are interested on learn how do we do that or contribute, please be "
-"welcome to <a href='https://teambox.com/public/georemindme-2/'>join us</a> "
-"at the community"
+"If you are interested in collaborating with us, please feel welcome and <a "
+"href='https://teambox.com/public/georemindme-2/'>join</a> the community."
 msgstr ""
 
 #: templates/team/design.html:20
