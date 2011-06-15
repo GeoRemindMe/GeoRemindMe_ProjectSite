@@ -422,13 +422,13 @@ ul li{
 
 
 .msgOK{
-   background: url("/media/img/sprite_sticks.png") no-repeat scroll 0 0 transparent;
+   background: url("media/img/icons/sprite_sticks.png") no-repeat scroll 0 0 transparent;
     color: green;
     margin-left: 50px;
     padding-left: 20px;
 }
 .msgNoOK{
-   background: url("/media/img/sprite_sticks.png") no-repeat scroll -20px 0 transparent;
+   background: url("media/img/icons/sprite_sticks.png") no-repeat scroll -20px 0 transparent;
     color: red;
     margin-left: 50px;
     padding-left: 20px;
