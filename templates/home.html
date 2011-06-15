@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+
+{%block extra_css%}
+	<link rel="stylesheet" href="/media/style/easySlider.css" type="text/css" media="screen, projection" />
+{%endblock%}
+
+{%block extra_js%}
+	<script type="text/javascript" src="/media/js/easySlider1.5.js"></script>
+
+
+	<script type="text/javascript">
+	   
+	$(document).ready(function(){
+		$("#slider").easySlider({
+			controlsFade: false,
+			
+		});
+		
+	   
+	   {% if login%}setTimeout(function(){$('#signinBtn').click();},500);{%endif%}
+	});
+	</script>
+{%endblock%}
+
+
+{%block tooltipLogo%}{%endblock%}
+
+{% block login %} {%endblock%}
+
+{%block section%}id="private-beta"{%endblock%}
+{% block content %}
+
+   <div id="description">
+      <h2>{% trans "GeoRemindMe es una herramienta para gestionar recomendaciones <em>a través de tus redes sociales</em>." %}</h2>
+     
+     <ul id="benefits">
+		<li id="whatsup-icon">{% trans "<strong>Encuentra</strong> cosas interesantes que hacer" %}.</li>
+		<li id="explore-icon">{% trans "<strong>Descubre</strong> y explora nuevas zonas" %}.</li>
+		<li id="reminder-icon">{% trans "<strong>No olvides</strong> lo que querías hacer" %}.</li>
+     </ul>
+    
+      
+		<span id="description-list">
+			
+			<p>{% trans "Todo esto gracias a que podrás" %}:</p>
+			<div id="slider-container">
+				<div id="slider">
+					<ul>
+						<li id="share-icon"><span class="slide-icon">{% trans "<strong>Compartir y recibir recomendaciones</strong> de tus contactos, instituciones, etc..." %}</span></li>
+						<li id="customize-icon"><span class="slide-icon">{% trans "Recibir <strong>recomendaciones personalizadas</strong> en base a tus gustos, localización, etc" %}</span></li>
+						<li id="search-icon"><span class="slide-icon">{% trans "<strong>Buscar y filtrar</strong> recomendaciones de otras personas" %}.</span></li>
+						<li id="suscription-icon"><span class="slide-icon">{% trans "<strong>Seguir</strong> a los usuarios y comercios que te interesen" %}.</span></li>
+						<li id="print-icon"><span class="slide-icon">{% trans "<strong>Descargar o imprimir</strong> rutas de diferentes zonas de la ciudad" %}.</span></li>
+						<li id="rate-icon"><span class="slide-icon">{% trans "<strong>Apoyar y comentar</strong> las recomendaciones" %}.</span></li>
+						<li id="checkin-icon"><span class="slide-icon">{% trans "Y en un futuro... queremos <strong>ofrecerte cupones</strong> de descuento para disfrutarlos donde estés" %}.</span></li>
+					</ul>
+				</div>
+			</div>
+			<div id="know_more" class="clear">
+				<form id="subscription-form" action="http://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('{% trans "http://feedburner.google.com/fb/a/mailverify?uri=GeoRemindMe" %}', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">{% trans "Keep me updated!" %} 
+					<p>{% trans "Enter your email address to be notified when a new version is released" %}</p>
+					<input type="text" id="subscribe-rss" placeholder="email" name="email"/><input type="hidden" value="GeoRemindMe" name="uri"/>
+					<input type="hidden" name="loc" value="{% trans "en_US" %}"/><input type="submit" value="{% trans "Sign me up!" %}" />
+					<p class="text-align-center">{% trans "No spam. We promise." %}</p>
+				</form> 
+			</div>
+			
+			<p id="p-compatible">{% trans "Compatible con" %}:</p>
+			<ul id="compatible">
+				<li id="fb-compatible"><span>Facebook</span></li>
+				<li id="twitter-compatible"><span>Twitter</span></li>
+				<li id="gcal-compatible"><span>Google calendar</span></li>
+			</ul>
+      </span>
+   </div>
+
+  	<div id="form-invitation-request" class="caja-arriba">
+      <p class="new_msg"><a href="/knowmore" title="{% trans "Screenshots, licenses, versions, etc."%}" accesskey="m">{% trans "More about"%}</a>{% trans " the project:"%}</p>
+      <p><a href='/knowmore/#available-versions' class="right-arrow">{% trans "Available Versions" %}</a></p>
+      <p><a href='/knowmore/#community' class="right-arrow">{% trans "The GeoRemindMe Community" %}</a></p>
+   </div>
+
+	<div id="form-invitation-request" class="caja-abajo">
+      <p class="new_msg">{% trans "Now <strong>testing</strong>"%}</p>
+      <p>{% trans "Would you like to help us with beta testing? <strong>Request an invitation</strong> and we will send you the details:" %}</p>
+      <p id="invitation-request"><a href="https://spreadsheets.google.com/viewform?formkey=dEFPeHBiSktzeFluM3dRQnNvVnFCUXc6MQ" accesskey="i">{% trans "Request invitation"%}</a></p>
+   </div>  
+
+{%endblock%}
+

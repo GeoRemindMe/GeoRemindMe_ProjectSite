@@ -1,0 +1,171 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+
+{% block title %}{% trans "Contact us - GeoRemindMe" %}{%endblock%}
+
+{% block extra_css %}
+	<link rel="stylesheet" type="text/css" href="/media/style/common.css" media="screen" /> 
+	<link rel="stylesheet" href="/media/style/jquery.treeview.css" type="text/css" />
+{%endblock%}
+
+{% block login %} {%endblock%}
+
+{% block extra_js %}
+
+	<script type="text/javascript" src="/media/js/jquery.treeview.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#list-tree").treeview({collapsed: true});
+		});
+	</script>
+
+	<script type="text/javascript">
+	function checkFields()
+	{
+		if (echeck($('#userEmail').val()) && $('#msg').val())
+		{
+			emailOK=passOK=true;
+			renderStartBtn();
+		}
+		else
+		{
+			emailOK=passOK=false;
+			renderStartBtn();
+		}
+		
+	}
+	$(document).ready(function(){
+		$('#msg,#userEmail').one('focus',function(){$(this).val('');});
+		
+		$('#startBtn').click(function(e){
+		   e.preventDefault();
+		   $("#wait-mask").show();
+		   $.ajax({
+			   url: AJAX_URL+"contact/",
+			   type: "post",
+			   data: $("form").serialize(),
+			   async:true,
+			   success: function(){ $("#wait-mask").hide(); $('#sentMsg').removeClass("msgNoOK").addClass("msgOK");$('#sentMsg span').text("{% trans "Message sent succesfully!" %}");$('#msg,#userEmail').val('');},
+			   error: function(){ $("#wait-mask").hide(); $('#sentMsg').removeClass("msgOK").addClass("msgNoOK");$('#sentMsg span').text("{% trans "Error sending the message" %}");}           
+			   });
+			
+		});
+	});
+	</script> 
+
+{%endblock%}
+
+{%block section%}id="contact-section"{%endblock%}
+
+{%block breadcumb%}
+   <nav> 
+      <a href="/">{% trans "Home" %}</a> 
+      <span class="maqnav">></span> 
+      <h1>{% trans "Sitemap" %}</h1> 
+   </nav>
+{%endblock%}
+
+{% block content %}
+
+	<article style="text-align:left;" id="community-content"> 
+		<section class="community-box"> 
+			<h3 class="blue-chicken menu-icons">{% trans "Usuarios" %}</h3> 
+			<p>{% trans "Todo lo que el usuario necesita para sacarle todo el provecho a la herramienta:" %}</p>
+			<ul>
+				<li>
+					<a href="http://www.georemindme.com">{% trans "Inicio</a> ; información sobre el proyecto" %}
+				</li>
+				<li><a href="/knowmore/">{% trans "Más información" %}</a> ; {% trans "profundiza en más detalles de la herramienta" %}</li>
+<!--
+				<li><a href="https://georemindme.appspot.com/">{% trans "Login" %}</a> ; {% trans "menu de acceso a la herramienta" %}</li>
+-->
+				<li><a href="http://blog.georemindme.com">{% trans "Blog" %}</a> ; {% trans "información sobre novedades y avances del proyecto" %}</li>
+				<li><a href="http://help.georemindme.com">{% trans "Help / Support" %}</a> ; sugerencias y ayuda para usuarios" %}</li>
+			</ul>
+		</section>	
+		
+		<section class="community-box"> 
+			<h3 id="Jobs" class=" menu-icons">{% trans "La empresa" %}</h3> 
+			<p>{% trans "Toda la información sobre la empresa que trabaja con este proyecto:" %}</p>
+			<ul>
+				<li><a href="/team/">{% trans "Equipo" %}</a> ; {% trans "conoce a nuestros trabajdores" %}.</li>
+				<li><a href="http://jobs.georemindme.com">{% trans "Empleo" %}</a> ; {% trans "información sobre ofertas de empleo" %}.</li>
+				<li><a href="/contact/">{% trans "Contacto" %}</a> ; {% trans "diferentes formas de contacto" %}.</li>
+				<li><a href="/partners/">{% trans "Colaboradores" %}</a> ; {% trans "instituciones y empresas con las que trabajamos" %}.</li>
+				<li><a href="/press/">{% trans "Prensa" %}</a> ; {% trans "apariciones y notas de prensa" %}.</li>
+			</ul>
+		</section>	
+		<hr>
+		<section class="community-box"> 
+			<h3 id="Community" class="menu-icons">{% trans "Comunidad de voluntarios" %}</h3>
+			<p>{% trans "Comunidad de usuarios voluntarios y amigos de la plataforma que nos ayudan a seguir creciendo y mejorando" %}.</p>
+			<ul id="list-tree">
+				<li><a href="http://www.flickr.com/groups/1620000@N25/pool/">{% trans "Fotos" %}</a> ; {% trans "fotografías de eventos de la comunidad" %}.</li></li>
+				<li><a href="https://teambox.com/projects/georemindme-2/">Teambox</a> ; {% trans "plataforma de trabajo colaborativo" %}.</li>
+				<li><span class="folder"><a href="http://team.georemindme.com">{% trans "Voluntarios" %}</a></span>
+					<ul>
+					<li>
+					<span class="folder"><a href="http://dev.georemindme.com/android-developers">{% trans "Programadores" %}.</a></span>
+					<ul>
+						<li>
+							<span class="folder"><span>{% trans "Desarrolladores Android" %}</span></span>
+							<ul>
+								<li><a href="http://dev.georemindme.com/android-developers">{% trans "Guía" %}</a> ; {% trans "guía de iniciación para colaboradores" %}.</li>
+								<li><a href="https://teambox.com/public/georemindme-2/android-developers">{% trans "Colaboradores" %}</a> ; {% trans "listado de desarrolladores Android" %}.</li>
+							</ul>
+						</li>
+						<li>
+							<span class="folder"><span>{% trans "Desarrolladores Web" %}</span></span>
+							<ul>
+								<li><a href="http://dev.georemindme.com/webdev/">{% trans "Guía" %}</a> ; {% trans "guía de iniciación para colaboradores" %}.</li>
+								<li><a href="https://teambox.com/public/georemindme-2/web-developers">{% trans "Colaboradores" %}</a> ; {% trans "listado de desarrolladores web" %}.</li>
+							</ul>
+						</li>
+						
+						<li><a href="https://github.com/georemindme">Github</a> ; {% trans "sistema de control de versiones para el código" %}.</li>
+						<li><a href="http://api.georemindme.com/">{% trans "API pública" %}</a> ; {% trans "documentación y ejemplos de la API" %}.</li>
+						<li><a href="http://dev.georemindme.com/licensing/">{% trans "Licencias" %}</a> ; {% trans "licencias aplicables al software" %}.</li>
+					</ul>
+					<li>
+						<span class="folder"><a href="http://team.georemindme.com/design/">{% trans "Diseñadores" %}</span>
+						<ul>
+							<li><a href="#">{% trans "Galería" %}</a> ; {% trans "galería de las imágenes realizadas desde la comunidad" %}.</li>
+						</ul>
+					</li>
+					<li>
+						<span class="folder"><a href="http://team.georemindme.com/localization/">{% trans "Traductores" %}</span>
+						<ul>
+							<li><a href="http://www.transifex.net/projects/p/georemindme/">Transifex</a> ; {% trans "herramienta web para realizar las traducciones" %}.</li>
+							<li><a href="https://teambox.com/public/georemindme-2/translating">{% trans "Metodología de trabajo"%}</a> ; {% trans "guía explicativa sobre la metodología seguida" %}.</li>
+						</ul>
+					</li>
+					</li>
+					</ul>
+
+				</li>
+				
+					
+				
+				</li>
+				 
+			 
+				
+			</ul>
+
+		</section>	
+
+		<section class="community-box"> 
+			<h3 id="legal" class="menu-icons">{% trans "Legal" %}</h3> 
+			<p>{% trans "Estamos comprometidos con la seguridad y el buen uso de los datos, informate sobre" %}:</p>
+			<ul>
+				<li><a href="/privacy/">{% trans "Nuestra política de privacidad" %}</a> ; {% trans "información sobre cómo gestionamos tu privacidad" %}</li>
+				<li><a href="/tos/">{% trans "Condiciones de uso" %}</a> ; {% trans "condiciones para poder usar la herramienta" %}</li>
+			</ul>
+		</section>		
+		
+		
+	</article>  
+         
+     
+{%endblock%}
