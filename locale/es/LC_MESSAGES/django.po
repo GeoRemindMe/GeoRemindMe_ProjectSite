@@ -9,9 +9,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GeoRemindMe\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-06-15 11:38+0200\n"
-"PO-Revision-Date: 2011-06-15 09:56+0000\n"
-"Last-Translator: Annalogik <anna@georemindme.com>\n"
+"POT-Creation-Date: 2011-06-15 12:35+0200\n"
+"PO-Revision-Date: 2011-06-15 10:37+0000\n"
+"Last-Translator: hhkaos <hhkaos@gmail.com>\n"
 "Language-Team: Spanish (Castilian) (http://www.transifex.net/projects/p/georemindme/team/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -134,9 +134,10 @@ msgstr "¡Únete a la comunidad ahora!"
 #: templates/base.html:148 templates/content-table.html:82
 #: templates/layout.html:55 templates/layout.html.py:81
 #: templates/dev/android_guide.html:7 templates/dev/index.html:6
-#: templates/dev/webdev_guide.html:6 templates/team/design.html:6
-#: templates/team/index.html:4 templates/team/index.html.py:8
-#: templates/team/localization.html:6 templates/team/survey.html:6
+#: templates/dev/licensing.html:6 templates/dev/webdev_guide.html:6
+#: templates/team/design.html:6 templates/team/index.html:4
+#: templates/team/index.html.py:8 templates/team/localization.html:6
+#: templates/team/survey.html:6
 msgid "Community"
 msgstr "Comunidad"
 
@@ -407,7 +408,7 @@ msgid ""
 "Would you like to help us with beta testing? <strong>Request an "
 "invitation</strong> and we will send you the details:"
 msgstr ""
-"¿Quieres ayudarnos haciendo beta testing. <strong>Solicita una "
+"¿Quieres ayudarnos haciendo beta testing?. <strong>Solicita una "
 "invitación</strong> y te explicaremos los detalles:"
 
 #: templates/home.html:88
@@ -738,7 +739,7 @@ msgstr "Colaboradores - GeoRemindMe"
 msgid "Partners"
 msgstr "Colaboradores"
 
-#: templates/partners.html:34
+#: templates/partners.html:26 templates/partners.html.py:34
 msgid "University of Granada"
 msgstr "Universidad de Granada"
 
@@ -894,7 +895,7 @@ msgstr "Usuarios"
 
 #: templates/sitemap.html:74
 msgid "Everything you always wanted to know about GeoRemindMe:"
-msgstr "Todo lo que siempre quisiste saber sobre GeoRemindMe"
+msgstr "Todo lo que siempre quisiste saber sobre GeoRemindMe:"
 
 #: templates/sitemap.html:77
 msgid "Home</a> ; Learn the basics about the project"
@@ -927,8 +928,8 @@ msgstr "Ayuda / Soporte"
 #: templates/sitemap.html:84
 msgid "Ask questions, share ideas, report problems, \tgive praises."
 msgstr ""
-"Haz preguntas, comparte tus ideas, avísa si tienes problemas, haz "
-"peticiones."
+"Pregunta si tienes problemas, comparte tus ideas y pide lo que quieras (¡que"
+" es gratis!)."
 
 #: templates/sitemap.html:89
 msgid "The start-up"
@@ -1005,7 +1006,8 @@ msgid "Volunteers"
 msgstr "Voluntarios"
 
 #: templates/sitemap.html:109 templates/dev/android_guide.html:9
-#: templates/dev/index.html:8 templates/dev/webdev_guide.html:8
+#: templates/dev/index.html:8 templates/dev/licensing.html:8
+#: templates/dev/webdev_guide.html:8
 msgid "Developers"
 msgstr "Desarrolladores"
 
@@ -1159,7 +1161,7 @@ msgstr "Continuar"
 
 #: templates/support.html:88
 msgid "Easy and quick feedback system"
-msgstr "Sistema simple y rápido feedback"
+msgstr "Sistema simple y rápido de feedback"
 
 #: templates/team.html:5
 msgid "Company team - GeoRemindMe"
@@ -1204,7 +1206,7 @@ msgstr ""
 
 #: templates/team.html:91
 msgid "Chief of Mobile Development & cofounder"
-msgstr "Director de Desarrollo Móvil & cnfundador"
+msgstr "Director de Desarrollo Móvil & cofundador"
 
 #: templates/team.html:102
 msgid ""
@@ -1271,7 +1273,7 @@ msgstr ""
 
 #: templates/dev/android_guide.html:26 templates/dev/webdev_guide.html:25
 msgid "Create a fork of the repository"
-msgstr "Crear un hijo del repositorio"
+msgstr "Crear un fork del repositorio"
 
 #: templates/dev/android_guide.html:27
 msgid "Install and configure Android SDK"
@@ -1418,9 +1420,9 @@ msgstr ""
 "queremos ayudarte a desarrollar tus propias aplicaciones y funcionalidades "
 "(<strong>En desarrollo!</strong>)"
 
-#: templates/dev/index.html:40 templates/dev/licensing.html:38
-#: templates/dev/licensing.html.py:44 templates/dev/licensing.html:55
-#: templates/dev/licensing.html.py:64
+#: templates/dev/index.html:40 templates/dev/licensing.html:10
+#: templates/dev/licensing.html.py:47 templates/dev/licensing.html:53
+#: templates/dev/licensing.html.py:64 templates/dev/licensing.html:73
 msgid "Licenses"
 msgstr "Licencias"
 
@@ -1428,11 +1430,11 @@ msgstr "Licencias"
 msgid "learn how the code is licensed"
 msgstr "aprende como está licenciado el código"
 
-#: templates/dev/licensing.html:8
+#: templates/dev/licensing.html:17
 msgid "Open Software"
 msgstr "Software Abierto"
 
-#: templates/dev/licensing.html:9
+#: templates/dev/licensing.html:18
 msgid ""
 "Open Software means that the <strong>project is open in every sense of the "
 "word</strong>, meaning that anyone should feel free to "
@@ -1447,17 +1449,17 @@ msgstr ""
 "pueden ser copiados, distribuidos y usados sin necesidad de ningún permiso "
 "adicional."
 
-#: templates/dev/licensing.html:11
+#: templates/dev/licensing.html:20
 msgid "We believe that Open Software benefits all the parties involved."
 msgstr ""
 "Nosotros creemos que el Software Abierto beneficia a todas las partes "
 "involucradas."
 
-#: templates/dev/licensing.html:13
+#: templates/dev/licensing.html:22
 msgid "Benefits for users"
 msgstr "Beneficios para los miembros de la comunidad"
 
-#: templates/dev/licensing.html:15
+#: templates/dev/licensing.html:24
 msgid ""
 "They can <strong>participate</strong> in the developement of the tool, "
 "making customization easier"
@@ -1465,7 +1467,7 @@ msgstr ""
 "Pueden <strong>participar</strong> en el desarrollo de la herramienta, "
 "facilitando la personalización"
 
-#: templates/dev/licensing.html:16
+#: templates/dev/licensing.html:25
 msgid ""
 "They can <strong>learn</strong> how to implement an app that involves "
 "geolocation and content sharing"
@@ -1473,24 +1475,24 @@ msgstr ""
 "Pueden <strong>aprender</strong> como implementar una aplicación de "
 "geolocalización y gestión de contenidos"
 
-#: templates/dev/licensing.html:17
+#: templates/dev/licensing.html:26
 msgid "It guarantees a reliable code, as anyone can study how it works"
 msgstr ""
 "Es una garatía de que el código es fiable, ya que cualquiera con "
 "conocimientos puede estudiarlo (y lo harán)"
 
-#: templates/dev/licensing.html:18
+#: templates/dev/licensing.html:27
 msgid "<strong>Meet</strong> people in the world with common interests"
 msgstr ""
 "Da la oportunidad de <strong>conocer</strong> a personas de todo el mundo "
 "con intereses comunes"
 
-#: templates/dev/licensing.html:19
+#: templates/dev/licensing.html:28
 msgid "Learn about <strong>teleworking</strong>"
 msgstr ""
 "Es una oportunidad para aprender a <strong>trabajar a distancia</strong>"
 
-#: templates/dev/licensing.html:20
+#: templates/dev/licensing.html:29
 msgid ""
 "Your contributions to the tool can be <strong>included in your "
 "resume</strong>"
@@ -1498,7 +1500,7 @@ msgstr ""
 "Las contribuciones a la herramienta puede ser <strong>añadidas a tu "
 "CV</strong>"
 
-#: templates/dev/licensing.html:21
+#: templates/dev/licensing.html:30
 msgid ""
 "It guarantees that the <strong>app will remain active</strong>, no mater "
 "what hapens to our company or community: if we are not able to continue the "
@@ -1509,11 +1511,11 @@ msgstr ""
 "empresa que lo mantiene; cualquier persona tiene la posibilidad de "
 "mantenerlo vivo."
 
-#: templates/dev/licensing.html:24
+#: templates/dev/licensing.html:33
 msgid "Benefits for our Start-Up"
 msgstr "Beneficios para nuestra Start-Up"
 
-#: templates/dev/licensing.html:26
+#: templates/dev/licensing.html:35
 msgid ""
 "<strong>A community of users</strong> willig to give us priceless customer "
 "<strong>feedback</strong>"
@@ -1521,39 +1523,39 @@ msgstr ""
 "Ganamos <strong>una comunidad de usuarios</strong> dispuestos a ayudarnos "
 "dándonos  <strong>feedback</strong>"
 
-#: templates/dev/licensing.html:27
+#: templates/dev/licensing.html:36
 msgid "The community <strong>contributes</strong> to the project"
 msgstr ""
 "Otro tipo de <strong>contribuciones</strong> al proyecto: código, diseños, "
 "traducciones, etc."
 
-#: templates/dev/licensing.html:28
+#: templates/dev/licensing.html:37
 msgid "Bigger <strong>acknowledgement and media coverage</strong>of our work"
 msgstr "Mayor <strong>difusión</strong> del proyecto y del código."
 
-#: templates/dev/licensing.html:29
+#: templates/dev/licensing.html:38
 msgid "<strong>Transparency</strong> and <strong>credibility</strong>"
 msgstr "<strong>Transparencia</strong> y <strong>credibilidad</strong>"
 
-#: templates/dev/licensing.html:30
+#: templates/dev/licensing.html:39
 msgid "We can hire <strong>talented people</strong> from our own community"
 msgstr ""
 "Posibilidad de contratar a <strong>personas con talento</strong> de nuestra "
 "propia comunidad (¡ya hemos contratado al primero!)"
 
-#: templates/dev/licensing.html:31
+#: templates/dev/licensing.html:40
 msgid ""
 "The Open Software World Wide Community<strong>supports</strong> our project"
 msgstr "<strong>Apoyo</strong> de la comunidad Software Libre"
 
-#: templates/dev/licensing.html:32
+#: templates/dev/licensing.html:41
 msgid ""
 "The<strong>satisfaction</strong> of sharing knowledge and not only a service"
 msgstr ""
 "La <strong>gran satisfacción</strong> de compartir conocimiento, no solo un "
 "servicio"
 
-#: templates/dev/licensing.html:39
+#: templates/dev/licensing.html:48
 msgid ""
 "This project has many contributions from our community. Not all of them "
 "share the same license, so we want to be specific and detailed on the "
@@ -1563,11 +1565,11 @@ msgstr ""
 "todas ellas tienen la misma licencia por lo que a continuación "
 "especificaremos las mismas"
 
-#: templates/dev/licensing.html:43
+#: templates/dev/licensing.html:52
 msgid "Android application"
 msgstr "Aplicación Android"
 
-#: templates/dev/licensing.html:46
+#: templates/dev/licensing.html:55
 msgid ""
 "The source code of the Android App is licensed under <a "
 "href=\"http://www.gnu.org/copyleft/gpl.html\">GPL v3</a>"
@@ -1575,7 +1577,7 @@ msgstr ""
 "El código fuente de la aplicación Android está licenciado bajo <a "
 "href=\"http://www.gnu.org/copyleft/gpl.html\">GPL v3</a>"
 
-#: templates/dev/licensing.html:47
+#: templates/dev/licensing.html:56
 msgid ""
 "The Icon set created by Mardigann are licensed under <a "
 "href=\"http://creativecommons.org/licenses/by-nc-sa/3.0/\">CC BY-NC-SA "
@@ -1585,7 +1587,7 @@ msgstr ""
 "href=\"http://creativecommons.org/licenses/by-nc-sa/3.0/\">CC BY-NC-SA "
 "3.0</a>"
 
-#: templates/dev/licensing.html:48
+#: templates/dev/licensing.html:57
 msgid ""
 "The Android icons are licensed under <a "
 "href=\"http://www.apache.org/licenses/LICENSE-2.0\">Apache license version "
@@ -1595,7 +1597,7 @@ msgstr ""
 "href=\"http://www.apache.org/licenses/LICENSE-2.0\">licencia Apache version "
 "2.0</a>"
 
-#: templates/dev/licensing.html:50
+#: templates/dev/licensing.html:59
 msgid ""
 "Find the <a "
 "href=\"https://github.com/GeoRemindMe/GeoRemindMe_Android\">source code on "
@@ -1605,11 +1607,11 @@ msgstr ""
 "href=\"https://github.com/GeoRemindMe/GeoRemindMe_Android\">código fuente en"
 " GitHub</a>"
 
-#: templates/dev/licensing.html:54
+#: templates/dev/licensing.html:63
 msgid "Facebook application"
 msgstr "Aplicación Facebook"
 
-#: templates/dev/licensing.html:57
+#: templates/dev/licensing.html:66
 msgid ""
 "The source code of the Facebook App is licensed under  <a "
 "href=\"http://www.fsf.org/licensing/licenses/agpl-3.0.html\">AGPL v3</a>"
@@ -1617,7 +1619,7 @@ msgstr ""
 "El código fuente de la aplicación facebook está licenciado bajo <a "
 "href=\"http://www.fsf.org/licensing/licenses/agpl-3.0.html\">AGPL v3</a>"
 
-#: templates/dev/licensing.html:59 templates/dev/licensing.html.py:77
+#: templates/dev/licensing.html:68 templates/dev/licensing.html.py:86
 msgid ""
 "Find the <a href=\"https://github.com/GeoRemindMe/GeoRemindMe_Web\">source "
 "code on Github</a>"
@@ -1625,11 +1627,11 @@ msgstr ""
 "<a href=\"https://github.com/GeoRemindMe/GeoRemindMe_Web\">El codigo "
 "fuente</a> se encuentra en Github"
 
-#: templates/dev/licensing.html:63
+#: templates/dev/licensing.html:72
 msgid "Project website"
 msgstr "Página web del proyecto"
 
-#: templates/dev/licensing.html:66
+#: templates/dev/licensing.html:75
 msgid ""
 "The source code is licensed under  <a "
 "href=\"http://www.fsf.org/licensing/licenses/agpl-3.0.html\">AGPL v3</a>"
@@ -1637,7 +1639,7 @@ msgstr ""
 "El código fuente está licenciado bajo <a "
 "href=\"http://www.fsf.org/licensing/licenses/agpl-3.0.html\">AGPL v3</a>"
 
-#: templates/dev/licensing.html:67
+#: templates/dev/licensing.html:76
 msgid ""
 "jQuery, accept <a href=\"http://jquery.org/license/\">GPL and MIT "
 "licenses</a>"
@@ -1645,23 +1647,23 @@ msgstr ""
 "jQuery, acepta las licencias <a href=\"http://jquery.org/license/\">GPL y "
 "MIT</a>"
 
-#: templates/dev/licensing.html:69 templates/dev/licensing.html.py:73
+#: templates/dev/licensing.html:78 templates/dev/licensing.html.py:82
 msgid "under"
 msgstr "bajo"
 
-#: templates/dev/licensing.html:69
+#: templates/dev/licensing.html:78
 msgid "Apache license version 2.0"
 msgstr "licencia Apache versión 2.0"
 
-#: templates/dev/licensing.html:71
+#: templates/dev/licensing.html:80
 msgid "Graphic design licensing"
 msgstr "Licencias de los diseños gráficos"
 
-#: templates/dev/licensing.html:73
+#: templates/dev/licensing.html:82
 msgid "their free license agreement"
 msgstr "su contrato de licencia libre"
 
-#: templates/dev/licensing.html:74
+#: templates/dev/licensing.html:83
 msgid ""
 "licensed as <a href=\"http://creativecommons.org/licenses/by-sa/3.0/us/\">CC"
 " Attribution-Share Alike 3.0</a> & <a "
@@ -1671,7 +1673,7 @@ msgstr ""
 "sa/3.0/us/\">CC Attribution-Share Alike 3.0</a> & <a "
 "href=\"http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL\">OFL</a>"
 
-#: templates/dev/licensing.html:75
+#: templates/dev/licensing.html:84
 msgid ""
 "L4D1S designs & icons under <a href=\"http://creativecommons.org/licenses"
 "/by-nc-sa/3.0/\">CC BY-NC-SA 3.0</a>"
@@ -1792,7 +1794,7 @@ msgstr ""
 
 #: templates/jobs/index.html:33
 msgid ""
-"Google\\'s cloud:<a href='http://code.google.com/intl/es-ES/appengine/'>App "
+"Google's cloud:<a href='http://code.google.com/intl/es-ES/appengine/'>App "
 "Engine</a>"
 msgstr ""
 "La nube de Google:<a href='http://code.google.com/intl/es-ES/appengine/'>App"
@@ -1841,7 +1843,7 @@ msgstr "Les guste aprender de sus compañeros"
 
 #: templates/jobs/index.html:44
 msgid "Doesn't have <this can't be done> in your vocabulary"
-msgstr "No exista la frase 'eso no se puede hacer' en su vocabulario"
+msgstr "No exista la frase '<em>eso no se puede hacer</em>' en su vocabulario"
 
 #: templates/jobs/index.html:45
 msgid ""
@@ -2151,8 +2153,13 @@ msgid "Learn more"
 msgstr "Saber más"
 
 #: templates/team/localization.html:30
-msgid "Introduction video"
+msgid "Introduction video (in Spanish)"
 msgstr "Video de introducción"
+
+#: templates/team/localization.html:32
+msgid "The audio is not working propertly, we are working on it"
+msgstr ""
+"El sonido no funciona correctamente, estamos trabajando para solucionarlo"
 
 #: templates/team/survey.html:8
 msgid "Survey"

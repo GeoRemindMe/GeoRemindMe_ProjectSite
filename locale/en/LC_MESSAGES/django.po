@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-06-15 11:38+0200\n"
+"POT-Creation-Date: 2011-06-15 12:35+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -126,9 +126,10 @@ msgstr ""
 #: templates/base.html:148 templates/content-table.html:82
 #: templates/layout.html:55 templates/layout.html.py:81
 #: templates/dev/android_guide.html:7 templates/dev/index.html:6
-#: templates/dev/webdev_guide.html:6 templates/team/design.html:6
-#: templates/team/index.html:4 templates/team/index.html.py:8
-#: templates/team/localization.html:6 templates/team/survey.html:6
+#: templates/dev/licensing.html:6 templates/dev/webdev_guide.html:6
+#: templates/team/design.html:6 templates/team/index.html:4
+#: templates/team/index.html.py:8 templates/team/localization.html:6
+#: templates/team/survey.html:6
 msgid "Community"
 msgstr ""
 
@@ -686,7 +687,7 @@ msgstr ""
 msgid "Partners"
 msgstr ""
 
-#: templates/partners.html:34
+#: templates/partners.html:26 templates/partners.html.py:34
 msgid "University of Granada"
 msgstr ""
 
@@ -936,7 +937,8 @@ msgid "Volunteers"
 msgstr ""
 
 #: templates/sitemap.html:109 templates/dev/android_guide.html:9
-#: templates/dev/index.html:8 templates/dev/webdev_guide.html:8
+#: templates/dev/index.html:8 templates/dev/licensing.html:8
+#: templates/dev/webdev_guide.html:8
 msgid "Developers"
 msgstr ""
 
@@ -1304,9 +1306,9 @@ msgid ""
 "In Progress!</strong>)"
 msgstr ""
 
-#: templates/dev/index.html:40 templates/dev/licensing.html:38
-#: templates/dev/licensing.html.py:44 templates/dev/licensing.html:55
-#: templates/dev/licensing.html.py:64
+#: templates/dev/index.html:40 templates/dev/licensing.html:10
+#: templates/dev/licensing.html.py:47 templates/dev/licensing.html:53
+#: templates/dev/licensing.html.py:64 templates/dev/licensing.html:73
 msgid "Licenses"
 msgstr ""
 
@@ -1314,11 +1316,11 @@ msgstr ""
 msgid "learn how the code is licensed"
 msgstr ""
 
-#: templates/dev/licensing.html:8
+#: templates/dev/licensing.html:17
 msgid "Open Software"
 msgstr ""
 
-#: templates/dev/licensing.html:9
+#: templates/dev/licensing.html:18
 msgid ""
 "Open Software means that the <strong>project is open in every sense of the "
 "word</strong>, meaning that anyone should feel free to <strong>contribute</"
@@ -1326,178 +1328,178 @@ msgid ""
 "without any aditional permission."
 msgstr ""
 
-#: templates/dev/licensing.html:11
+#: templates/dev/licensing.html:20
 msgid "We believe that Open Software benefits all the parties involved."
 msgstr ""
 
-#: templates/dev/licensing.html:13
+#: templates/dev/licensing.html:22
 msgid "Benefits for users"
 msgstr ""
 
-#: templates/dev/licensing.html:15
+#: templates/dev/licensing.html:24
 msgid ""
 "They can <strong>participate</strong> in the developement of the tool, "
 "making customization easier"
 msgstr ""
 
-#: templates/dev/licensing.html:16
+#: templates/dev/licensing.html:25
 msgid ""
 "They can <strong>learn</strong> how to implement an app that involves "
 "geolocation and content sharing"
 msgstr ""
 
-#: templates/dev/licensing.html:17
+#: templates/dev/licensing.html:26
 msgid "It guarantees a reliable code, as anyone can study how it works"
 msgstr ""
 
-#: templates/dev/licensing.html:18
+#: templates/dev/licensing.html:27
 msgid "<strong>Meet</strong> people in the world with common interests"
 msgstr ""
 
-#: templates/dev/licensing.html:19
+#: templates/dev/licensing.html:28
 msgid "Learn about <strong>teleworking</strong>"
 msgstr ""
 
-#: templates/dev/licensing.html:20
+#: templates/dev/licensing.html:29
 msgid ""
 "Your contributions to the tool can be <strong>included in your resume</"
 "strong>"
 msgstr ""
 
-#: templates/dev/licensing.html:21
+#: templates/dev/licensing.html:30
 msgid ""
 "It guarantees that the <strong>app will remain active</strong>, no mater "
 "what hapens to our company or community: if we are not able to continue the "
 "project, some other group can take charge of it"
 msgstr ""
 
-#: templates/dev/licensing.html:24
+#: templates/dev/licensing.html:33
 msgid "Benefits for our Start-Up"
 msgstr ""
 
-#: templates/dev/licensing.html:26
+#: templates/dev/licensing.html:35
 msgid ""
 "<strong>A community of users</strong> willig to give us priceless customer "
 "<strong>feedback</strong>"
 msgstr ""
 
-#: templates/dev/licensing.html:27
+#: templates/dev/licensing.html:36
 msgid "The community <strong>contributes</strong> to the project"
 msgstr ""
 
-#: templates/dev/licensing.html:28
+#: templates/dev/licensing.html:37
 msgid "Bigger <strong>acknowledgement and media coverage</strong>of our work"
 msgstr ""
 
-#: templates/dev/licensing.html:29
+#: templates/dev/licensing.html:38
 msgid "<strong>Transparency</strong> and <strong>credibility</strong>"
 msgstr ""
 
-#: templates/dev/licensing.html:30
+#: templates/dev/licensing.html:39
 msgid "We can hire <strong>talented people</strong> from our own community"
 msgstr ""
 
-#: templates/dev/licensing.html:31
+#: templates/dev/licensing.html:40
 msgid ""
 "The Open Software World Wide Community<strong>supports</strong> our project"
 msgstr ""
 
-#: templates/dev/licensing.html:32
+#: templates/dev/licensing.html:41
 msgid ""
 "The<strong>satisfaction</strong> of sharing knowledge and not only a service"
 msgstr ""
 
-#: templates/dev/licensing.html:39
+#: templates/dev/licensing.html:48
 msgid ""
 "This project has many contributions from our community. Not all of them "
 "share the same license, so we want to be specific and detailed on the "
 "licensing as we can"
 msgstr ""
 
-#: templates/dev/licensing.html:43
+#: templates/dev/licensing.html:52
 msgid "Android application"
 msgstr ""
 
-#: templates/dev/licensing.html:46
+#: templates/dev/licensing.html:55
 msgid ""
 "The source code of the Android App is licensed under <a href=\"http://www."
 "gnu.org/copyleft/gpl.html\">GPL v3</a>"
 msgstr ""
 
-#: templates/dev/licensing.html:47
+#: templates/dev/licensing.html:56
 msgid ""
 "The Icon set created by Mardigann are licensed under <a href=\"http://"
 "creativecommons.org/licenses/by-nc-sa/3.0/\">CC BY-NC-SA 3.0</a>"
 msgstr ""
 
-#: templates/dev/licensing.html:48
+#: templates/dev/licensing.html:57
 msgid ""
 "The Android icons are licensed under <a href=\"http://www.apache.org/"
 "licenses/LICENSE-2.0\">Apache license version 2.0</a>"
 msgstr ""
 
-#: templates/dev/licensing.html:50
+#: templates/dev/licensing.html:59
 msgid ""
 "Find the <a href=\"https://github.com/GeoRemindMe/GeoRemindMe_Android"
 "\">source code on Github</a>"
 msgstr ""
 
-#: templates/dev/licensing.html:54
+#: templates/dev/licensing.html:63
 msgid "Facebook application"
 msgstr ""
 
-#: templates/dev/licensing.html:57
+#: templates/dev/licensing.html:66
 msgid ""
 "The source code of the Facebook App is licensed under  <a href=\"http://www."
 "fsf.org/licensing/licenses/agpl-3.0.html\">AGPL v3</a>"
 msgstr ""
 
-#: templates/dev/licensing.html:59 templates/dev/licensing.html.py:77
+#: templates/dev/licensing.html:68 templates/dev/licensing.html.py:86
 msgid ""
 "Find the <a href=\"https://github.com/GeoRemindMe/GeoRemindMe_Web\">source "
 "code on Github</a>"
 msgstr ""
 
-#: templates/dev/licensing.html:63
+#: templates/dev/licensing.html:72
 msgid "Project website"
 msgstr ""
 
-#: templates/dev/licensing.html:66
+#: templates/dev/licensing.html:75
 msgid ""
 "The source code is licensed under  <a href=\"http://www.fsf.org/licensing/"
 "licenses/agpl-3.0.html\">AGPL v3</a>"
 msgstr ""
 
-#: templates/dev/licensing.html:67
+#: templates/dev/licensing.html:76
 msgid ""
 "jQuery, accept <a href=\"http://jquery.org/license/\">GPL and MIT licenses</"
 "a>"
 msgstr ""
 
-#: templates/dev/licensing.html:69 templates/dev/licensing.html.py:73
+#: templates/dev/licensing.html:78 templates/dev/licensing.html.py:82
 msgid "under"
 msgstr ""
 
-#: templates/dev/licensing.html:69
+#: templates/dev/licensing.html:78
 msgid "Apache license version 2.0"
 msgstr ""
 
-#: templates/dev/licensing.html:71
+#: templates/dev/licensing.html:80
 msgid "Graphic design licensing"
 msgstr ""
 
-#: templates/dev/licensing.html:73
+#: templates/dev/licensing.html:82
 msgid "their free license agreement"
 msgstr ""
 
-#: templates/dev/licensing.html:74
+#: templates/dev/licensing.html:83
 msgid ""
 "licensed as <a href=\"http://creativecommons.org/licenses/by-sa/3.0/us/\">CC "
 "Attribution-Share Alike 3.0</a> & <a href=\"http://scripts.sil.org/cms/"
 "scripts/page.php?site_id=nrsi&id=OFL\">OFL</a>"
 msgstr ""
 
-#: templates/dev/licensing.html:75
+#: templates/dev/licensing.html:84
 msgid ""
 "L4D1S designs & icons under <a href=\"http://creativecommons.org/licenses/by-"
 "nc-sa/3.0/\">CC BY-NC-SA 3.0</a>"
@@ -1598,7 +1600,7 @@ msgstr ""
 
 #: templates/jobs/index.html:33
 msgid ""
-"Google\\'s cloud:<a href='http://code.google.com/intl/es-ES/appengine/'>App "
+"Google's cloud:<a href='http://code.google.com/intl/es-ES/appengine/'>App "
 "Engine</a>"
 msgstr ""
 
@@ -1891,7 +1893,11 @@ msgid "Learn more"
 msgstr ""
 
 #: templates/team/localization.html:30
-msgid "Introduction video"
+msgid "Introduction video (in Spanish)"
+msgstr ""
+
+#: templates/team/localization.html:32
+msgid "The audio is not working propertly, we are working on it"
 msgstr ""
 
 #: templates/team/survey.html:8
