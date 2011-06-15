@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-06-15 02:22+0200\n"
+"POT-Creation-Date: 2011-06-15 02:46+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -712,7 +712,8 @@ msgstr ""
 #: templates/press.html:44
 msgid ""
 "En esta sección se encuentra toda la información orientada a la prensa. "
-"Cualquier o solicitud de información, puede encontrar <a href=\\"
+"Cualquier o solicitud de información, puede encontrar <a href='/"
+"contact/'>nuestros datos de contacto aquí</a>"
 msgstr ""
 
 #: templates/press.html:46
@@ -1232,7 +1233,9 @@ msgid "Developers guide"
 msgstr ""
 
 #: templates/dev/index.html:17
-msgid "We are thankfull for our users <a href=\\"
+msgid ""
+"We are thankfull for our users <a href='http://getsatisfaction.com/"
+"georemindme/'>feedback</a>. There are many <a href=\\"
 msgstr ""
 
 #: templates/dev/index.html:18
@@ -1582,7 +1585,9 @@ msgid "These are the technologies we are using to make GeoRemindMe work"
 msgstr ""
 
 #: templates/jobs/index.html:33
-msgid "Google\\'s cloud:<a href=\\"
+msgid ""
+"Google\\'s cloud:<a href='http://code.google.com/intl/es-ES/appengine/'>App "
+"Engine</a>"
 msgstr ""
 
 #: templates/jobs/index.html:34
@@ -1768,11 +1773,14 @@ msgstr ""
 #: templates/team/design.html:19
 msgid ""
 "If you are interested on learn how do we do that or contribute, please be "
-"welcome to <a href=\\"
+"welcome to <a href='https://teambox.com/public/georemindme-2/\\'>join us</a> "
+"at the community"
 msgstr ""
 
 #: templates/team/design.html:20
-msgid "Meet <a href=\\"
+msgid ""
+"Meet <a href='https://teambox.com/public/georemindme-2/designing\\'>here "
+"some designers and front-end developers</a> that has been working with us"
 msgstr ""
 
 #: templates/team/design.html:25
@@ -1787,11 +1795,18 @@ msgstr ""
 msgid ""
 "<strong>GeoRemindme has a strong and happy community of contributors</"
 "strong> were everyone is helping to create a better experience. We like "
-"working all together as a team, that's why we host <a href=\\"
+"working all together as a team, that's why we host <a href='http://www."
+"flickr.com/groups/1620000@N25/pool/with/5614194428/\\'>hackathons</a> pretty "
+"often, were we learn about new technologies, free software and (of course) "
+"have a great time."
 msgstr ""
 
 #: templates/team/index.html:17
-msgid "Are you interested in joining the community? We are a <a href=\\"
+msgid ""
+"Are you interested in joining the community? We are a <a href='http://dev."
+"georemindme.com/licensing\\'>open software project</a>, learn more about how "
+"you can contribute here and choose from the list below where you will be "
+"more comfortable collaborating on:"
 msgstr ""
 
 #: templates/team/index.html:19 templates/team/survey.html:40
@@ -1827,7 +1842,9 @@ msgstr ""
 
 #: templates/team/index.html:33
 msgid ""
-"Do you have more community pictures and would like to share them? <a href=\\"
+"Do you have more community pictures and would like to share them? <a "
+"href='http://www.flickr.com/groups_join.gne?id=1620000@N25'>Join the group</"
+"a> and upload them!"
 msgstr ""
 
 #: templates/team/localization.html:8
@@ -1891,7 +1908,10 @@ msgid ""
 "<strong>GeoRemindMe</strong> is a tool that will help you discover through "
 "your smartphone* and a facebook aplication fun, unique, traditional or "
 "breath-taking places during your stay in Granada. In collaboration with the "
-"<a href=\\"
+"<a href='http://www.ugr.es\\'>University of Granada (UGR)</a> and the <a "
+"href='http://internacional.ugr.es/pages/perfiles/estudiantes/programa-"
+"mentores-de-la-ugr\\'>buddy programme</a> we are creating this tool that "
+"will be available for your use before you arrive to Spain."
 msgstr ""
 
 #: templates/team/survey.html:21
@@ -1945,11 +1965,17 @@ msgid "Join the Community"
 msgstr ""
 
 #: templates/team/survey.html:37
-msgid "This is a <a href=\\"
+msgid ""
+"This is a <a href='http://dev.georemindme.com/licensing\\'>open software "
+"project</a> so we are happy to welcome you if you are interested in "
+"collaborating with us:"
 msgstr ""
 
 #: templates/team/survey.html:49
-msgid "You can find more on this on our <a href=\\"
+msgid ""
+"You can find more on this on our <a href='http://team.georemindme.com/"
+"\\'>community site</a> were you can meet the team and choose the area where "
+"you will be more comfortable collaborating on."
 msgstr ""
 
 #: templates/team/survey.html:50
