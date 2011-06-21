@@ -86,3 +86,36 @@ def set_language(request):
       return HttpResponseRedirect(request.path)
     
     
+def set_language_es(request):
+  from django.conf import settings
+  available = dict(settings.LANGUAGES)
+  lang = 'es'
+  next = '/survey/'
+  if lang in available: #we have the lang_code
+      from django.utils import translation
+      #request.session['LANGUAGE_CODE'] = lang
+      request.session["django_language"] = lang
+      translation.activate(lang)
+      request.LANGUAGE_CODE = translation.get_language()
+      print 'Next= aaaaaaaaa = '+next
+  
+  
+      return HttpResponseRedirect(next)
+  return HttpResponseRedirect(request.path)
+
+def set_language_en(request):
+  from django.conf import settings
+  available = dict(settings.LANGUAGES)
+  lang = 'en'
+  next = '/survey/'
+  if lang in available: #we have the lang_code
+      from django.utils import translation
+      #request.session['LANGUAGE_CODE'] = lang
+      request.session["django_language"] = lang
+      translation.activate(lang)
+      request.LANGUAGE_CODE = translation.get_language()
+      print 'Next= aaaaaaaaa = '+next
+
+  
+      return HttpResponseRedirect(next)
+  return HttpResponseRedirect(request.path)
