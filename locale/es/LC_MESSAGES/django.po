@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GeoRemindMe\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-06-16 00:45+0200\n"
-"PO-Revision-Date: 2011-06-15 22:47+0000\n"
+"POT-Creation-Date: 2011-06-21 19:06+0200\n"
+"PO-Revision-Date: 2011-06-21 17:09+0000\n"
 "Last-Translator: hhkaos <hhkaos@gmail.com>\n"
 "Language-Team: Spanish (Castilian) (http://www.transifex.net/projects/p/georemindme/team/es/)\n"
 "MIME-Version: 1.0\n"
@@ -2007,7 +2007,7 @@ msgid "Designers at GeoRemindMe community"
 msgstr "Diseñadores en la comunidad de GeoRemindMe"
 
 #: templates/team/design.html:18 templates/team/index.html:23
-#: templates/team/survey.html:45
+#: templates/team/survey.html:61
 msgid "Designing"
 msgstr "Diseñando"
 
@@ -2087,11 +2087,11 @@ msgstr ""
 "abierto</a>, infórmate más sobre como puedes contribuir aquí y elige cual es"
 " la forma en la que te gustaría colaborar:"
 
-#: templates/team/index.html:21 templates/team/survey.html:42
+#: templates/team/index.html:21 templates/team/survey.html:58
 msgid "Localizing (translating)"
 msgstr "Traduciendo"
 
-#: templates/team/index.html:22 templates/team/survey.html:48
+#: templates/team/index.html:22 templates/team/survey.html:64
 msgid "Developing"
 msgstr "Desarrollando"
 
@@ -2216,11 +2216,15 @@ msgstr "Encuesta"
 msgid "GeoRemindMe Survey"
 msgstr "Encuesta - GeoRemindMe"
 
-#: templates/team/survey.html:17
+#: templates/team/survey.html:22
+msgid "Ver versión en "
+msgstr "Language"
+
+#: templates/team/survey.html:33
 msgid "Dear student,"
 msgstr "Querido estudiante,"
 
-#: templates/team/survey.html:20
+#: templates/team/survey.html:36
 msgid ""
 "<strong>GeoRemindMe</strong> is a tool that will help you discover through "
 "your smartphone* and a facebook aplication fun, unique, traditional or "
@@ -2239,11 +2243,11 @@ msgstr ""
 "mentores-de-la-ugr'>programa mentores</a> estamos creando esta herramienta "
 "que pondremos a tu disposición antes de tu llegada a España."
 
-#: templates/team/survey.html:23
+#: templates/team/survey.html:39
 msgid "Among other things, we want you to be able to:"
 msgstr "Entre otras cosas, queremos que puedas:"
 
-#: templates/team/survey.html:26
+#: templates/team/survey.html:42
 msgid ""
 "<strong>Get suggestions</strong> from your buddy, the University and your "
 "friends."
@@ -2251,22 +2255,22 @@ msgstr ""
 "<strong>Obtener sugerencias</strong> de tus compañeros, de la Universidad y "
 "de tus amigos."
 
-#: templates/team/survey.html:27
+#: templates/team/survey.html:43
 msgid ""
 "<strong>Suggest</strong> your friends places and things to do in Granada."
 msgstr ""
 "<strong>Recomendar</strong> a tus amigos lugares y cosas que hacer en "
 "Granada."
 
-#: templates/team/survey.html:28
+#: templates/team/survey.html:44
 msgid "<strong>Rate and comment</strong> the suggestions."
 msgstr "<strong>Valorar y comentar</strong> las sugerencias."
 
-#: templates/team/survey.html:29
+#: templates/team/survey.html:45
 msgid "<strong>Search and filter</strong> the suggestions made by others."
 msgstr "<strong>Buscar y filtrar</strong> las sugerencias hechas por otros."
 
-#: templates/team/survey.html:30
+#: templates/team/survey.html:46
 msgid ""
 "<strong>Download or print</strong> trips or routes to discover diferent "
 "areas of the city."
@@ -2274,11 +2278,11 @@ msgstr ""
 "<strong>Descargar o imprimir</strong> viajes o rutas para descubrir "
 "diferentes zonas de la ciudad."
 
-#: templates/team/survey.html:31
+#: templates/team/survey.html:47
 msgid "And many more!"
 msgstr "¡Y mucho más!"
 
-#: templates/team/survey.html:34
+#: templates/team/survey.html:50
 msgid ""
 "To make this project a success, we would like to ask for your help by "
 "filling up this short survey. We would really appreciate your feedback. <br>"
@@ -2293,7 +2297,7 @@ msgstr ""
 " encuesta estudiaremos la posibilidad de desarrollar otras versiones como "
 "iPhone o Blackberry .</em>"
 
-#: templates/team/survey.html:37
+#: templates/team/survey.html:53
 msgid ""
 "<iframe "
 "src='https://spreadsheets.google.com/spreadsheet/embeddedform?formkey=dENnQ2R6Q1RhcmlwWWkxTEY0bVQyS0E6MQ'"
@@ -2305,11 +2309,11 @@ msgstr ""
 " width='760' height='1900' frameborder='0' marginheight='0' "
 "marginwidth='0'>Cargando...</iframe>"
 
-#: templates/team/survey.html:38
+#: templates/team/survey.html:54
 msgid "Join the Community"
 msgstr "Únete a la comunidad"
 
-#: templates/team/survey.html:39
+#: templates/team/survey.html:55
 msgid ""
 "This is a <a href='http://dev.georemindme.com/licensing'>open software "
 "project</a> so we are happy to welcome you if you are interested in "
@@ -2318,7 +2322,7 @@ msgstr ""
 "Este es un <a href='http://dev.georemindme.com/licensing'>proyecto de Open "
 "Software</a>, estás invitado a participar si quieres colaborar con nosotros:"
 
-#: templates/team/survey.html:51
+#: templates/team/survey.html:67
 msgid ""
 "You can find more on this on our <a "
 "href='http://team.georemindme.com/'>community site</a> were you can meet the"
@@ -2329,7 +2333,7 @@ msgstr ""
 "href='http://team.georemindme.com/'>página de la comunidad</a> donde podrás "
 "conocer al equipo y elegir el área donde te sientas más agusto colaborando. "
 
-#: templates/team/survey.html:52
+#: templates/team/survey.html:68
 msgid "Thank you very much for your help!"
 msgstr "¡Muchas gracias por tu ayuda!"
 
