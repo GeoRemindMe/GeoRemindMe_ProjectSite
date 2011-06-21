@@ -4,7 +4,7 @@ from os import path
 
 BASE_DIR = path.normpath(path.dirname(__file__))
 
-DEBUG = True
+DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
@@ -18,12 +18,12 @@ MANAGERS = ADMINS
 if DEBUG == False:
     DATABASES = {
         'default': {
-            'ENGINE': '',                   # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
-            'NAME': '',                      # Or path to database file if using sqlite3.
-            'USER': '',                      # Not used with sqlite3.
-            'PASSWORD': '',                  # Not used with sqlite3.
-            'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
-            'PORT': '',                      # Set to empty string for default. Not used with sqlite3.
+            'ENGINE': 'postgresql_psycopg2',                   # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
+            'NAME': 'georemindme_site',                      # Or path to database file if using sqlite3.
+            'USER': 'postgres',                      # Not used with sqlite3.
+            'PASSWORD': 'postgres',                  # Not used with sqlite3.
+            'HOST': 'localhost',                      # Set to empty string for localhost. Not used with sqlite3.
+            'PORT': '5432',                      # Set to empty string for default. Not used with sqlite3.
         },
     }
 else:
