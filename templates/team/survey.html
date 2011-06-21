@@ -14,6 +14,22 @@
 
 	<article id="community-content"> 
 		<h3>{% trans "GeoRemindMe Survey" %}</h3>
+        <div id="change-version">
+            
+            {% get_available_languages as LANGUAGES %}
+				 {% get_current_language as LANGUAGE_CODE %}
+					<form action="/lang/" method="post">
+                        <label accesskey="v" for="language-bar">{% trans "Ver versión en " %}</label>
+                        {% csrf_token %}
+                            <select name="lang" id="language-bar" onchange="this.form.submit()" onsubmit="this.form.submit()">
+                                {% for code, name in LANGUAGES %}
+                                    <option {%if LANGUAGE_CODE == code %}selected="selected"{% endif %} value="{{code}}" hreflang="{{code}}">{{name}}</option>
+                                {% endfor %}
+                            </select>
+						{% csrf_token %}
+					   <input type="hidden" name="next" value="{{ request.path }}" />
+					</form>
+        </div>
 		<p>{% trans "Dear student," %}</p>
 		<p>
 			<img src="/media/img/partners/logo_ugr.jpg" alt="Logo ugr" style="float:right;border:0;margin:0 10px;" />
@@ -39,10 +55,10 @@
 		<p>{% trans "This is a <a href='http://dev.georemindme.com/licensing'>open software project</a> so we are happy to welcome you if you are interested in collaborating with us:" %}</p>
 		<ul id="survey">
 			<li>
-				<a href="http://team.georemindme.com/localization/" id="help-translating" class="btnHelp">{% trans 'Localizing (translating)' %}</a>
+				<a href="/localization/" id="help-translating" class="btnHelp">{% trans 'Localizing (translating)' %}</a>
 			</li>
 			<li>
-				<a href="http://team.georemindme.com/design/" id="help-designing" class="btnHelp">{% trans 'Designing' %}</a>
+				<a href="/design/" id="help-designing" class="btnHelp">{% trans 'Designing' %}</a>
 			</li>
 			<li>
 				<a href="http://dev.georemindme.com/" id="help-developing" class="btnHelp">{% trans 'Developing' %}</a>

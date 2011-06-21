@@ -9,7 +9,7 @@ from django.conf import settings
 urlpatterns = patterns('',
     
     
-    (r'^admin/', include(admin.site.urls)),
+    (r'^admin/?', include(admin.site.urls)),
     (r'^ajax/contact/', 'geostatic.views.contact'),
     (r'^ajax/keep-up-to-date/', 'geostatic.views.keepuptodate'),
     (r'^%s/(?P<path>.*)$' % settings.MEDIA_URL[1:-1], 'django.views.static.serve', {'document_root' : settings.MEDIA_ROOT}),

@@ -244,3 +244,41 @@ h3#media-releases{
 #list-tree span.folder a,#list-tree span.folder span{
 	margin-left:20px;
 }
+#change-version {
+    float:left;
+    display: block;
+    margin: 5px 0 15px 0;
+    padding:10px;
+    background-color: #FFEE7F;
+    border:1px solid #ccc;
+    font-size: 1.3em;
+    font-weight: normal;
+    
+}
+
+ul#survey{
+    margin:0;
+    height: 80px;
+}
+ul#survey li{
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 33%;
+}
+ul#survey li a{
+    display: block;
+    padding-top:55px;
+}
+#help-translating{
+    background: url("/media/img/world.png") no-repeat scroll 130px 0 transparent;
+}
+
+#help-designing{
+    background: url("/media/img/paint_brush.png") no-repeat scroll 130px 0 transparent;
+}
+#help-developing{
+    background: url("/media/img/tools.png") no-repeat scroll 130px 0 transparent;
+}
