@@ -138,3 +138,4 @@ LANGUAGES = (
   
 )
 
+UPDATE_SCRIPT = "/home/georemindme/update"

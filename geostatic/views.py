@@ -67,6 +67,13 @@ def main(request,slug=""):
     
 
     return render_to_response(page.template, context_instance=RequestContext(request))
+    
+def update(request):
+    from django.conf import settings
+
+    stdout,stderr = subprocess.Popen(settings.UPDATE_SCRIPT, stdout = subprocess.PIPE, stderr = subprocess.PIPE)
+
+    return HttpResponse(stdout+"\n\n"+stderr,mimetype="text/plain")
 
 def set_language(request):
   if request.method == 'POST':

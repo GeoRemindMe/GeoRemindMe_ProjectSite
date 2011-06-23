@@ -18,6 +18,8 @@ urlpatterns = patterns('',
     url(r'^lang/$', 'geostatic.views.set_language'),
     (r'favicon\.ico$', 'django.views.generic.simple.redirect_to', {'url': '/media/favicon.ico'}),
     
+    (r'^update/?$', 'geostatic.views.update' ),
+    
     (r'(?P<slug>(.*))$', 'geostatic.views.main' ),
     
 
