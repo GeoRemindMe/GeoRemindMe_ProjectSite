@@ -138,4 +138,4 @@ LANGUAGES = (
   
 )
 
-UPDATE_SCRIPT = "/home/georemindme/update"
+UPDATE_SCRIPT = "/home/georemindme/repos/update"
