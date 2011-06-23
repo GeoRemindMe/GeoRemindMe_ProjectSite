@@ -72,7 +72,9 @@ def update(request):
     from django.conf import settings
     import subprocess
 
-    stdout,stderr = subprocess.Popen(settings.UPDATE_SCRIPT, stdout = subprocess.PIPE, stderr = subprocess.PIPE)
+    proc = subprocess.Popen(settings.UPDATE_SCRIPT, stdout = subprocess.PIPE, stderr = subprocess.PIPE)
+
+    stdout,stderr = proc.communicate()
 
     return HttpResponse(stdout+"\n\n"+stderr,mimetype="text/plain")
 
