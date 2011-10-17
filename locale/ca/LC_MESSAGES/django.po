@@ -1976,7 +1976,7 @@ msgstr ""
 
 #: templates/team/survey.html:32
 msgid ""
-"This is a <a href=\\\"http://dev.georemindme.com/licensing\\\">open software "
+"This is a <a href=\\\"http://info.georemindme.com/licensing\\\">open software "
 "project</a> so we are happy to welcome you if you are interested in "
 "collaborating with us:"
 msgstr ""
