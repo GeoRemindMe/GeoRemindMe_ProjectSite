@@ -73,20 +73,20 @@
    <div id="wait-mask"></div> 
    <div class="container" id="documentation">     
       <header> 
-         <span id="logo"><a href="http://georemindme.com" title="Ir volando a la página de inicio. Pio! Pio!"><img src="/media/img/logoHeader.png" alt="GeoRemindMe"></a></span> 
+         <span id="logo"><a href="http://dev.georemindme.com" title="Ir volando a la página de inicio. Pio! Pio!"><img src="/media/img/logoHeader.png" alt="GeoRemindMe"></a></span> 
           <div id="top-menu"> 
 
 			<ul>
-                {% block Home-Link %} <li><a class="menu-icons" href="http://georemindme.com" id="Home">{%trans 'Home' %}</a></li>{% endblock %}
+                {% block Home-Link %} <li><a class="menu-icons" href="http://dev.georemindme.com" id="Home">{%trans 'Home' %}</a></li>{% endblock %}
                 {% block API-Link %}<li><a class="menu-icons" href="http://api.georemindme.com" id="API">{%trans 'API' %}</a></li>{% endblock %}
                 {% block Community-Link %}<li><a class="menu-icons" href="http://team.georemindme.com" id="Community">{%trans 'Community' %}</a></li>{% endblock %}
                 {% block Jobs-Link %}<li><a class="menu-icons" href="http://jobs.georemindme.com" id="Jobs">{%trans 'Jobs' %}</a></li>{% endblock %}
-                {% block Sitemap-Link %}<li><a class="menu-icons" href="http://georemindme.com/sitemap" id="Sitemap">{%trans 'Sitemap' %}</a></li>{% endblock %}
+                {% block Sitemap-Link %}<li><a class="menu-icons" href="http://dev.georemindme.com/sitemap" id="Sitemap">{%trans 'Sitemap' %}</a></li>{% endblock %}
 			</ul>
 					
 		</div> 
          <nav> 
-			<a href="http://www.georemindme.com">{%trans 'Home' %}</a>
+			<a href="http://dev.georemindme.com">{%trans 'Home' %}</a>
             {% block breadCumbMenu%}{% endblock %}
          </nav>
          
@@ -114,7 +114,7 @@
 			   <li><a href="http://jobs.georemindme.com" title="{% trans "Do you want to work with us?"%}">Jobs</a></li>
 			   <li><a href="http://team.georemindme.com" title="{% trans "Join the community now!"%}">Community</a></li>
 			   <li><a href="http://help.georemindme.com" title="{% trans "Contact us"%}">Support</a></li>
-			   <li><a href="http://www.georemindme.com/sitemap" title="{% trans "Looking for some info?"%}">Sitemap</a></li>
+			   <li><a href="http://dev.georemindme.com/sitemap" title="{% trans "Looking for some info?"%}">Sitemap</a></li>
                <li>
 				 {% get_available_languages as LANGUAGES %}
 				 {% get_current_language as LANGUAGE_CODE %}
