@@ -95,6 +95,8 @@ def set_language(request):
           return HttpResponseRedirect(next)
       return HttpResponseRedirect(request.path)
     
+  return HttpResponse()
+    
     
 def set_language_es(request):
   from django.conf import settings
